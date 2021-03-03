@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<link rel="shortcut icon" href="{% static 'counter/images/logo.png' %}" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Tecnoelectro Comercio Online</title>	
+
+<div class="header">
+<!-- Logo Image -->	
+		<a href="/" class="brand-logo"><img src="{% static 'counter/images/sc.png' %}" width="250" height="100" alt="sc"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">  
+				<div class="form-inline my-2 my-lg-0">	
+				</div>			
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span></button>
+<!--DropDown Nav Bar -->	  
+		<a href="/about/" class="btn btn-white" style="text-align-center" class="main" id="section0">Acerca de Nosotros</a>
+
+		<a href="tel:+50640339238"class="btn btn-white">Call Center <img src="{% static 'counter/images/ph.png' %}" width="40" height="40" alt="sc"></a>
+	  		<a href="/login/"class="btn btn-info">Iniciar Sesion/Registrarse</a>
+<!--Agents -->	  							
+		<button class="collapsible" style="text-align-center">Vendedores / Agentes</button>
+		<div class="content">
+				<a href="https://wa.me/50664251938"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Tecnoelectro WhatsApp</a>
+				<a href="https://wa.me/50662139266"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Josua Corrales (Gammer)</a>
+				<a href="https://wa.me/50671016124"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Lupe Palma</a>
+				<a href="https://wa.me/50672610966"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Tati Porras</a>
+				<a href="https://wa.me/50683138801"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Argery Chacon</a>
+				<a href="https://wa.me/50663311665"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Josseline Calvo </a>
+				<a href="https://wa.me/50685379735"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Shirley Calderon </a>
+				<a href="https://wa.me/50671518291"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Steven Arburola</a>
+				<a href="https://wa.me/50670049582"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Cristel Ching</a>
+				<a href="https://wa.me/50688062664"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Laura Obando</a>
+				<a href="https://wa.me/50670786886"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Daniela Solano</a>
+				<a href="https://wa.me/50662459193"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Katherine Jarquin</a>
+				<a href="https://wa.me/50662260928"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Tracy Guillen</a>
+				<a href="https://wa.me/50661802259"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Jessica Bourrouoet</a>
+				<a href="https://wa.me/50671065021"class="btn btn-white"><img  id="cart-icon" src="{% static 'counter/images/whatsappicon.jpg' %}" width="25" height="25" alt="sc">Fabian Padron</a>
+			</div>																	
+<!--NAV BAR CONTAINER-->
+			<div class="container"><br></div>   
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			{% block content %}
+			{% endblock content %}
+		<div class="container-fluid"><br>
+<!-- RESPONSIVE NAV BAR -->
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+				<link rel="stylesheet" type="text/css" href="{% static 'counter/css/main.css' %}">
+<!-- NAVEGAR STYLES	 -->
+<style>
+		body {
+		  background-image: url("{% static 'counter/images/backgg.bmp' %}");
+		}
+  
+	  .feedback {
+	background-color : #31B0D5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border-color: #46b8da;
+  }
+  
+  .header {
+	background-color: #ffffff;
+	padding: 30px;
+	text-align: center;
+  }
+  
+  #navbar {
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+  }
+  
+  #navbar a {
+	float: left;
+	display: block;
+	color: #181818;
+	text-align: center;
+	padding: 12px 14px;
+	text-decoration: none;
+	font-size: 14px;
+  }
+  
+  #navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  #navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  .content {
+	padding: 16px;
+  }
+  
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+  
+</style>
+</div>
+</head>
+<body>
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/puntero.png' %}" width="25" height="25" >Navegar Articulos</button>		
+<div id="navbar">
+		<a href="#section0" class="btn btn-white" id="cart-icon">Home</a>
+		<a href="#section1"class="btn btn-info" id="cart-icon"> SmartPhones</a>
+		<a href="#section2"class="btn btn-white" id="cart-icon"> SmartWatch</a>
+		<a href="#section3"class="btn btn-info"id="cart-icon"> Componentes PC</a>
+		<a href="#section4"class="btn btn-white" id="cart-icon"> Consolas</a></li>
+		<a href="#section5"class="btn btn-info" id="cart-icon"> SmartTV</a></li>
+		<a href="#section6"class="btn btn-white" id="cart-icon"> Tablets</a></li>
+		<a href="#section7"class="btn btn-info" id="cart-icon"> Laptops</a></li>
+		<a href="#section8"class="btn btn-white" id="cart-icon"> Sonido</a></li>
+		<a href="#section9"class="btn btn-info" id="cart-icon"> Linea-blanca</a></li>
+		<a href="#section10"class="btn btn-white" id="cart-icon"> Eslectrodomesticos</a></li>
+		<a href="#section11"class="btn btn-info" id="cart-icon"> Muebleria</a></li>
+		<a href="#section12"class="btn btn-white" id="cart-icon"> Herramientas</a></li>
+	</div>		
+
+
+<!--PRODUCTS SLIDER  -->	 
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/GAMMERAOURUS.jpg' %}" style="width:100%">
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/gammer.jpg' %}" style="width:100%">		
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/silla3.jpg' %}" style="width:100%">		
+<!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/gammer4.jpg' %}" style="width:100%">				 
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+ <div class="mySlides fade">
+   <div class="numbertext"></div>
+	   <img src="{% static 'counter/images/gammer5.jpg' %}" style="width:100%">						
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext"></div>
+  <img src="{% static 'counter/images/gammercorsair.jpg' %}" style="width:100%">						
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext"></div>
+  <img src="{% static 'counter/images/deskrgb.jpg' %}" style="width:100%">						
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/gammer3.jpg' %}" style="width:100%">						
+<!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="{% static 'counter/images/CPU2.png' %}" style="width:100%">						 
+		 <!-- <div class="text">Caption Text</div>--->
+		</div>
+	</div>					
+<br><div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span>
+</div>		
+<!--Mini About --->
+		<div style="text-align:center;">
+				<p><b>Saludos! Somos Tecnoelectro Comercio Online, una tienda virtual para tus compras tecnologicas a crédito, te ayudamos con todo el proceso. 	</b></p> 
+				<p><b>SmartPhones, Smart Tvs, SmartWatchs, PS5/PS4, Nintendo Switch, PC Gammer, Laptops, Tablets/iPads, Electrodomesticos, Muebleria, Herramientas, motocicletas  y mucho más...</b></p> 
+				<p><b>Nuestros vendedores estaran atentos para asistir en cada paso</b></p> 		 
+				<p><b>Todos es 100% originales con 12 meses de garantía de fábrica! </b></p> 		 
+				<p><b>Compre y disfrute de hacer las compras de sus de preferencia SIN moverse de la comodidad de su hogar!. </b></p> 	
+				<p><b>Si necesitas saber acerca de los creditos toca <a href = "/about">aca</a>.
+				</b></p> <p><b> 
+		</div>
+	  		 <h1 style="text-align:center;" ><div class="main" id="section1"><img id="thumbail" src="{% static 'counter/images/smartph.jpg' %}" width="50" height="50">SmartPhones <img id="thumbail" src="{% static 'counter/images/smartph.jpg' %}" width="50" height="50"> </h1> 
+<!--Smartphones Colapsible --->
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/apicon.png' %}" width="75" height="75" alt="appleicon"> </button>
+				<div class="content">
+										<!--CART FEATURE--->
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iphone 12 Pro Max</span></strong></p> 
+					<div class="box-element product"> <!--CART FEATURE--->
+						<img src="{% static 'counter/images/iphone12.jpg' %}" width="400" height="400">
+										<!--CART FEATURE
+							<button class="btn btn-outline-info add-btn">Agregar al Carrito</button>
+							<h4 style="display: inline-block; float: right"><strong>$2000</strong></h4>
+						</div>--->
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iphone 12 Pro</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/i12.jpg' %}" width="400" height="400">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iphone 12 & 12 Mini</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/i12mini.jpg' %}" width="350" height="350">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iPhone 11 Pro Max</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/11promax.jpg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iPhone 11 Pro </span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/11pro.jpg' %}" width="250" height="250">
+					</div>
+			
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">iPhone 11 </span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/i11.jpg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" class="collapsible" style="text-align:center;"><strong><span class="item">iPhone SE 64/128 GB New Generation</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/ise.jpg' %}" width="250" height="250">
+					</div>
+			</div>
+	</div>
+</div>
+<!--Samsung--->
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/samicon.jpg' %}" width="75" height="75" alt="appleicon"></button>
+			<div class="content">
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Z Fold 2 </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/zflip.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Z Flip </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/zflip2.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Note 20 Utra </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/n20ultra.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Note 20</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images//n20.jpg' %}" width="250" height="250">
+				</div>
+				
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S20 ultra </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s20ultra.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S20+ </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s20p.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S20  </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s20.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S20 FE </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s20fe.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Note 10 Lite </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/n10l.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S10+ </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s10p.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S10 </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s10.jpg' %}" width="250" height="250">
+				</div>
+				
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy S10 Lite  </span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/s10l.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy A71</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/a71.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy A70</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/a70.jpg' %}" width="250" height="250">
+				</div>
+				
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy A51</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/a51.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy A31</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/a31.jpg' %}" width="250" height="250">
+				</div>
+			
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy A21</span></strong></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/a21.jpg' %}" width="250" height="250">
+				</div>
+			</div>
+		</div>
+<!--Huawei--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/huicon.jpg' %}" width="75" height="75" alt="hicon"></button>
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Huawei P40 Pro </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P40PRO.jpg' %}" width="250" height="250">
+	</div>
+
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Huawei P40 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P40.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P40 Lite</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P40L.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P30 Pro </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P30P.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P30 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P30.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P30 Lite </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P30L.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P30 Lite 128 GB New Edition</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P30L2.jpeg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">P30 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/P30.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Nova 5T</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/N5T.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">9X</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/9X.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">9X Lite</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/9XL.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">8X</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/8X.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y9s </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y9S.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y9 Prime 2019 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y9P.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y9 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/N5T.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y9 A </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y9A.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y8 S </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y8S.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y8 P</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y8P.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">Y7 P</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/Y7P.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">PSmart</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/PSMART.jpg' %}" width="250" height="250">
+	</div>
+</div>
+
+<!--Xiaomi--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/mil.png' %}" width="75" height="75" alt="hicon"></button>
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Mi 10 128/256 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/MI10.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Mi 10 Lite  64/128 GB</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/MI10L.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Mi 10 Note Lite 64/128 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/MI10L2.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Mi 10 128 GB</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/MI10.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Poco F2 PRO 128/256 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/POCOF2.jpg' %}" width="250" height="250">
+	</div>
+	
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Poco X3 NFC 128 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/POCOX3.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Mi 9T 64 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/MI9T.jpg' %}" width="250" height="250">
+	</div>
+	
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9S 64/128 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/REDMIN9S.jpg' %}" width="250" height="250">
+	</div>
+	
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9 PRO 64/128 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/REDMIN9P.jpg' %}" width="250" height="250">
+	</div>
+		
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9 64/128 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/REDMIN9.jpg' %}" width="250" height="250">
+	</div>
+	
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9 32/64 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/REDMIN9.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9 C 32/64 GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/9C.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 9 A 32 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/9A.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 8 PRO 64/128 GB</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/REDMIN8P.jpg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 8 64/12 8GB	</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images//REDMIN8.jpg' %}" width="250" height="250">
+	</div>
+	
+<p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 7P</span></strong></p> 
+<div class="content">
+	<img src="{% static 'counter/images/Y7P.jpg' %}" width="250" height="250">
+</div>
+</div>
+
+<!--One Plus--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/1PLUS.png' %}" width="75" height="75" alt="hicon"></button>
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> 8 Pro 12+256GB </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/1p8p.jpeg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Nord N10 5G</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/n10.png' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> Nord N100 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/n100.jpeg' %}" width="250" height="250">
+	</div>
+
+</div>
+
+<!--CAT--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/CAT.png' %}" width="75" height="75" alt="hicon"></button>
+
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><span class="item"> S61 </span></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/s61.jpeg' %}" width="250" height="250"> 
+	</div>
+
+	
+	<p class="collapsible" style="text-align:center;"><span class="item">  S60 </span></p> 
+<div class="content">
+	<img src="{% static 'counter/images/s60.jpeg' %}" width="250" height="250"> 
+</div>
+
+<p class="collapsible" style="text-align:center;"><span class="item">  S52 </span></p> 
+<div class="content">
+	<img src="{% static 'counter/images/s52.jpeg' %}" width="250" height="250"> 
+</div>
+
+<p class="collapsible" style="text-align:center;"><span class="item">  S42 </span></p> 
+<div class="content">
+	<img src="{% static 'counter/images/s42.jpeg' %}" width="250" height="250"> 
+</div>
+</div>
+<!--Motorola--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/motor.png' %}" width="75" height="75" alt="hicon"></button>
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"> G9</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/g9.jpeg' %}" width="250" height="250">
+	</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">G8 </span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/g8.jpeg' %}" width="250" height="250">
+	</div>
+</div>
+
+<!--LG--->
+
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/lg.png' %}" width="75" height="75" alt="hicon"></button>
+<div class="content">
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item">K71</span></strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/k71.jpeg' %}" width="250" height="250">
+	</div>
+
+</div>
+<!--SmartWatch Colapsible --->
+<button class="collapsible" style="text-align:center;"><div class="main" id="section2">	<h1 style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/smartw.jpg' %}" width="50" height="50">SmartWatchs<img id="thumbail" src="{% static 'counter/images/smartwa.png' %}" width="50" height="50"> </h1> </button>
+	<div class="content">			
+					<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/apicon.png' %}" width="75" height="75">
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Apple Watch SERIES 6 40/44MM </span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/w644.jpg' %}" width="250" height="250">
+						</div>
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Apple Watch SERIES 5 40/44MM</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/w544.jpg' %}">
+						</div>
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Apple Watch SE 40/44MM</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/wse40.jpg' %}">
+						</div>
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Apple Watch SERIES 3 38MM</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/w338.jpg' %}">
+						</div>
+					</div>
+					<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/samicon.jpg' %}" width="75" height="75">
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Watch Active 2 40/44MM
+						</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/wa240.jpg' %}">
+						</div>			
+					</div>
+				</div>
+<script type="text/javascript">
+	let thumbnails = document.getElementsByClassName('thumbnail')
+	let activeImages = document.getElementsByClassName('active')
+	for (var i=0; i < thumbnails.length; i++){
+		thumbnails[i].addEventListener('mouseover', function(){
+
+			if (activeImages.length > 0){
+				activeImages[0].classList.remove('active')
+			}
+		
+			this.classList.add('active')
+			document.getElementById('featured').src = this.src
+		})
+
+	}
+
+	const buttonRight = document.getElementById('slideRight');
+	const buttonLeft = document.getElementById('slideLeft');
+
+	buttonRight.addEventListener('click', function(){
+		document.getElementById('slider').scrollLeft += 180;
+	})
+
+	buttonLeft.addEventListener('click', function(){
+	  document.getElementById('slider').scrollLeft -= 180;
+	})
+</script>
+ <!-- slider -->
+ <section id="rt-showcase-surround">
+	<div id="rt-showcase" class="slider-container rt-overlay-dark">
+		<div class="rt-container slider-container">
+			<div class="rt-grid-12 rt-alpha rt-omega">
+<link rel="stylesheet" href="http://cssslider.com/sliders/demo-7/engine1/style.css">
+<!--[if IE]><link rel="stylesheet" href="http://cssslider.com/sliders/demo-7/engine1/ie.css"><![endif]-->
+<!--[if lte IE 9]><script type="text/javascript" src="http://cssslider.com/sliders/demo-7/engine1/ie.js"></script><![endif]-->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="http://cssslider.com/sliders/demo-7/engine1/gestures.js"></script>
+<div class="csslider1 autoplay cs_handle" style="top:-5px;">
+<input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_3" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_4" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_5" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_6" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_7" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_8" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_slide1_9" type="radio" class="cs_anchor slide">
+<input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+<input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_3" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_4" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_5" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_6" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_7" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_8" type="radio" class="cs_anchor pause">
+<input name="cs_anchor1" id="cs_pause1_9" type="radio" class="cs_anchor pause">
+<ul>
+	<!-- /photo slider -->
+<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+	<img src="{% static 'counter/images/giga.jpg' %}" style="width: 100%;">
+</div>
+<li class="num0 img">
+	<img src="{% static 'counter/images/giga.jpg' %}" alt="CSS3 all images appearing slideshow example test questions" title="Hyundai i20">
+</li>
+<li class="num1 img">
+	<img src="{% static 'counter/images/gammer3.jpg' %}" alt="jQuery vertical em  embedphoto behind" title="Citroën DS3 WRC">
+</li>
+<li class="num2 img">
+	<img src="{% static 'counter/images/ryzens.jpg' %}" alt="HTML5 full screen iphone  thumbnail with images" title="Volkswagen Polo R WRC">
+</li>
+<li class="num3 img">
+	<img src="{% static 'counter/images/vengeance.jpg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num4 img">
+	<img src="{% static 'counter/images/i9.jpg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num5 img">
+	<img src="{% static 'counter/images/ENF.jpg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num6 img">
+	<img src="{% static 'counter/images/ra.jpeg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num7 img">
+	<img src="{% static 'counter/images/GSKILL.jpg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num8 img">
+	<img src="{% static 'counter/images/CPU2.png' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+<li class="num9 img">
+	<img src="{% static 'counter/images/RGBK.jpeg' %}"alt="HTML continuous with controls  download photo" title="Škoda Fabia Super 2000">
+</li>
+</ul>
+<a class="cs_lnk" href="http://cssslider.com">h</a>
+<div class="cs_description">
+<label class="num0">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Las mejores marcas</span></span>
+</label>
+<label class="num1">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Las mejores cuotas & plazos</span></span>
+</label>
+<label class="num2">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Los mejores componentes</span></span>
+</label>
+<label class="num3">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num4">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num5">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num6">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num7">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num8">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+<label class="num9">
+	<span class="cs_title"><span class="cs_wrapper">Tecnologia de primera</span></span>
+	<br><span class="cs_descr"><span class="cs_wrapper">Tu PC a credito!</span></span>
+</label>
+</div>
+<div class="cs_play_pause">
+<label class="cs_play" for="cs_play1"><span><i></i></span></label>
+<label class="cs_pause num0" for="cs_pause1_0"><span><i></i></span></label>
+<label class="cs_pause num1" for="cs_pause1_1"><span><i></i></span></label>
+<label class="cs_pause num2" for="cs_pause1_2"><span><i></i></span></label>
+<label class="cs_pause num3" for="cs_pause1_3"><span><i></i></span></label>
+<label class="cs_pause num4" for="cs_pause1_4"><span><i></i></span></label>
+<label class="cs_pause num5" for="cs_pause1_5"><span><i></i></span></label>
+<label class="cs_pause num6" for="cs_pause1_6"><span><i></i></span></label>
+<label class="cs_pause num7" for="cs_pause1_7"><span><i></i></span></label>
+<label class="cs_pause num8" for="cs_pause1_8"><span><i></i></span></label>
+<label class="cs_pause num9" for="cs_pause1_9"><span><i></i></span></label>
+</div>
+<div class="cs_arrowprev">
+<label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+<label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+<label class="num2" for="cs_slide1_2"><span><i></i></span></label>
+<label class="num3" for="cs_slide1_3"><span><i></i></span></label>
+<label class="num4" for="cs_slide1_4"><span><i></i></span></label>
+<label class="num5" for="cs_slide1_5"><span><i></i></span></label>
+<label class="num6" for="cs_slide1_6"><span><i></i></span></label>
+<label class="num7" for="cs_slide1_7"><span><i></i></span></label>
+<label class="num8" for="cs_slide1_8"><span><i></i></span></label>
+<label class="num9" for="cs_slide1_9"><span><i></i></span></label>
+</div>
+<div class="cs_arrownext">
+<label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+<label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+<label class="num2" for="cs_slide1_2"><span><i></i></span></label>
+<label class="num3" for="cs_slide1_3"><span><i></i></span></label>
+<label class="num4" for="cs_slide1_4"><span><i></i></span></label>
+<label class="num5" for="cs_slide1_5"><span><i></i></span></label>
+<label class="num6" for="cs_slide1_6"><span><i></i></span></label>
+<label class="num7" for="cs_slide1_7"><span><i></i></span></label>
+<label class="num8" for="cs_slide1_8"><span><i></i></span></label>
+<label class="num9" for="cs_slide1_9"><span><i></i></span></label>
+</div>
+<!-- /MINIATURAS -->
+<div class="cs_bullets">
+<label class="num0" for="cs_slide1_0">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/giga.jpg' %}" width="180" height="180" alt="HTML template fullscreen  download responsive" title="Hyundai i20"></span>
+</label>
+<label class="num1" for="cs_slide1_1">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/gammer.jpg' %}" width="180" height="180" alt="Bootstrap buttons zoom control slider mobile ie disable" title="Citroën DS3 WRC"></span>
+</label>
+<label class="num2" for="cs_slide1_2">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/ryzens.jpg' %}" width="180" height="180" alt="Responsive banner with video slider vertical with gallery" title="Volkswagen Polo R WRC"></span>
+</label>
+<label class="num3" for="cs_slide1_3">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/vengeance.jpg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="Škoda Fabia Super 2000"></span>
+</label>
+<label class="num4" for="cs_slide1_4">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/i9.jpg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="Škoda Fabia Sup0"></span>
+</label>
+<label class="num5" for="cs_slide1_5">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/ENF.jpg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="Škodper 2000"></span>
+</label>
+<label class="num6" for="cs_slide1_6">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/ra.jpeg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="ŠkodSuper 2000"></span>
+</label>
+<label class="num7" for="cs_slide1_7">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/GSKILL.jpg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="a FSuper 2000"></span>
+</label>
+<label class="num8" for="cs_slide1_8">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/CPU2.png' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="Škoda Fa 2000"></span>
+</label>
+<label class="num9" for="cs_slide1_9">
+	<span class="cs_point"></span>
+	<span class="cs_thumb"><img src="{% static 'counter/images/RGBK.jpg' %}" width="180" height="180" alt="jQuery image div text slider text example download" title="Škoia Super 2000"></span>
+</label>
+</div>
+		<div class="clear"></div>
+		</div>
+	</div>
+</section> 
+<!--slider -->
+			<section id="rt-main-surround"><div id="rt-transition">
+		<div id="rt-mainbody-surround">
+			<div id="rt-top" class="rt-overlay-light">
+				<div class="rt-container hide-pointer">
+					<div class="rt-grid-12 rt-alpha rt-omega">
+					<div class="rt-block fp-top rt-center rt-big-title">
+	<div class="module-surround">
+					<div class="module-content"></div>
+			</div>
+			   </div>
+
+				</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+<!--Componentes PC Colapsible --->
+<button class="collapsible" style="text-align:center;"><div class="main" id="section3"><h1><img src="{% static 'counter/images/pc1.jpeg' %}" width="40" height="40">Componentes PC<img src="{% static 'counter/images/pc2.jpeg' %}" width="40" height="50"></h1></button>
+	<div class="content">
+<!--PC -  Tarjetas Madre --->
+<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/mb.png' %}" width="50" height="50">Tarjeta Madre Motherboards<img src="{% static 'counter/images/mb.png' %}" width="50" height="50"></button>
+				<div class="content">
+					<button class="collapsible" style="text-align:center;">Gygabyte</button>
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><span class="item">Z490I AORUS ULTRA - Socket 1200</span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/Z490I.jpeg' %}" width="250" height="250">
+						</div>
+					</div>
+
+					<button class="collapsible" style="text-align:center;">MSI</button>
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><span class="item">MSI GeForce RTX 3090 GAMING X TRIO 24GB GDDR6X</span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/g1.jpeg' %}" width="250" height="250">
+						</div>
+						<div class="content">
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">MSI GeForce RTX 3070 Gaming X Trio 8GB </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/g2.jpeg' %}" width="250" height="250">
+							</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">MSI RTX 3060 Ti GAMING X TRIO 8GB GDDR6</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/g3.jpeg' %}" width="250" height="250">
+								</div>
+								<p style="text-align:center;"></p>MSI X570 MEG Godlike- Socket AM4</p>
+								<p style="text-align:center;">MSI TRX40 PRO 10G - 8xDDR4 </p>
+								<p style="text-align:center;">MSI TRX40 PRO WiFi - 8xDDR4 </p>
+								<p style="text-align:center;">MSI MEG Z490 UNIFY - Socket 1200</p>
+								<p style="text-align:center;">MSI B550 TOMAHAWK - Socket AM4 </p>
+								<p style="text-align:center;">MSI B550 Mortal WiFi- Socket AM4</p>
+								<p style="text-align:center;"></p>GeForce GTX 1650 Super 4GB Ventus XS OC</p>
+							</div>
+					</div>
+					<button class="collapsible" style="text-align:center;">ASUS</button>
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/I.jpeg' %}" width="250" height="250">
+						</div>
+
+						<p style="text-align:center;"> Asus Prime X570-P - Socket AM4</p>
+						<p style="text-align:center;">Asus Tuf Gaming B550M-Plus</p>
+						<p style="text-align:center;"> Asus B450-F Gaming Rog Strix</p>
+					</div>
+					<button class="collapsible" style="text-align:center;">ECS</button>
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/Z.jpeg' %}" width="250" height="250">
+						</div>
+					</div>
+					<button class="collapsible" style="text-align:center;">Supero</button>
+					<div class="content">
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/.jpeg' %}" width="250" height="250">
+						</div>
+
+						<p style="text-align:center;">Supero C7Z270-PG - Socket 1151 </p>
+						<p style="text-align:center;"> Supero C7Z270-CG - Socket 1151</p>
+						<p style="text-align:center;">ECS H310CH5-M2- Socket 1151</p>
+					</div>
+				</div>
+<!--PC - GPU--->
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/gp.png' %}" width="50" height="50">Tarjetas de Video(GPU)<img src="{% static 'counter/images/gp.png' %}" width="50" height="50"></button>
+				<div class="content">
+
+					<button class="collapsible" style="text-align:center;">ASRock</button>
+					<div class="content">
+	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Phantom Gaming D Radeon RX 5500 XT 8G OC 
+						</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/gpu1.jpeg' %}" width="250" height="250">
+						</div>
+					</div>
+	
+					<button class="collapsible" style="text-align:center;">PNY</button>
+					<div class="content">
+	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"> GeForce RTX 3090 24GB XLR8 Gaming  	</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/gpu4.jpeg' %}" width="250" height="250">
+						</div>
+					</div>
+
+					<button class="collapsible" style="text-align:center;">ASUS</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">TUF GAMING GeForce RTX 3090 OC</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/gpu1.jpeg' %}" width="250" height="250">
+						</div>
+						
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">ROG STRIX NVIDIA GeForce RTX 3090 OC Edition</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/gpu2.jpeg' %}" width="250" height="250">
+						</div>
+					</div>		
+				</div>
+<!--PC - CPU--->		
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/cp.png' %}" width="50" height="50">Procesador <img src="{% static 'counter/images/cp.png' %}" width="50" height="50">	</button>
+				<div class="content">			
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/intel.png' %}" width="50" height="50">Intel<img src="{% static 'counter/images/intel.png' %}" width="50" height="50"></button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/.jpg' %}" width="250" height="250">
+                        </div>
+						<p style="text-align:center;"> Intel Core i9-10850KA 3.6 GHz - Edicion Avengers</p>
+						<p style="text-align:center;"> Intel Core i9-10900 2.8 GHz LGA 1200 </p>
+						<p style="text-align:center;">  Intel Core i7-9700K 3.6Ghz</p>
+						<p style="text-align:center;"> Intel Core i7-10700K 3.8 GHz , Edicion Avengers </p>
+						<p style="text-align:center;"> Intel Core i7-10700K 3.8 GHz</p>
+						<p style="text-align:center;"> Intel Core i7-7700K 4.5Ghz</p>
+						<p style="text-align:center;"> Intel Core i7 10700 2.90 GHz</p>
+						<p style="text-align:center;"> Intel Core i5-10600K - 4,10GHz - Edición Avengers </p>
+						<p style="text-align:center;">  Intel Core i5-10600K 4.1 GHz</p>
+						<p style="text-align:center;"> Intel Core i5 10400 2.90 GHz</p>
+						<p style="text-align:center;">  Intel Core i5 10400F 2.90 GHz	</p>
+						<p style="text-align:center;">  Intel Core i3 9100 3.6 GHz</p>
+						<p style="text-align:center;"> Intel Core i3 10100 3.60 GHz</p>
+						<p style="text-align:center;"> Intel Core i3 - 9100F - 3.6Ghz</p>	
+					</div>
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/ryze.png' %}" width="50" height="50">AMD<img src="{% static 'counter/images/ryze.png' %}" width="50" height="50"></button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/w644.jpg' %}" width="250" height="250">
+                        </div>
+
+						<p style="text-align:center;">  AMD Ryzen 9 3900X 3.80GHz, - AM4</p>
+						<p style="text-align:center;"> AMD Ryzen 7 3800XT - Socket AM4</p>
+						<p style="text-align:center;">  AMD Ryzen 7 3700X 3.6GHz - AM4</p>
+						<p style="text-align:center;"> AMD Ryzen 5 3600XT - AM4	</p>
+						<p style="text-align:center;">  AMD Ryzen 5 3600X 3.8GHz - AM4</p>
+						<p style="text-align:center;"> AMD Ryzen 5 3600 3.6GHz - AM4 </p>
+						<p style="text-align:center;"> AMD Ryzen 3 3100 - AM4</p>			
+						<p style="text-align:center;"> AMD Ryzen 5 3400G 3.7GHz - AM4 </p>	
+                    </div>
+				</div>
+<!--PC - RAM--->				
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/ra.jpeg' %}" width="50" height="50">Memoria RAM<img src="{% static 'counter/images/ra.jpeg' %}" width="50" height="50"></button>
+				<div class="content">
+					<p style="text-align:center;">  	CORSAIR DOMINATOR PLATINUM 16GB (4x4GB) DDR4 3200MHz / ROG EDITION  				</p>
+					<p style="text-align:center;">  		XPG SPECTRIX D60 RGBDDR4 32GB (2X16) 3600 MHZ 			</p>
+					<p style="text-align:center;">  XPG SPECTRIX D50 RGB DDR4 32GB (2X16) 3600 MHZ   					</p>
+					<p style="text-align:center;">  			XPG SPECTRIX D50 RGB  DDR4 32GB 3200 MHZ 		</p>
+					<p style="text-align:center;">  				XPG SPECTRIX D50 RGB DDR4 16GB (2X8) 4133 MHZ 	</p>
+					<p style="text-align:center;">  	XPG SPECTRIX D60G RGBDDR4 16GB (2X8) 3600 MHZ 				</p>
+					<p style="text-align:center;">  		 XPG SPECTRIX D50 RGB Memoria Ram DDR4 16GB (2X8) 3600 MHZ 			</p>
+					<p style="text-align:center;">  		XPG SPECTRIX D80 RGB  DDR4 8GB 3200 MHZ			</p>
+					<p style="text-align:center;">  	XPG SPECTRIX D50 RGB DDR4 8GB 3200 MHZ - Blanco  				</p>
+					<p style="text-align:center;">  	XPG SPECTRIX D50 RGB	DDR4 8GB 3200 MHZ				</p>
+					<p style="text-align:center;">  		 XPG Hunter DDR4 2666 MHz - 8GB SO DIMM 			</p>
+					<p style="text-align:center;">  	 XPG Hunter DDR4 3000MHz - 8GB				</p>
+					<p style="text-align:center;">  		Patriot Viper DDR4 3600MHz - 16GB 2 x 8GB 			</p>
+					<p style="text-align:center;">  		Patriot Viper Steel DDR4 16GB - 3200MHz				</p>
+					<p style="text-align:center;">  Patriot Premium 8GB DDR4 SR 2666 MHz UDIMM    </p>	
+					<p style="text-align:center;">   Patriot Viper Steel DDR4 3200 16GB (1x32GB)   </p>	
+					<p style="text-align:center;">  Patriot Viper 4 Blackout 32Gb 2x16GB - 3600Mhz   </p>	
+					<p style="text-align:center;">  Patriot Viper Steel DDR4 32GB - 3600 MHz  </p>	
+					<p style="text-align:center;">  Adata XPG Hunter 16GB DDR4 3200MHz  </p>	
+				</div>
+
+<!--PC - Enfriamiento--->				
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/ENF.jpg' %}" width="50" height="50">Enfriamiento Liquido<img src="{% static 'counter/images/ENF.jpg' %}" width="50" height="50"></button>
+				<div class="content">
+					<p style="text-align:center;"> Asus ROG Ryujin 360 RGB 360mm  </p>	
+					<p style="text-align:center;"> Asus ROG Ryujin 240 RGB 240mm </p>	
+					<p style="text-align:center;">  Asus ROG Ryuo 240 RGB 240mm </p>	
+					<p style="text-align:center;">  Asus Strix LC 240  </p>	
+					<p style="text-align:center;"> MSI MAG 360R  </p>	
+					<p style="text-align:center;">  MSI MAG 240R  </p>	
+					<p style="text-align:center;">  GAMDIAS CHOINE M1A 240R 240mm RGB</p>	
+					<p style="text-align:center;"> KWG Crater M1-240R  </p>	
+					<p style="text-align:center;">  EChione EA1 - 120R - Líquido   </p>	
+					<p style="text-align:center;">  KWG Crater E1-120R</p>	
+				</div>
+<!--PC - Monitores--->				
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/MONI.jpg' %}" width="50" height="50">Monitores<img src="{% static 'counter/images/MONI.jpg' %}" width="50" height="50"></button>
+				<div class="content">
+					<p>  MSI Optix MAG321CQR 32" Curvo 144H -DP- DVI - HDMI- 2560X1440  </p>	
+					<p>  MSI Optix MAG321 32" FreeSync Curvo 3840 x 2160  </p>	
+					<p>  MSI Led 32"  Optix AG32C 165HZ Curvo Full HD - DP - DVI - HDMI  </p>	
+					<p>   MSI Led 27" Optix G27C5 Curvo Full HD 165HZ FreeSync DP- HDM </p>	
+					<p>   MSI Led 27" Optix G271 Flat 144HZ - Full HD - IPS - 1MS HDMI - DP			</p>	
+					<p>   MSI Led 24" Optix MAG240CR RGB Curvo Full HD 144HZ FreeSync DP-HDMI </p>
+					<p>   MSI LED 24"  OPTIX G241 FLAT 144HZ/1MS  </p>	
+					<p> MSI 24" Optix G24C Curvo 144HZ Freesync DP - DVI - HDMI 1920X1080 199mil
+					<p> MSI Optix MAG321CQR 32" Curvo 144H -DP- DVI - HDMI- 2560X1440 
+					<p> MSI Led 27" Optix G27C2 Curvo 144HZ FreeSync DP-DVI- HDMI 1920X1080 
+					<p> MSI Led 27" Optix G271 Flat 144HZ - Full HD - IPS - 1MS HDMI - DP
+					<p>  ASUS VG278QR 27” 165Hz Full HD 0.5ms G-SYNC  </p>	
+					<p>  ASUS 24"  Tuf Gaming VG24VQ 144Hz-1MS -Full HD - HDMI -DP  </p>	
+					<p> ASUS VP249QGR 24" LED FullHD 144Hz FreeSync </p>	
+					<p> ASUS VZ279HEG1R 27" FHD IPS - 1ms - 75hz   </p>	
+					<p>  Asus 27" VA27EHEY - 75HZ IPS - VGA -HDMI  </p>	
+					<p>  ASUS TUF Gaming VG32VQ 32" WQHD 144Hz 1ms  </p>	
+					<p>  ASUS 24" VA24EHE - 75HZ IPS - VGA -HDMI- DVI  </p>	
+					<p> Asus VZ249HEG1R 24" Full HD IPS 75Hz    ₡135 mil
+					<p>  Acer KG221Q 21.5"- 1MS - 1080P - 75HZ</p>	
+					<p>  Acer LED 27"  Nitro VG270 BMIIX -75HZ - 1ms -1920 x1080 - 75hz VGA-HDMI  </p>	
+					<p> SAMSUNG Led 31.5" Curvo Full HD - 75HZ - 4MS VGA - HDMI			</p>	
+					<p> SAMSUNG 32" LedCurvo IPS Full HD - HDMI - DP 249mil
+					<p>  SAMSUNG 27" C27R5G Gaming Curvo 240Hz - 4ms - Full HD- DP-HDMI  </p>	
+					<p>   SAMSUNG 27" C27JG50 Gaming Curvo 144Hz - 4ms - 2560X1440- DP-HDMI			</p>	
+					<p>   SAMSUNG 32" Led Curvo IPS Full HD - HDMI - DP  </p>	
+					<p> AOC  Led 27" 27B2H Full HD 75HZ-IPS HDMI -VGA. ₡179 Mila
+					<p>  AOC 24" 24B2XH -75HZ IPS-7ms - Full HD - VGA - HDMI </p>	
+					<p>  AOC Led 27" 27B2H Full HD 75HZ-IPS HDMI -VGA			</p>	
+					</div>
+
+<!--PC - fuente de poder --->
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/pwsp.png' %}" width="25" height="25">Fuentes de Poder<img src="{% static 'counter/images/pwsp.png' %}" width="25" height="25"></button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Asus Rog Strix 650 Watts Gold</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/pwsp1.jpeg' %}" width="250" height="250">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Asus TUF 650 Watts 80+ Bronze </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/pwsp2.jpeg' %}" width="250" height="250">
+							</div>
+
+						</div>	
+
+<!--PC - SSD--->
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/ssd.png' %}" width="25" height="25">SSD<img src="{% static 'counter/images/ssd.png' %}" width="25" height="25"></button>
+				<div class="content">
+					<p style="text-align:center;"> SSD 2.5 Adata Ultimate SU650 - 1.92TB</p>	
+
+					<p style="text-align:center;"> SSD XPG M.2 SX8200 Pro PCIe Gen 3x4- 1TB</p>	
+			
+					<p style="text-align:center;"> SSD Adata SC685P- 1TB - USB C 3.2 - Gris Titanium</p>	
+
+					<p style="text-align:center;"> SSD M.2 Adata 1TB Swordfish PCie</p>	
+			
+					<p style="text-align:center;"> SSD Adata Ultimate SU650 - 960GB</p>	
+			
+					<p style="text-align:center;"> SSD Adata 2.5 Ultimate SU650 - 480GB</p>	
+			
+					<p style="text-align:center;"> SSD M.2 ADATA 250GB SWORDFISH PCie 1800 1200Mbs</p>	
+				</div>
+<!--PC - Sillas--->				
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/sillas1.jpg' %}" width="50" height="50">Silla Gammmer<img src="{% static 'counter/images/sillas2.jpg' %}" width="50" height="50"></button>
+				<div class="content">
+						<p style="text-align:center;"> Gamdias Aphrodite EF1 Rojo		</p>			
+						<p style="text-align:center;"> Gamdias Aphrodite MF1 - Negro con Bordado Blanco </p>			
+						<p style="text-align:center;"> Corsair T1 Race 2018 Amarillo/Negro  </p>			
+						<p style="text-align:center;">  Corsair T2 Road Warrior Negro </p>																	
+				</div>
+<!--PC - UPS--->
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/upsapc.jpg' %}" width="50" height="50">UPS<img src="{% static 'counter/images/upsapc.jpg' %}" width="50" height="50"></button>
+					<div class="content">
+					<p style="text-align:center;"> Ups APC Back 1000VA - 600 Watts -120V- 8 Tomas </p>	
+					<p style="text-align:center;"> UPS APC BACK-UP 850VA/450WATTS 9TOMAS 2 USB </p>					
+					</div>
+<!--PC - Teclados--->				
+					<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/tc2.jpeg' %}" width="50" height="50">Teclados<img src="{% static 'counter/images/tk.jpg' %}" width="50" height="50"></button>
+					<div class="content">
+					<p>   MotoSpeed CK107 Mecánico Amarillo O BLANCO - Rainbow - Switch Azul</p>	
+					<p>   Razer Blackwidow Elite Chroma </p>	
+					<p>   Mecánico MOTOSPEED CK80 GRIS RGB - GOLD SWITCH </p>	
+					<p>  Razer - BlackWidow Elite - CHROMA RGB</p>	
+					<p>  Teclado y Mouse MOTOSPEED - RGB - Mecánico - Switch Azul</p>	
+					<p>  Teclado Y Mouse Gamdias E1B Combo 4 en 1 - Headset -MousePad</p>	
+					<p>  Teclado Y Mouse KWG Teclado Mouse + Headset +Mouse Pad</p>	
+					</div>
+				</div>
+<!--Consolas Colapsible --->
+			<button class="collapsible" style="text-align:center;"><div class="main" id="section4"><h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/cico.png' %}" width="35" height="35">Consolas<img id="thumbail" src="{% static 'counter/images/cico.png' %}" width="35" height="35"> </h1> </button>
+				<div class="content">	
+<!--Consolas PS5--->
+			<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/psicon.jpg' %}" width="75" height="75"></button>
+				<div class="content">
+	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">PS5 3 JUEGOOS	</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ps5.jpg' %}" width="250" height="250">
+						</div>	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">PS5 </span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ps5.jpg' %}" width="250" height="250">
+						</div>	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">PS4 1TB 3 JUEGOOS	</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ps4.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/ps41.jpeg' %}" width="250" height="250">
+						</div>	
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">PS4</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ps4d.jpg' %}" width="250" height="250">
+						</div>	
+				</div>
+<!--Consola Xbox One --->
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/xboxico.jpg' %}" width="75" height="75"></button>
+				<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span> Xbox X 1Tb </span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/xboxx1tb.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span> Xbox S 1Tb </span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/xboxs1tb.jpeg' %}" width="250" height="250">
+						</div>
+				</div>	
+<!--Consola Nintendo --->
+				<button class="collapsible" style="text-align:center;"><img src="{% static 'counter/images/ninlogo.jpg' %}" width="75" height="75"></button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Switch Neon 2019 </span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/nswitch.jpg' %}" width="250" height="250">
+						</div>
+					</div>	
+			</div>
+<!--Smart TV Colapsible --->
+			<button class="collapsible" style="text-align:center;"><div class="main" id="section5">	<h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/smartv.jpg' %}" width="50" height="50">Smart TV<img id="thumbail" src="{% static 'counter/images/smartv.jpg' %}" width="50" height="50"> </h1> </button>
+						<div class="content">
+<!--Smart TV  Samsung--->
+							<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/samicon.jpg' %}" width="75" height="75"></strong></button>
+							<div class="content">
+		
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">65" Led 4K Smart 7100</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/sams65.jpg' %}" width="250" height="250">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">65" UDH 4K Flat HDR</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/sams652.jpg' %}" width="250" height="250">
+								</div>
+								
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">58" Led 4K Smart TV 7100</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/sams58.gif' %}" width="250" height="250">
+								</div>
+								
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">55" Led 4K Smart TV 7100</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/sams55.jpg' %}" width="250" height="250">
+								</div>
+								
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">43" Sero 4K Smart TV (Rotativo)							</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/sams43.jpg' %}" width="250" height="250">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">Led Smart TV 58" Pulgadas </span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/stv1.jpeg' %}">
+								</div>
+							</div>
+<!--Smart TV LG--->
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"><img id="thumbail" src="{% static 'counter/images/lg.png' %}" width="75" height="75"></button>
+							<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">86" LED SMART TV UDH 4K</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/sams86.jpg' %}" width="250" height="250">
+							</div>
+						</div>
+<!--Smart TV Haier--->
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"><img id="thumbail" src="{% static 'counter/images/haier.png' %}" width="75" height="75"></button>
+							<div class="content">
+							
+								<p class="collapsible" style="text-align:center;"><span class="item">LED Smart TV 4K 75" - Sintonizador Digital</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/hai75.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">Led Smart TV 58"+ Barra de sonido KOCASO 600w</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/stv2.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">58" Led Smart TV</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/hai58.jpg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">50" D-LED 4K SMART TV - Sintonizador Digital</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/hai50.png' %}">
+								</div>
+							</div>			
+<!--Smart TV Telstar--->
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"><img id="thumbail" src="{% static 'counter/images/telstar.jpg' %}" width="75" height="75"></button>
+							<div class="content">
+						
+								<p class="collapsible" style="text-align:center;"><span class="item"> 58" LED SMART-TV 4K UDH</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/tels58.jpg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">LED SMART-TV 4K UDH 55" </span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/tvt2.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><span class="item">LED SMART-TV 4K UDH 50"</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/tels50.jpg' %}">
+								</div>
+							</div>
+<!--Smart TV Westinghouse--->
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"><img id="thumbail" src="{% static 'counter/images/westing.png' %}" width="75" height="75"></button>
+							<div class="content">
+						
+								<p class="collapsible" style="text-align:center;"><span class="item">46" LED Smart TV Full HD</span></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/west46.jpg' %}">
+								</div>
+							</div>
+<!--Smart TV SANKEY--->
+							<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/sankey.jpg' %}" width="75" height="75"></button>
+							<div class="content">
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">65" / CLED-65SIH1 / 4K Ultra HD</span></strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/sank65.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">50" / CLED-50SIH1 / 4K Ultra HD </span></strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/sank50.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">43" / CLED 43SID3 / Smart TV </span></strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/sank43.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">40" CLED-40SID3</span></strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/sank40.jpeg' %}">
+								</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">32" LED 4K SmartTV AndroidTV / CLED32SMB1 </span></strong></p> 
+							<div class="content">	
+								<img src="{% static 'counter/images/sank32.jpeg' %}">
+							</div>
+						</div>
+<!--Smart TV TEC --->
+								<button class="collapsible" style="text-align:center;"><strong>TEC</strong></button>
+								<div class="content">
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">32" SMART TV AndroidTV ₡99 mil</span></strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/tvte1.jpeg' %}">
+								</div>
+							</div>
+<!--Smart TV ZIF --->
+							<button class="collapsible" style="text-align:center;"><strong>ZIF</strong></button>
+							<div class="content">
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>40" SMART TV + Barra de sonido KOCASO 400w</strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/zif402.jpg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>40" - SMART TV</strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/zif40.jpg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>32" - HDTV</strong></p> 
+								<div class="content">	
+									<img src="{% static 'counter/images/zif32.jpg' %}">
+								</div>
+						</div>
+					</div>
+
+<!--Tablets Colapsible --->
+	<button class="collapsible" style="text-align:center;"><div class="main" id="section6">	<h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/ip1.jpeg' %}" width="50" height="50">Tablets/iPads <img id="thumbail" src="{% static 'counter/images/tbt.jpeg' %}" width="45" height="45"> </h1> </button>
+		<div class="content">	
+<!--Tablets Apple --->
+						<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/apicon.png' %}" width="75" height="75"></button>
+							<div class="content">
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">iPad Pro 11 Gen2 128GB </span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/ip1.jpeg' %}" width="250" height="250">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">iPad Air Gen4 64GB</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/ip2.jpeg' %}">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">iPad Gen8 128GB & 32GB</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/ipadgen8.jpg' %}">
+								</div>	
+							</div>
+<!--Tablets Samsung --->
+				<button class="collapsible" style="text-align:center;" ><img id="thumbail" src="{% static 'counter/images/samicon.jpg' %}" width="75" height="75"></button>
+					<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab S6 10.5" - 6GB - 128GB - 4G- 13+5MP-SPEN</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/samstab.jpg' %}" width="250" height="250">
+					</div>
+					
+					<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy TAB S6 Lite 10.4inches Octacore - 4GB - 64GB - 4G S PEN</span></strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/tb2.jpeg' %}" width="250" height="250">
+					</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab S4 10.5" 4GB - 64GB - WIFI - 13MP - SPEN
+						</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab2.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab S5e 10.5" - 64GB - 4 GB - WIFI</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab3.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A 8" OctaCore - 3GB -32GB - 4G</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab4.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A 10.1" Octa 1.8GHZ - 2GB - 32GB - 4G - WiFi</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab5.jpeg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Tab A7 OctaCore -4GLTE -3GB -32GB -10.4" - 8MP	</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab6.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A 8" OctaCore 1.8GHZ - 3GB - 32GB - WiFi</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab7.jpg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/samstab8.jpg' %}" width="250" height="250">
+
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A7 10.4" WiFi 32GB 3GB RAM - Gris</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab10.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A 8.0" QuadCore - 32GB - 2GB - 4G - WiFi</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab11.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galaxy Tab A 8.0" 2GB - 32GB - WIFI</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/samstab12.jpg' %}" width="250" height="250">
+						</div>
+	
+					</div>
+<!--Tablets Huawei --->
+				<button class="collapsible" style="text-align:center;" ><img id="thumbail" src="{% static 'counter/images/huicon.jpg' %}" width="75" height="75"> </button>
+				<div class="content">
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">MediaPad T5</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/tbt.jpeg' %}" width="250" height="250">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">MediaPad M5 Lite - 10.1" - 3GB - 32GB - 4G</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/huawm5.jpg' %}" width="250" height="250">
+								</div>
+				
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">MediaPad T3 10" 2GB - 16 GB - 4GLTE</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/huawtabt3.jpg' %}" width="250" height="250">
+								</div>
+							</div>
+<!--Tablets RCA--->
+					<button class="collapsible" style="text-align:center;" ><img id="thumbail" src="{% static 'counter/images/rca.png' %}" width="75" height="75"> </button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Galileo Pro 11.5" - Quadcore - 1GB - 32GB - Android - Negra</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/rcatab.jpg' %}" width="250" height="250">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Viking Pro con teclado 10.1" - QuadCore - 1GB - 32GB - Android - Negra</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/rcatab2.jpg' %}" width="250" height="250">
+						</div>
+					</div>
+
+<!--Tablets Alcatel --->
+							<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/alcatel.png' %}" width="75" height="75"> </button>
+								<div class="content">
+			
+									<p class="collapsible" style="text-align:center;"><strong><span class="item">3T Qcore 10" 4GLTE 2G - 32GB</span></strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/ta4.jpeg' %}" width="250" height="250">
+									</div>
+								</div>
+<!--Tablets Huion--->					
+						<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/huion.jpg' %}" width="75" height="75"> </button>
+						<div class="content">
+	
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Kamvas Pro 22"	 Pen Display   </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/ta.jpeg' %}" width="250" height="250">
+							</div>
+						</div>
+						
+<!--Tablets Wacom--->
+							<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/wacom.png' %}" width="75" height="75"> </button>
+							<div class="content">
+		
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">Intuos Pro Creative Pen - Medium</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/ta2.jpeg' %}" width="250" height="250">
+								</div>
+
+								<p class="collapsible" style="text-align:center;"><strong><span class="item">Cintiq 16 Creative Pen</span></strong></p> 
+								<div class="content">
+									<img src="{% static 'counter/images/ta1.jpeg' %}" width="250" height="250">
+								</div>
+							</div>	
+						</div>	
+<!--Laptops Colapsible --->
+					<button class="collapsible" style="text-align:center;"><div class="main" id="section7">	<h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/lap.png' %}" width="45" height="45">Laptops <img id="thumbail" src="{% static 'counter/images/lap.png' %}" width="45" height="45"> </h1> </button>
+					<div class="content">	
+<!--Laptops Apple --->
+						<button class="collapsible" style="text-align:center;"><strong><img id="thumbail" src="{% static 'counter/images/apicon.png' %}" width="75" height="75"></strong></button>
+						<div class="content">
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Apple MacBook AIR ci3-1000 - 8GB - 256GB - 13.3"</span></strong></p> 
+						<div class="content">	
+							<h3>Gray- Silver - Pink Gold</h3> 
+							<img src="{% static 'counter/images/macbookair.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/macbookairgray.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/macbookairpink.jpeg' %}" width="250" height="250">
+						</div>	
+					</div>
+<!--Laptops XPG --->
+						<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/xpg.jpg' %}" width="75" height="75"></button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Xenia Ci7-9750H - 32GB - 1TB-SSD - RTX-2070-8GB - 15.6"IPS - 144HZ - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/xpgxenia.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">XPG XENIA Ci7-9750H - 32GB - 1TB-SSD - GTX-1660Ti-6GB - 15.6"IPS-144HZ - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/xpgxenia2.jpg' %}">
+							</div>
+						</div>
+<!--Laptops Asus --->
+						<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/asus.png' %}" width="75" height="75"></button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"> ROG G712L Ci7-10750H - 1TB-SSD - 16GB - 1660TI-6GB - 17.3" - W10 Esp </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asusrog.jpg' %}">
+							</div>
+							
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">ROG G512LI Ci7-10750H - 1TB-SSD - 16GB - 1650TI-4GB - 15.6" -W10 - Español</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asusrog.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">ROG Strix G512LI Ci7-10750H - 8GB - 512GB-SSD - GTX1650TI-4GB - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asusrog.jpg' %}">
+							</div>
+							
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">  M509DA Ryzen-7 3700U - 8GB - 1TB+256GB-SSD - 15.6 - W10  </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asusm5.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">  FX505D Ryzen 5-3550H - 8GB - 512GB-SDD - GTX1650 4GB - 15.6"  </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asusfx.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">  E203MAH Celeron N4000 - 4GB - 500GB - 11.6" - WIN10  </span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/asus1.png' %}">
+							</div>
+
+						</div>					
+<!--Laptops DELL --->
+<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/dell.gif' %}" width="75" height="75"></button>
+<div class="content">
+
+			<p class="collapsible" style="text-align:center;"><strong><span class="item">Dell G5 Gaming Ci7-10750H - 8GB - 256GB - 1650TI-4GB - 15"6-120HZ - W10			</span></strong></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/dellg5.jpg' %}">
+			</div>
+
+			<p class="collapsible" style="text-align:center;"><strong><span class="item">Dell Gaming G5 Ci5-10300H - 8GB/256GB -GTX-1660TI-6GB -15.6" -Windows10			</span></strong></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/dellg5.jpg' %}">
+			</div>
+
+			<p class="collapsible" style="text-align:center;"><strong><span class="item">Dell Inspiron 3493 - Ci5-1035G4 - 128GB-SSD - 4GB - 14" - Windows 10			</span></strong></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/dellins.jpg' %}">
+			</div>
+		</div>
+
+<!--Laptops HP --->
+				<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/hp.jpg' %}" width="75" height="75"></button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Omen AMD Ryzen7 4800H -16GB -1TB-SSD -GTX-1660TI-6GB -15.6" - Windows 10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpomen.jpg' %}">
+							</div>
+							
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Envy X360 15-ed0002la Ci7-10510U - 12GB - 512GB-SSD + 32 Optane - 15.6" - W10
+							</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpenvy.png' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Envy X360 15-ed0001la Ci5-10210U - 12GB - 512GB SSD - 15.6" - touch - W10							</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpenvy.png' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">15-cw1005la R7-3700U - 16GB - 1TB+128 SSD - 15.6" - W10
+							</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hp15.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">15-dy1078nr Core i7-1065G7 - 8GB - 256GB-SSD - 15.6" - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hp152.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">15-gw0013la Ryzen 7-3700U - 8GB - 512GB-SSD - 15.6" - W10
+							</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hp153.png' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">15-DA2180NIA Ci5-10210U - 4GB - 1TB - 2GB MX110 -15.6"</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hp154.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">15-DY1731 Core i3 1005G1 - 8GB - 128GB-SSD -15"TOUCH - W10 - Español</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hp15touch.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">ProBook 440 G7 Ci7-10510U - 8GB - 1TB - 14 - W10Pro	</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpro.png' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">ProBook 440 G7 Ci7-10510U - 8GB - 512GB-SSD - 14" - W10 Pro</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpro2.jpg' %}">
+							</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">ProBook 450 G7 Ci5-10210U - 4GB - 1TB - 15.6" - W10Pro Esp</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/hpro3.png' %}">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">ProBook 450 G7 Ci5-10210U - 8GB - 1TB - 15.6" - W10P</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/hpro4.png' %}">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">ProBook 440 G7 Intel Core i5- 10210U - 8GB - 256GBSSD - 14" - W10Pro</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/hpro5.jpg' %}">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Pavilion X360 14- DW0023DX Ci5- 1035G1 - 8GB - 256GB-SSD -14" Touch- Windows10</span></strong></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/hpx360.jpg' %}">
+						</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">Pavilion X360 14m-dh0003dx Ci5-8265U - 8GB - 128GB-SSD - 14" - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpav.jpg' %}">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item">HP Pavilion x360 14-dh0011la Ci3-8145U - 4GB - 256GB-SSD - 14" - W10</span></strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/hpx3602.png' %}">
+							</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item">HP 15-DA2180NIA Ci5-10210U - 4GB - 1TB - 2GB MX110 -15.6'</span></strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/hp1.jpeg' %}">
+									</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item">14-CF2059LA Intel Corei3 10110U - 8GB - 256GB SSD-14" - W10</span></strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/hp14.jpg' %}">
+									</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item">14-CF2062LA - CORE I3 10110U - 4GB RAM - 256GB SSD - 14" - W10</span></strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/hp142.jpg' %}">
+									</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item">11-ak0012dx N4020 - 4GB - 64GB EMMC - 11.6" - W10</span></strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/hp11.png' %}">
+									</div>
+
+								</div>
+<!--Laptops ACER --->
+								<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/acer.jpg' %}" width="75" height="75"></button>
+								<div class="content">
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Predator Helios 300 Ci7-10750H - 16GB - 512GB-SSD - RTX-2060-6GB -15.6"-144HZ -Windows 10 </strong></p> 
+									<div class="content">
+									<img src="{% static 'counter/images/acerpredator.jpg' %}" width="250" height="250">
+									</div>
+									
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Predator Helios 300 Ci7-9750H - 16GB - 256GB-SSD+1TB - GTX-1660TI 6GB - 15.6" - W10 - Regalía Gamdias Eros M2 - Español</strong></p> 
+									<div class="content">
+									<img src="{% static 'counter/images/acerpredator2.jpg' %}" width="250" height="250">
+									</div>
+				
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Nitro 5 Ci5-10300H - 8GB -256GB -GTX-1650 -4GB- 15.6" - Windows10 </strong></p> 
+					<div class="content">
+					<img src="{% static 'counter/images/acerni5.jpg' %}" width="250" height="250">
+					</div>
+				
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Nitro 5 Ci5-9300H - 8GB - 256GB - GTX-1650-4GB - 15.6" - W10</strong></p> 
+					<div class="content">
+					<img src="{% static 'counter/images/acerni52.jpg' %}" width="250" height="250">
+					</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Nitro 5 Ci5-9300H- 8GB- 512GB-SSD-GTX-1650-4GB-15.6"-Windows10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/acerni53.jpg' %}" width="250" height="250">
+				</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Aspire 3 Ryzen R5-3500U - 8GB - 1TB - 15.6" - W10 - Español</strong></p> 
+					<div class="content">
+					<img src="{% static 'counter/images/aceras3.jpg' %}" width="250" height="250">
+					</div>
+				</div>
+
+<!--Laptops MSI --->					
+					<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/msicon.png' %}" width="75" height="75"></button>
+					<div class="content">
+
+			<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>PRESTIGE 15 Ci7-10710U - 16GB - 512GB-SSD - 15.6 - GTX1650-4GB - W10 - Esp </strong></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/msipr.jpeg' %}" width="250" height="250">
+			Precio ₡1.200 mil	
+			</div>
+			<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>15M CREATOR Corei7 10750H - 16GB - 512GB-SSD - RTX2060-6GB - 15.6"144hz - W10</strong></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/msicreator.jpeg' %}" width="250" height="250">
+			</div>
+		</div>
+<!--Laptops Lenovo --->
+
+<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/lenovo.jpg' %}" width="100" height="100"></button>
+			<div class="content">
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Legión 5 Ci7-10750H - 8GB - 512GB - GTX-1660TI - 15.6" - W10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenlegion.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Legión 5 R5-4600H - 8GB - 1TB + 256GB-SSD - GTX-1650-4GB - 15.6" - W10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenlegion2.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>IdeaPad 3 - Ryzen-3500U -8GB -256GB-SSD -14" - Windows 10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenideapad2.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>IdeaPad 3 Ryzen 3-3250U - 8GB - 1TB - 14" - W10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenideapad3.jpg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>IdeaPad 3 Ci3-1005G1 - 8GB - 256GB-SSD - 15.6" - W10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenideapad4.png' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>IdeaPad Gaming 3 Ci5-10300H - 8GB - 256GB SSD - GTX-1650 -15.6"- Windows10</strong></p> 
+				<div class="content">
+				<img src="{% static 'counter/images/lenideapad.jpg' %}" width="250" height="250">
+				</div>
+
+	<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Ideapad 3 Ryzen 5-3500U - 8GB - 256GB-SSD - 15.6 - W10</strong></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/laple1.jpeg' %}" width="250" height="250">
+			</div>
+		</div>
+
+		<button class="collapsible" style="text-align:center;"><img id="thumbail" src="{% static 'counter/images/hyund.jpg' %}" width="75" height="75"></button>
+		<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Thinnote 13 Pro - Ci5-8250U - 8GB - 256GB-SSD - 13" - W10</strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/hyundthin.jpg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Flipnote 2 en1 Intel N3350 -4GB - 64GB -11.6" - Windows 10</strong></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/hyundflip.jpg' %}" width="250" height="250">
+					</div>
+			</div>
+		</div>
+
+<!--audio & sonido Collapsible--->
+		<button class="collapsible" style="text-align:center;"><div class="main" id="section8"></div><h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/ampli.jpg' %}" width="45" height="45">Audio & Sonido<img id="thumbail" src="{% static 'counter/images/music.png' %}" width="45" height="45"> </h1> </button>
+		<div class="content">		
+<!--airpods & buds--->
+					<button class="collapsible" style="text-align:center;">Airpods & Buds</button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>AirPods 2 Pro</strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/airpods2.jpg' %}" width="250" height="250">
+									</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>AirPods 2</strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/airpodspro.jpg' %}" width="250" height="250">
+											</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Samsung Galaxy Buds Live </strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/galaxbuds.jpg' %}" width="250" height="250">
+									</div>
+
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Samsung Galaxy Buds+</strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/galaxbuds2.jpg' %}" width="250" height="250">
+											</div>
+
+											<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Samsung Galaxy Buds</strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/galaxbuds3.jpg' %}" width="250" height="250">
+									</div>
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span> Huawei Freebuds 3</strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/huawfree.jpg' %}" width="250" height="250">
+									</div>
+						
+									<p class="collapsible" style="text-align:center;"><strong><span class="item"></span> Huawei Freebuds 3i</strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/huawfree2.jpg' %}" width="250" height="250">
+									</div>
+								</div>
+
+						<button class="collapsible" style="text-align:center;">Torres de Sonido</button>
+						<div class="content">	
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Torre de Sonido con conexión bluetooth y Radio FM</strong></p> 
+									<div class="content">
+										<img src="{% static 'counter/images/torre1.jpeg' %}" width="250" height="250">
+									</div>
+							</div>
+
+						<button class="collapsible" style="text-align:center;">Parlantes, Auriculares & Bocinas</button>
+						<div class="content">
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Bocina bluetooth dual de 10pulgadas con micrófono</strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/boc1.jpeg' %}" width="250" height="250">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>AWPOK7 – SISTEMA DE AUDIO 50W</strong></p> 
+							<div class="content">
+								<img src="{% static 'counter/images/awpok7b.jpeg' %}" width="250" height="250">
+							</div>
+
+							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Más</strong></p> 
+							<div class="content">
+							<img src="{% static 'counter/images/awsb1.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awsb12.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awsp08m.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awsp15m.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awpok72.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awpok7.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awkf2b.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awkf2.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awk11b2.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awk11b.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/aw31b.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/aw21.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/aw8ncbt.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/awpok100.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/aws21b.jpeg' %}" width="250" height="250">
+							<img src="{% static 'counter/images/aw21.jpeg' %}" width="250" height="250">
+
+						</div>
+					</div>
+
+							<button class="collapsible" style="text-align:center;">Amplificadores</button>
+						<div class="content">
+						</div>
+					</div>
+
+<!--Linea Blanca Colapsible --->
+<button class="collapsible" style="text-align:center;"><div class="main" id="section9"></div><h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/la.jpg' %}" width="40" height="40">Linea Blanca<img id="thumbail" src="{% static 'counter/images/l.jpg' %}" width="40" height="40"> </h1> </button>
+	<div class="content">	
+<!--Lavadoras--->
+		
+					<button class="collapsible" style="text-align:center;">Lavadoras</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;">Automática LG 13KG WT13DPBP<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/lav1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;">Automática LG 16KG WT16DSB <span class="item"></span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/lav2.jpeg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;">Automática LG 20KG WM20VVS6 CF<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/lav3.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;">Automática LG 22KG WT22VSS6H<span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/lav4.jpeg' %}" width="250" height="250">
+		</div>
+
+				<p class="collapsible" style="text-align:center;">Automática LG 22KG WT22VSS6H <span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/lav5.jpeg' %}" width="250" height="250">
+			</div>
+
+		<p class="collapsible" style="text-align:center;">Automática Daewoo DW1602KP de 16 K<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/lav6.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;">Semi Automática 20kg Daewoo 1año DWS-K200AW<span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/lav7.jpeg' %}" width="250" height="250">
+		</div>
+
+				<p class="collapsible" style="text-align:center;">Semi Automática TEC 12KG CLS012120MD<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/lav8.jpeg' %}" width="250" height="250">
+			</div>
+
+		<p class="collapsible" style="text-align:center;">Semi Automática ATLAS 13KG LAD1344G0₡169 <span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/lav9.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;">Frigidaire FWAB16M3EBGRW 35 libras <span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/lav9.jpeg' %}" width="250" height="250">
+		</div>
+						<p> Frigidaire FWIB22M4EBGS  48 Libras</p>	
+						<p> Samsung (Automática) 22KG WF22M5500AW AP</p>	
+						<p> Samsung WT11H3210MG AP 23 Lb</p>	
+						<p> Whirlpool (Semiautomática) WLD1825FP 41 Lb</p>	
+						<p> Mabe (Automática) LMA5120WPAB0 33 libras</p>	
+						<p> Maggio (Automática) MAWM20WH</p>	
+						<p> Maggio (Automática) MAWM16S</p>	
+					</div>
+<!--Cocinas--->
+
+					<button class="collapsible" style="text-align:center;">Cocinas</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;">Cocina a Gas MABE EM6038CFIX0 20pulgadas <span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/cosig1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;">Cocina a Gas MABE EM7657CSIS1 30pulgadas<span class="item"></span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/cosig2.jpeg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;">Cocina a Gas OSTER GSGC20HW 20c<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/cosig3.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;">Cocina a Gas MAGGIO 30CMKEG06 30 <span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/cosig4.jpeg' %}" width="250" height="250">
+		</div>
+
+						<p> Mabe (Gas) 30 PULGADAS EM7657CSIS0</p>	
+						<p> Atlas (eléctrica) / EAE5020BSB0 / 4 quemadores</p>	
+						<p> Whirlpool (eléctrica) WFC150M0JS 4 quemadores</p>	
+						<p> Frigidaire vitrocerámica FCRE3052AS 5 Quemadores</p>
+						<p> Frigdaire (Gas) 20 PULGADAS FKGI20C3MKB</p>		
+						<p> General Electric (Electrica) Vitroceramica 30 PULGADAS JCB840SKSS</p>	
+					</div>
+					<button class="collapsible" style="text-align:center;">Refrigeradoras</button>
+					<div class="content">
+							<p> GRS GR 100CC-B 4 Pies</p>	
+							<p> Telstar (Semiautomatica) 4CP TRS095510MD</p>	
+							<p> Telstar (Semiautomatica) 8CP TRS225410MD</p>	
+							<p> Mabe (Automatica )11CP RMA1130XMFE0</p>	
+							<p> Mabe RMS510IBMRX0 19 Pies </p>
+							<p> Mabe (Mini Bar) 4CP RMF0411PYMX0 </p>
+							<p> GNM26AEKFSS 26 pies</p>	
+							<p> Whirlpool 7WRS25SDHM Acero inoxidable</p>	
+							<p> Bottom Freezer LM75SGS /26 Pies</p>	
+							<p> LG  Side by Side InstaView / LS74SXP/ 26 Pies</p>	
+					</div>
+				</div>
+<!--Electrodomesticos Colapsible --->
+		<button class="collapsible" style="text-align:center;"><div class="main" id="section10"></div><h1 style="text-align:center;" img id="thumbail"><img id="thumbail" src="{% static 'counter/images/oster.jpg' %}" width="40" height="40">Electrodomesticos<img id="thumbail" src="{% static 'counter/images/oster.jpg' %}" width="40" height="40"> </h1> </button>
+			<div class="content">			
+					<button class="collapsible" style="text-align:center;">Batidoras</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;"> Kitchen AID (Tazon) Classic <span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/kitclass.jpg' %}" width="250" height="250">
+					</div>
+
+						<p class="collapsible" style="text-align:center;"> Kitchen AID (Tazon) KSM150PSER Artisan<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/tartisan.jpeg' %}" width="250" height="250">
+					</div>
+
+						<p class="collapsible" style="text-align:center;"> Cuisinart (Tazon) SM50R<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/bcuisinart.jpeg' %}" width="250" height="250">
+					</div>
+				</div>
+
+					<button class="collapsible" style="text-align:center;">Coffee Maker</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;">Black + Decker CM0755S-LA  <span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/caf1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;">Black + Decker CM1105B-CL   <span class="item"></span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/caf2.jpeg' %}" width="250" height="250">
+				</div>
+
+				<p class="collapsible" style="text-align:center;">Black + Decker  10 Tazas  Model  DCM1100B <span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/caf3.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;">Black + Decker  10 Tazas  Model  DCM1100W <span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/caf4.jpeg' %}" width="250" height="250">
+		</div>
+	</div>
+<!--Licuadoras --->
+
+					<button class="collapsible" style="text-align:center;">Licuadoras</button>
+					<div class="content">
+
+						<p class="collapsible" style="text-align:center;">Oster ACTIVESENSE 2litros BLSTTDGNBG<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/lic1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;">Oster REVERSIBLE 1.5 LITROS BLSTPYG1209B G<span class="item"></span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/lic2.jpeg' %}" width="250" height="250">
+				</div>
+			</div>
+
+			<button class="collapsible" style="text-align:center;">Microondas</button>
+			<div class="content">
+
+				<p class="collapsible" style="text-align:center;"> Silver Winia 0.7 Pies KOR-760GES<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/mic1.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;"> Winia 0.7 Pies KOR-760SES<span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/mic2.jpeg' %}" width="250" height="250">
+		</div>
+
+			<p class="collapsible" style="text-align:center;"> Premium PM70710 Digital 700W<span class="item"></span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/mic3.jpeg' %}" width="250" height="250">
+		</div>
+
+		<p class="collapsible" style="text-align:center;">Horno Microondas Pm7077 Premium<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/mic4.jpeg' %}" width="250" height="250">
+			</div>
+		</div>
+<!--Hornos--->
+		<button class="collapsible" style="text-align:center;">Horno</button>
+					<div class="content">	
+
+						<p class="collapsible" style="text-align:center;"> Eléctrico para Empotrar DRIJA LATINO 60<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/hor1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"> Tostador con capacidad para 4 rebanadas<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/hor2.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;"> Horno con Convección Natural  Model  TO1705SG-LA<span class="item"></span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/hor3.jpeg' %}" width="250" height="250">
+			</div>
+		</div>
+
+<!--Plantillas--->
+				<button class="collapsible" style="text-align:center;">Plantillas</button>
+					<div class="content">	
+						<p class="collapsible" style="text-align:center;"><span class="item">vitrocerámica a gas 2 quemadores 30cm con válvu </span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/plan1.jpeg' %}" width="250" height="250">
+					</div>
+			</div>
+<!--Refrigeradoras--->
+				<button class="collapsible" style="text-align:center;">Refrigeradoras</button>
+					<div class="content">	
+						<p class="collapsible" style="text-align:center;"> Daewoo PR-1611DGF  12 pies<span class="item"></span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ref1.jpeg' %}" width="250" height="250">
+					</div>
+			</div>		
+<!--Ollas--->
+				<button class="collapsible" style="text-align:center;">Ollas</button>
+					<div class="content">	
+
+						<p class="collapsible" style="text-align:center;"><span class="item">Freidora eléctrica sin aceite 4L PRESTO - 03421</span></p> 
+						<div class="content">
+							<img src="{% static 'counter/images/ofreid1.jpeg' %}" width="250" height="250">
+					</div>		
+			</div>
+
+<!--Ventiladores --->
+			<button class="collapsible" style="text-align:center;">Ventiladores </button>
+			<div class="content">	
+
+				<p class="collapsible" style="text-align:center;"><span class="item">Torre 30″, 3 VEL PFT307</span></p> 
+				<div class="content">
+					<img src="{% static 'counter/images/torre1.jpeg' %}" width="250" height="250">
+			</div>
+		</div>
+<!--Otros --->
+		<button class="collapsible" style="text-align:center;">Otros </button>
+		<div class="content">	
+
+			<p class="collapsible" style="text-align:center;"><span class="item">Freidora De Aire De 2 Litros  Model  HF100WD</span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/freid1.jpeg' %}" width="250" height="250">
+			</div>
+
+			<p class="collapsible" style="text-align:center;"><span class="item">Torre 42″ Negro 3 Velocidades Premium PFT423R</span></p> 
+			<div class="content">
+				<img src="{% static 'counter/images/vtorre2.jpeg' %}" width="250" height="250">
+			</div>
+
+		<p class="collapsible" style="text-align:center;"><span class="item">Hidrolavadora combustión 2700 psi 9,5 lm karcher g2700 </span></p> 
+		<div class="content">
+			<img src="{% static 'counter/images/hlav1.jpeg' %}" width="250" height="250">
+		</div>
+
+	<p class="collapsible" style="text-align:center;"><span class="item">Waflera Parrilla Plancha 3 en 1</span></p> 
+	<div class="content">
+		<img src="{% static 'counter/images/waflera1.jpeg' %}" width="250" height="250">
+	</div>
+</div>
+</div> 
+<!--Muebleria Colapsible --->
+<button class="collapsible" style="text-align:center;"><div class="main" id="section11"></div><h1><img src="{% static 'counter/images/cama.png' %}" width="40" height="40">Muebleria<img src="{% static 'counter/images/cama.png' %}" width="40" height="50"></h1></button>
+				<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Sala esquinera con sofa cama Menotti </span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/sala2.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Sala esquinera</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/sala1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Sala seccional con sofá cama</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/sala3.jpeg' %}" width="250" height="250">
+					</div>
+					
+					<p class="collapsible" style="text-align:center;"><span class="item">Sofá eléctrico con reposacabezas.</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/sofae1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Sofá SeatLove</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/sof1.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Clóset bariloche 180 x 170 x 50 cm </span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/clos1.jpeg' %}" width="250" height="250">
+					</div>
+				</div>	
+
+<!--Herramientas Colapsible --->
+				<button class="collapsible" style="text-align:center;"><div class="main" id="section12"></div><h1><img src="{% static 'counter/images/tatornillador.jpeg' %}" width="40" height="40">Herramientas<img src="{% static 'counter/images/timpacto.jpeg' %}" width="40" height="50"></h1></button>
+				<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Taladro atornillador inalámbrico 20 v con bolso(baterías se venden por separado)</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/tatornillador.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Taladro de impacto inalámbrico 20 v (batería se vende por separado)</span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/timpacto.jpeg' %}" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><span class="item">Esmeril de 9 pulgadas 2400 w </span></p> 
+					<div class="content">
+						<img src="{% static 'counter/images/esmeril1.jpeg' %}" width="250" height="250">
+					</div>
+				</div>		
+
+				<div class="fnav">
+					<div style="text-align:center"><p> © Copyright &copy;2020. Designed by <a href="https://nigarumovum.github.io/" rel="nofollow"> Neighbortech</a></p>  </div>
+				  </div>
+<!--<GAMMER SLIDER --->
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!--<collapsible --->
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+	var i;
+	
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "block";
+		}
+	  });
+	}
+	</script>
+ </div>
+<!--<Navegar Navbar --->
+ <script>
+	window.onscroll = function() {myFunction()};
+	
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	if (window.pageYOffset >= sticky) {
+	navbar.classList.add("sticky")
+	} else {
+	navbar.classList.remove("sticky");
+	}
+	}
+	</script>
+</body>
+</html>
