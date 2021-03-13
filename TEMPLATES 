@@ -1,0 +1,26 @@
+<!--Microondas--->
+
+<button class="collapsible" style="text-align:center;"><div class="main" id="section2">	<h1 style="text-align:center;"><img id="thumbail" src="counter/images/smart" width="50" height="50">Microondas<img id="thumbail" src="counter/images/smart" width="50" height="50"> </h1> </button>
+	<div class="content">	
+				<!--Apple--->		
+					<button class="collapsible" style="text-align:center;"><img id="thumbail" src="counter/images/" width="75" height="75"></button>
+					<div class="content">
+
+                        <p class="collapsible" style="text-align:center;"><strong><span class="item">Samsung MS28J5255US / 1000W </span></strong></p> 
+						<div class="content">
+							<img src="counter/images/micro4.jpeg">
+						</div>
+
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Whirlpool WM1807D / 700 Watts</span></strong></p> 
+						<div class="content">
+							<img src="counter/images/micro1.jpeg">
+						</div>
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Whirlpool WM1807W / 700 Watts</span></strong></p> 
+						<div class="content">
+							<img src="counter/images/micro2.jpeg">
+						</div>
+						<p class="collapsible" style="text-align:center;"><strong><span class="item">Whirlpool WM1811D / 900 Watts</span></strong></p> 
+						<div class="content">
+							<img src="counter/images/micro3.jpeg">
+						</div>
+					</div>
