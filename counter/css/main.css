@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6{
   
   /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
-	font-size: 17px;
+	font-size: 14px;
 	border: none;
 	outline: none;
 	color: rgb(0, 0, 0);
@@ -201,16 +201,9 @@ h1,h2,h3,h4,h5,h6{
     #secondary { width:30%; margin-left:3%;}  
 }
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-@media (min-device-width:600px) {
-    img[data-src-600px] {
-        content: attr(data-src-600px, url);
-    }
+@media screen and (max-width: 1024px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
 
 @media (min-device-width:800px) {
@@ -218,6 +211,43 @@ h1,h2,h3,h4,h5,h6{
         content: attr(data-src-800px, url);
     }
 }
+
+@media (min-device-width:812px) {
+    img[data-src-812px] {
+        content: attr(data-src-812px, url);
+    }
+}
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 736px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+
+@media (min-device-width:667px) {
+	img[data-src-667px] {
+		content: attr(data-src-667px, url);
+	}
+}	
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:568px) {
+    img[data-src-568px] {
+        content: attr(data-src-568px, url);
+    }
+}
+
+
+
   /* Slider wrapper */
 .item { color: #000000;
     font-size: 16px;
