@@ -397,6 +397,19 @@ animation-name: fade;
 animation-duration: 3s;
 }
 
+
+
+/* Mobile Responsive Website */
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+	width: device-width ;
+  }
+
+
   /* Resposive for video */
 @-webkit-keyframes fade {
 from {opacity: .4} 
