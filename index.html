@@ -102,11 +102,42 @@ body {
   background-color: #0792b4;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
+/* Gradient */
+.gradient {
+	text-transform: none;
+	background: linear-gradient(to right, #320638 0%, #109cb4 100% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+		};
+
+@media (max-width: 1024px) {
+#about img {
+	float: left;s
+	margin-bottom: 8px;
+}
+}
+
+ @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
   }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+
+  @media screen and (max-width:320px) {
+	/* CSS for screens that are 320 pixels or less will be put in this section */
+  }
+
 }
 </style>
 <head>
@@ -115,13 +146,13 @@ body {
   <a href="index.html" class="brand-logo">  <img src="counter/images/sc.png" width="250" height="100" alt="sc"> </a>
   <ul id="nav-mobile" class="right hide-on-med-and-down">
     <a href="about.html" class="btn btn-white"  id="section0">Acerca de Nosotros</a>
-	<a href="tel:+50640339238"  class="fa fa-phone-square">Call Center</a>
+	<a href="tel:+50640339238"  class="fa fa-phone-square">Servicio Al Cliente</a>
 <!--	<a href="#"><i class="fa fa-fw fa-search"></i> Buscar</a>   -->
-  <!--  <a href="#"><i class="fa fa-fw fa-user"></i> Iniciar Sesión</a>  -->
+  <a href="login.html"><i class="fa fa-fw fa-user"></i> Iniciar Sesión</a> 
 </div>
 
 <!--Agents -->	  						
-<a class="collapsible" class="btn btn-white"> <h2><span><img src="counter/images/puntero.png" width="25" height="25" ><b>Asesores/Vendedores</b></span></h2></a>
+<a class="collapsible" class="btn btn-white"> <h2><span><img src="counter/images/puntero.png" width="25" height="25" ><b>Contactanos</b></span></h2></a>
 <div class="content">
     <a href="https://wa.me/50664251938"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Tecnoelectro WhatsApp</a>
     <a href="https://wa.me/50671016124"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Lupe Palma</a>
@@ -176,7 +207,27 @@ body {
             <div class="loader-section section-right"></div>
 		</div>
 
-<!--PRODUCTS SLIDER  -->	 
+<!-- PRODUCTS SLIDER  -->	 
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="counter/images/a521.jpg" style="width:100%">
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="counter/images/gammer1.jpg" style="width:100%">		
+ <!-- <div class="text">Caption Text</div>--->
+</div>
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext"></div>
+		  <img src="counter/images/a521.jpg" style="width:100%">
+ <!-- <div class="text">Caption Text</div>--->
+</div>
 <div class="slideshow-container">
 	<div class="mySlides fade">
 	  <div class="numbertext"></div>
@@ -187,23 +238,10 @@ body {
 <div class="slideshow-container">
 	<div class="mySlides fade">
 	  <div class="numbertext"></div>
-		  <img src="counter/images/a521.jpg" style="width:100%">
- <!-- <div class="text">Caption Text</div>--->
-</div>
-
-<div class="slideshow-container">
-	<div class="mySlides fade">
-	  <div class="numbertext"></div>
 		  <img src="counter/images/GAMMERAOURUS.jpg" style="width:100%">
  <!-- <div class="text">Caption Text</div>--->
 </div>
 
-<div class="slideshow-container">
-	<div class="mySlides fade">
-	  <div class="numbertext"></div>
-		  <img src="counter/images/gammer1.jpg" style="width:100%">		
- <!-- <div class="text">Caption Text</div>--->
-</div>
 
 <div class="slideshow-container">
 	<div class="mySlides fade">
@@ -268,19 +306,24 @@ body {
 			<span class="dot"></span>
 			<span class="dot"></span>
 			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
 </div>		
 <!--Mini About --->
 		<div style="text-align:center;">
-				<p><b>Saludos! Somos Tecnoelectro Comercio Online, una tienda virtual para tus compras tecnologicas a crédito, te ayudamos con todo el proceso. 	</b></p> 
-				<p><b>SmartPhones, Smart Tvs, SmartWatchs, PS5/PS4, Nintendo Switch, PC Gammer, Laptops, Tablets/iPads, Electrodomesticos, Muebleria, Herramientas, motocicletas  y mucho más...</b></p> 
-				<p><b>Nuestros vendedores estaran atentos para asistir en cada paso</b></p> 		 
-				<p><b>Todos es 100% originales con 12 meses de garantía de fábrica! </b></p> 		 
-				<p><b>Compre y disfrute de hacer las compras de sus de preferencia SIN moverse de la comodidad de su hogar!. </b></p> 	
-				<p><b>Si necesitas saber acerca de los financiamientos a crédito y más toca <a href = "about.html">aca</a>.
+				<p class="gradient"><b>Saludos! Somos Tecnoelectro Comercio Online, una tienda virtual para tus compras tecnologicas a crédito, te ayudamos con todo el proceso. 	</b></p> 
+				<p class="gradient"><b>SmartPhones, Smart Tvs, SmartWatchs, PS5/PS4, Nintendo Switch, PC Gammer, Laptops, Tablets/iPads, Electrodomesticos, Muebleria, Herramientas, motocicletas  y mucho más...</b></p> 
+				<p class="gradient"><b>Nuestros vendedores estaran atentos para asistir en cada paso</b></p> 		 
+				<p class="gradient"><b>Todos es 100% originales con 12 meses de garantía de fábrica! </b></p> 		 
+				<p class="gradient"><b>Compre y disfrute de hacer las compras de sus de preferencia SIN moverse de la comodidad de su hogar!. </b></p> 	
+				<p class="gradient"> <b>Si necesitas saber más acerca de nosotros y de los financiamientos toca <a href = "about.html">aca</a>.
 				</b></p> <p><b> 
 		</div>
-		<h3 style="text-align:center;" ><div class="main" id="section1"><img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45">SmartPhones <img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45"> </h3> 
-	 <!-- Apple Smartphones Colapsible --->
+
+	<button class="collapsible" ><h3 style="text-align:center;" ><div class="main" id="section1"></div><img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45">SmartPhones <img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45"> </h3> </button>
+	<div class="content">
+
+	<!-- Apple Smartphones Colapsible --->
 			<button class="collapsible" style="text-align:center;"><img src="counter/images/apicon.png" width="75" height="75" alt="appleicon"> </button>
 				<div class="content">
 
@@ -361,8 +404,7 @@ body {
 						<img src="counter/images/ise.jpg" width="250" height="250">
 						</div>
 					</div>
-				</div>
-			</div>
+
 <!--Samsung--->
 				<button class="collapsible" style="text-align:center;"><img src="counter/images/samicon.jpg" width="75" height="75" alt="appleicon"></button>
 			<div class="content">
@@ -457,7 +499,7 @@ body {
 					<img src="counter/images/a21.jpg" width="250" height="250">
 				</div>
 			</div>
-		</div>
+
 <!--Huawei--->
 
 <button class="collapsible" style="text-align:center;"><img src="counter/images/huicon.jpg" width="75" height="75" alt="hicon"></button>
@@ -467,8 +509,7 @@ body {
 	<div class="content">
 		<img src="counter/images/P40PRO.jpg" width="250" height="250">
 	</div>
-
-
+]
 	<p class="collapsible" style="text-align:center;"><strong><span class="item">Huawei P40 </span></strong></p> 
 	<div class="content">
 		<img src="counter/images/P40.jpg" width="250" height="250">
@@ -562,8 +603,8 @@ body {
 	<p class="collapsible" style="text-align:center;"><strong><span class="item">PSmart</span></strong></p> 
 	<div class="content">
 		<img src="counter/images/PSMART.jpg" width="250" height="250">
+		</div>
 	</div>
-</div>
 
 <!--Xiaomi--->
 
@@ -653,8 +694,8 @@ body {
 <p class="collapsible" style="text-align:center;"><strong><span class="item"> RedMi Note 7P</span></strong></p> 
 <div class="content">
 	<img src="counter/images/Y7P.jpg" width="250" height="250">
-</div>
-</div>
+		</div>
+	</div>
 
 <!--One Plus--->
 
@@ -675,8 +716,7 @@ body {
 	<div class="content">
 		<img src="counter/images/n100.jpeg" width="250" height="250">
 	</div>
-
-</div>
+ </div>
 
 <!--CAT--->
 
@@ -689,7 +729,6 @@ body {
 		<img src="counter/images/s61.jpeg" width="250" height="250"> 
 	</div>
 
-	
 	<p class="collapsible" style="text-align:center;"><span class="item">  S60 </span></p> 
 <div class="content">
 	<img src="counter/images/s60.jpeg" width="250" height="250"> 
@@ -703,8 +742,9 @@ body {
 <p class="collapsible" style="text-align:center;"><span class="item">  S42 </span></p> 
 <div class="content">
 	<img src="counter/images/s42.jpeg" width="250" height="250"> 
+	</div>
 </div>
-</div>
+
 <!--Motorola--->
 
 <button class="collapsible" style="text-align:center;"><img src="counter/images/motor.png" width="75" height="75" alt="hicon"></button>
@@ -718,20 +758,21 @@ body {
 	<p class="collapsible" style="text-align:center;"><strong><span class="item">G8 </span></strong></p> 
 	<div class="content">
 		<img src="counter/images/g8.jpeg" width="250" height="250">
-	</div>
-</div>
-
-<!--LG--->
-
-<button class="collapsible" style="text-align:center;"><img src="counter/images/lg.png" width="75" height="75" alt="hicon"></button>
-<div class="content">
-
-	<p class="collapsible" style="text-align:center;"><strong><span class="item">K71</span></strong></p> 
-	<div class="content">
-		<img src="counter/images/k71.jpeg" width="250" height="250">
+		</div>
 	</div>
 
-</div>
+<!--------------LG--->
+
+		<button class="collapsible" style="text-align:center;"><img src="counter/images/lg.png" width="75" height="75" alt="hicon"></button>
+			<div class="content">
+
+				<p class="collapsible" style="text-align:center;"><strong><span class="item">K71</span></strong></p> 
+				<div class="content">
+			<img src="counter/images/k71.jpeg" width="250" height="250">
+			</div>
+		</div>
+	</div>
+
 
 <!--SmartWatch Colapsible --->
 
@@ -862,6 +903,7 @@ body {
 					</div>
 
 				</div>
+				
 <!--Tablets Huawei --->
 			<button class="collapsible" style="text-align:center;" ><img id="thumbail" src="counter/images/huicon.jpg" width="75" height="75"> </button>
 			<div class="content">
@@ -1191,7 +1233,7 @@ body {
 <button class="collapsible" style="text-align:center;"><div class="main" id="section3"><h3><img src="counter/images/pc1.jpeg" width="40" height="40">Componentes PC<img src="counter/images/pc2.jpeg" width="40" height="50"></h3></button>
 	<div class="content">
 <!--PC -  Tarjetas Madre --->
-<button class="collapsible" style="text-align:center;"> <img src="counter/images/mb.png" width="40" height="40"> <b> Motherboards </b> <img src="counter/images/mb.png" width="40" height="40"> </button>
+<button class="collapsible" style="text-align:center;"> <img src="counter/images/mb.png" width="40" height="40"></button>
 				<div class="content">
 					<button class="collapsible" style="text-align:center;"><b> Gigabyte </b></button>
 					<div class="content">
@@ -1257,7 +1299,7 @@ body {
 					</div>
 				</div>
 <!--PC - GPU--->
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/gp.png" width="45" height="45"><b> GPU </b><img src="counter/images/gp.png" width="45" height="45"></button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/gp.png" width="45" height="45"></button>
 				<div class="content">
 <!--AS ROCK--->
 
@@ -1349,7 +1391,7 @@ body {
 
 				</div>
 <!--PC - CPU--->		
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/cp.png" width="45" he	ight="45"><b> CPU</b> <img src="counter/images/cp.png" width="45" height="45">	</button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/cp.png" width="45" he	ight="45"><b>	</button>
 				<div class="content">			
 					<button class="collapsible" style="text-align:center;"><img src="counter/images/intel.png" width="45" height="45">Intel<img src="counter/images/intel.png" width="45" height="45"></button>
 					<div class="content">
@@ -1392,7 +1434,7 @@ body {
                     </div>
 				</div>
 <!--PC - RAM--->				
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/ra.jpeg" width="45" height="45"><b> Memoria RAM </b><img src="counter/images/ra.jpeg" width="45" height="45"></button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/ra.jpeg" width="45" height="45"></button>
 				<div class="content">
 					<p style="text-align:center;">  	CORSAIR DOMINATOR PLATINUM 16GB (4x4GB) DDR4 3200MHz / ROG EDITION  				</p>
 					<p style="text-align:center;">  		XPG SPECTRIX D60 RGBDDR4 32GB (2X16) 3600 MHZ 			</p>
@@ -1416,7 +1458,7 @@ body {
 				</div>
 
 <!--PC - Enfriamiento--->				
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/ENF.jpg" width="45" height="45"><b> Enfriamiento Liquido </b><img src="counter/images/ENF.jpg" width="45" height="45"></button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/ENF.jpg" width="45" height="45"></button>
 				<div class="content">
 					<p style="text-align:center;"> Asus ROG Ryujin 360 RGB 360mm  </p>	
 					<p style="text-align:center;"> Asus ROG Ryujin 240 RGB 240mm </p>	
@@ -1430,7 +1472,7 @@ body {
 					<p style="text-align:center;">  KWG Crater E1-120R</p>	
 				</div>
 <!--PC - Monitores--->				
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/MONI.jpg" width="45" height="45"><b> Monitores</b><img src="counter/images/MONI.jpg" width="45" height="45"></button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/MONI.jpg" width="45" height="45"></button>
 				<div class="content">
 					<p>  MSI Optix MAG321CQR 32" Curvo 144H -DP- DVI - HDMI- 2560X1440  </p>	
 					<p>  MSI Optix MAG321 32" FreeSync Curvo 3840 x 2160  </p>	
@@ -1464,7 +1506,7 @@ body {
 					</div>
 
 <!--PC - fuente de poder --->
-					<button class="collapsible" style="text-align:center;"><img src="counter/images/pwsp.png" width="25" height="25"><b> Power Supply </b><img src="counter/images/pwsp.png" width="25" height="25"></button>
+					<button class="collapsible" style="text-align:center;"><img src="counter/images/pwsp.png" width="25" height="25"></button>
 						<div class="content">
 
 							<p class="collapsible" style="text-align:center;"><strong><span class="item">Asus Rog Strix 650 Watts Gold</span></strong></p> 
@@ -1480,7 +1522,7 @@ body {
 						</div>	
 
 <!--PC - SSD--->
-					<button class="collapsible" style="text-align:center;"><img src="counter/images/ssd.png" width="25" height="25"><b> SSD </b><img src="counter/images/ssd.png" width="25" height="25"></button>
+					<button class="collapsible" style="text-align:center;"><img src="counter/images/ssd.png" width="25" height="25"></button>
 				<div class="content">
 					<p style="text-align:center;"> SSD 2.5 Adata Ultimate SU650 - 1.92TB</p>	
 
@@ -1497,7 +1539,7 @@ body {
 					<p style="text-align:center;"> SSD M.2 ADATA 250GB SWORDFISH PCie 1800 1200Mbs</p>	
 				</div>
 <!--PC - Sillas--->				
-				<button class="collapsible" style="text-align:center;"><img src="counter/images/sillas1.jpg" width="45" height="45"><b> Sillas </b><img src="counter/images/sillas2.jpg" width="45" height="45"></button>
+				<button class="collapsible" style="text-align:center;"><img src="counter/images/sillas1.jpg" width="45" height="45"></button>
 				<div class="content">
 						<p style="text-align:center;"> Gamdias Aphrodite EF1 Rojo		</p>			
 						<p style="text-align:center;"> Gamdias Aphrodite MF1 - Negro con Bordado Blanco </p>			
@@ -1505,13 +1547,13 @@ body {
 						<p style="text-align:center;">  Corsair T2 Road Warrior Negro </p>																	
 				</div>
 <!--PC - UPS--->
-					<button class="collapsible" style="text-align:center;"><img src="counter/images/upsapc.jpg" width="45" height="45"><b> UPS</b><img src="counter/images/upsapc.jpg" width="45" height="45"></button>
+					<button class="collapsible" style="text-align:center;"><img src="counter/images/upsapc.jpg" width="45" height="45"></button>
 					<div class="content">
 					<p style="text-align:center;"> Ups APC Back 1000VA - 600 Watts -120V- 8 Tomas </p>	
 					<p style="text-align:center;"> UPS APC BACK-UP 850VA/450WATTS 9TOMAS 2 USB </p>					
 					</div>
 <!--PC - Teclados--->				
-					<button class="collapsible" style="text-align:center;"><img src="counter/images/tc2.jpeg" width="45" height="45"><b> Teclados </b><img src="counter/images/tk.jpg" width="45" height="45"></button>
+					<button class="collapsible" style="text-align:center;"><img src="counter/images/tc2.jpeg" width="45" height="45"></button>
 					<div class="content">
 					<p>   MotoSpeed CK107 Mecánico Amarillo O BLANCO - Rainbow - Switch Azul</p>	
 					<p>   Razer Blackwidow Elite Chroma </p>	
@@ -2030,114 +2072,60 @@ body {
 			</div>
 		</div>
 
-<!--audio & sonido Collapsible--->
-		<button class="collapsible" style="text-align:center;"><div class="main" id="section8"></div><h3 style="text-align:center;" img id="thumbail"><img id="thumbail" src="counter/images/ampli.jpg" width="45" height="45">Audio & Sonido<img id="thumbail" src="counter/images/music.png" width="45" height="45"> </h3> </button>
-		<div class="content">		
-
-						<button class="collapsible" style="text-align:center;">Torres de Sonido</button>
-						<div class="content">	
-
-							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Torre de Sonido con conexión bluetooth y Radio FM</strong></p> 
-									<div class="content">
-										<img src="counter/images/torre1.jpeg" width="250" height="250">
-									</div>
-							</div>
-
-						<button class="collapsible" style="text-align:center;">Parlantes, Auriculares & Bocinas</button>
-						<div class="content">
-
-							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Bocina bluetooth dual de 10pulgadas con micrófono</strong></p> 
-							<div class="content">
-								<img src="counter/images/boc1.jpeg" width="250" height="250">
-							</div>
-
-							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>AWPOK7 – SISTEMA DE AUDIO 50W</strong></p> 
-							<div class="content">
-								<img src="counter/images/awpok7b.jpeg" width="250" height="250">
-							</div>
-
-							<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Más</strong></p> 
-							<div class="content">
-							<img src="counter/images/awsb1.jpeg" width="250" height="250">
-							<img src="counter/images/awsb12.jpeg" width="250" height="250">
-							<img src="counter/images/awsp08m.jpeg" width="250" height="250">
-							<img src="counter/images/awsp15m.jpeg" width="250" height="250">
-							<img src="counter/images/awpok72.jpeg" width="250" height="250">
-							<img src="counter/images/awpok7.jpeg" width="250" height="250">
-							<img src="counter/images/awkf2b.jpeg" width="250" height="250">
-							<img src="counter/images/awkf2.jpeg" width="250" height="250">
-							<img src="counter/images/awk11b2.jpeg" width="250" height="250">
-							<img src="counter/images/awk11b.jpeg" width="250" height="250">
-							<img src="counter/images/aw31b.jpeg" width="250" height="250">
-							<img src="counter/images/aw21.jpeg" width="250" height="250">
-							<img src="counter/images/aw8ncbt.jpeg" width="250" height="250">
-							<img src="counter/images/awpok100.jpeg" width="250" height="250">
-							<img src="counter/images/aws21b.jpeg" width="250" height="250">
-							<img src="counter/images/aw21.jpeg" width="250" height="250">
-
-						</div>
-					</div>
-
-							<button class="collapsible" style="text-align:center;">Amplificadores</button>
-						<div class="content">
-						</div>
-						Actualizando
-					</div>
-
 <!--Linea Blanca Colapsible --->
 <button class="collapsible" style="text-align:center;"><div class="main" id="section9"></div><h3 style="text-align:center;" img id="thumbail"><img id="thumbail" src="counter/images/la.jpg" width="40" height="40">Linea Blanca<img id="thumbail" src="counter/images/l.jpg" width="40" height="40"> </h3> </button>
 	<div class="content">	
 <!--Lavadoras--->
 		
-				<button class="collapsible" style="text-align:center;">Lavadoras</button>
+				<button class="collapsible" style="text-align:center;"><strong>Lavadoras</strong></button>
 					<div class="content">
 
-						<p class="collapsible" style="text-align:center;">Automática LG 13KG WT13DPBP<span class="item"></span></p> 
+						<p class="collapsible" style="text-align:center;"><strong>Automática LG 13KG WT13DPBP</strong><span class="item"></span></p> 
 						<div class="content">
 							<img src="counter/images/lav1.jpeg" width="250" height="250">
 						</div>
 
-					<p class="collapsible" style="text-align:center;">Automática LG 16KG WT16DSB <span class="item"></span></p> 
+					<p class="collapsible" style="text-align:center;"><strong>Automática LG 16KG WT16DSB </strong><span class="item"></span></p> 
 					<div class="content">
 						<img src="counter/images/lav2.jpeg" width="250" height="250">
 					</div>
 
-				<p class="collapsible" style="text-align:center;">Automática LG 20KG WM20VVS6 CF<span class="item"></span></p> 
+				<p class="collapsible" style="text-align:center;"><strong>Automática LG 20KG WM20VVS6 CF</strong><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/lav3.jpeg" width="250" height="250">
 				</div>
 
-			<p class="collapsible" style="text-align:center;">Automática LG 22KG WT22VSS6H<span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><strong>Automática LG 22KG WT22VSS6H</strong><span class="item"></span></p> 
 			<div class="content">
 				<img src="counter/images/lav4.jpeg" width="250" height="250">
 			</div>
 
-				<p class="collapsible" style="text-align:center;">Automática LG 22KG WT22VSS6H <span class="item"></span></p> 
+				<p class="collapsible" style="text-align:center;"><strong>Automática LG 22KG WT22VSS6H </strong><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/lav5.jpeg" width="250" height="250">
 			</div>
 
-			<p class="collapsible" style="text-align:center;">Automática Daewoo DW1602KP de 16 K<span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><strong>Automática Daewoo DW1602KP de 16 K</strong><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/lav6.jpeg" width="250" height="250">
 				</div>
 
-			<p class="collapsible" style="text-align:center;">Semi Automática 20kg Daewoo 1año DWS-K200AW<span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><strong>Semi Automática 20kg Daewoo 1año DWS-K200AW</strong><span class="item"></span></p> 
 			<div class="content">
 				<img src="counter/images/lav7.jpeg" width="250" height="250">
 			</div>
 
-				<p class="collapsible" style="text-align:center;">Semi Automática TEC 12KG CLS012120MD<span class="item"></span></p> 
+				<p class="collapsible" style="text-align:center;"><strong>Semi Automática TEC 12KG CLS012120MD</strong><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/lav8.jpeg" width="250" height="250">
 			</div>
 
-			<p class="collapsible" style="text-align:center;">Semi Automática ATLAS 13KG LAD1344G0₡169 <span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><strong>Semi Automática ATLAS 13KG LAD1344G0 </strong><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/lav9.jpeg" width="250" height="250">
 				</div>
 
-			<p class="collapsible" style="text-align:center;">Frigidaire FWAB16M3EBGRW 35 libras <span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><strong>Frigidaire FWAB16M3EBGRW 35 libras</strong> <span class="item"></span></p> 
 			<div class="content">
 				<img src="counter/images/lav9.jpeg" width="250" height="250">
 			</div>
@@ -2152,25 +2140,25 @@ body {
 					</div>
 <!--Cocinas--->
 
-					<button class="collapsible" style="text-align:center;">Cocinas</button>
+					<button class="collapsible" style="text-align:center;"><strong>Cocinas</strong></button>
 					<div class="content">
 
-						<p class="collapsible" style="text-align:center;">Cocina a Gas MABE EM6038CFIX0 20pulgadas <span class="item"></span></p> 
+						<p class="collapsible" style="text-align:center;"><b>Cocina a Gas MABE EM6038CFIX0 20pulgadas</b> <span class="item"></span></p> 
 						<div class="content">
 							<img src="counter/images/cosig1.jpeg" width="250" height="250">
 					</div>
 
-					<p class="collapsible" style="text-align:center;">Cocina a Gas MABE EM7657CSIS1 30pulgadas<span class="item"></span></p> 
+					<p class="collapsible" style="text-align:center;"><b>Cocina a Gas MABE EM7657CSIS1 30pulgadas</b><span class="item"></span></p> 
 					<div class="content">
 						<img src="counter/images/cosig2.jpeg" width="250" height="250">
 				</div>
 
-				<p class="collapsible" style="text-align:center;">Cocina a Gas OSTER GSGC20HW 20c<span class="item"></span></p> 
+				<p class="collapsible" style="text-align:center;"><b>Cocina a Gas OSTER GSGC20HW 20c</b><span class="item"></span></p> 
 				<div class="content">
 					<img src="counter/images/cosig3.jpeg" width="250" height="250">
 			</div>
 
-			<p class="collapsible" style="text-align:center;">Cocina a Gas MAGGIO 30CMKEG06 30 <span class="item"></span></p> 
+			<p class="collapsible" style="text-align:center;"><b>Cocina a Gas MAGGIO 30CMKEG06 30 </b><span class="item"></span></p> 
 			<div class="content">
 				<img src="counter/images/cosig4.jpeg" width="250" height="250">
 		</div>
@@ -2185,7 +2173,7 @@ body {
 
 	<!--Refrigeradoras--->
 
-					<button class="collapsible" style="text-align:center;">Refrigeradoras</button>
+					<button class="collapsible" style="text-align:center;"><strong>Refrigeradoras</strong></button>
 					<div class="content">
 						
 						<p class="collapsible" style="text-align:center;"> Mabe RMF0411PYMX0 / 4 Pies<span class="item"></span></p> 
@@ -2230,7 +2218,7 @@ body {
 		<button class="collapsible" style="text-align:center;"><div class="main" id="section10"></div><h3 style="text-align:center;" img id="thumbail"><img id="thumbail" src="counter/images/oster.jpg" width="40" height="40">Electrodomesticos<img id="thumbail" src="counter/images/oster.jpg" width="40" height="40"> </h3> </button>
 			<div class="content">		
 
-					<button class="collapsible" style="text-align:center;">Batidoras</button>
+					<button class="collapsible" style="text-align:center;"><strong>Batidoras</strong></button>
 					<div class="content">
 
 						<p class="collapsible" style="text-align:center;"> Kitchen AID (Tazon) Classic <span class="item"></span></p> 
@@ -2250,7 +2238,7 @@ body {
 				</div>
 <!--Cofee Maker --->
 
-					<button class="collapsible" style="text-align:center;">Coffee Maker</button>
+					<button class="collapsible" style="text-align:center;"><strong>Coffee Maker</strong></button>
 					<div class="content">
 
 						<p class="collapsible" style="text-align:center;">Black + Decker CM0755S-LA  <span class="item"></span></p> 
@@ -2275,7 +2263,7 @@ body {
 	</div>
 	
 <!--Licuadoras --->
-					<button class="collapsible" style="text-align:center;">Licuadoras</button>
+					<button class="collapsible" style="text-align:center;"><strong>Licuadoras</strong></button>
 					<div class="content">
 
 						<p class="collapsible" style="text-align:center;">Oster ACTIVESENSE 2litros BLSTTDGNBG<span class="item"></span></p> 
@@ -2290,7 +2278,7 @@ body {
 			</div>
 <!--Microondas--->
 
-			<button class="collapsible" style="text-align:center;">Microondas</button>
+			<button class="collapsible" style="text-align:center;"><strong>Microondas</strong></button>
 			<div class="content">
 
 				<p class="collapsible" style="text-align:center;"><strong><span class="item">Samsung MS28J5255US / 1000W </span></strong></p> 
@@ -2332,7 +2320,7 @@ body {
 			</div>
 		</div>
 <!--Hornos--->
-		<button class="collapsible" style="text-align:center;">Horno</button>
+		<button class="collapsible" style="text-align:center;"><strong>Hornos</strong></button>
 					<div class="content">	
 
 						<p class="collapsible" style="text-align:center;"> Eléctrico para Empotrar DRIJA LATINO 60<span class="item"></span></p> 
@@ -2352,7 +2340,7 @@ body {
 		</div>
 
 <!--Plantillas--->
-				<button class="collapsible" style="text-align:center;">Plantillas</button>
+				<button class="collapsible" style="text-align:center;"><strong>Plantillas</strong></button>
 					<div class="content">	
 						<p class="collapsible" style="text-align:center;"><span class="item">vitrocerámica a gas 2 quemadores 30cm con válvu </span></p> 
 						<div class="content">
@@ -2360,7 +2348,7 @@ body {
 					</div>
 			</div>
 <!--Ollas--->
-				<button class="collapsible" style="text-align:center;">Ollas</button>
+				<button class="collapsible" style="text-align:center;"><strong>Ollas</strong></button>
 					<div class="content">	
 
 						<p class="collapsible" style="text-align:center;"><span class="item">Freidora eléctrica sin aceite 4L PRESTO - 03421</span></p> 
@@ -2382,7 +2370,7 @@ body {
 			</div>
 
 <!--Ventiladores --->
-			<button class="collapsible" style="text-align:center;">Ventiladores </button>
+			<button class="collapsible" style="text-align:center;"><strong>Ventiladores</strong></button>
 			<div class="content">	
 
 				<p class="collapsible" style="text-align:center;"><span class="item">Torre 30″, 3 VEL PFT307</span></p> 
@@ -2391,7 +2379,7 @@ body {
 			</div>
 		</div>
 <!--Otros --->
-		<button class="collapsible" style="text-align:center;">Otros </button>
+		<button class="collapsible" style="text-align:center;"><strong>Otros</strong></button>
 		<div class="content">	
 
 			<p class="collapsible" style="text-align:center;"><span class="item">Parrila de gas - Blu Grill - 4 quemadores - G2085D </span></p> 
@@ -2633,9 +2621,57 @@ body {
 						<img src="counter/images/tron2.jpeg" width="250" height="250">
 					</div>
 
-
-
 				</div>		
+<!--audio & sonido Collapsible--->
+<button class="collapsible" style="text-align:center;"><div class="main" id="section8"></div><h3 style="text-align:center;" img id="thumbail"><img id="thumbail" src="counter/images/ampli.jpg" width="45" height="45">Audio & Sonido<img id="thumbail" src="counter/images/music.png" width="45" height="45"> </h3> </button>
+<div class="content">		
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Torre de Sonido con conexión bluetooth y Radio FM<</strong></p> 
+							<div class="content">
+								<img src="counter/images/torre1.jpeg" width="250" height="250">
+							</div>
+
+				<button class="collapsible" style="text-align:center;"><b>Parlantes, Auriculares & Bocinas</b></button>
+				<div class="content">
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Bocina bluetooth dual de 10pulgadas con micrófono </strong></p> 
+					<div class="content">
+						<img src="counter/images/boc1.jpeg" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>AWPOK7 – SISTEMA DE AUDIO 50W<</strong></p> 
+					<div class="content">
+						<img src="counter/images/awpok7b.jpeg" width="250" height="250">
+					</div>
+
+					<p class="collapsible" style="text-align:center;"><strong><span class="item"></span>Mas</strong></p> 
+					<div class="content">
+					<img src="counter/images/awsb1.jpeg" width="250" height="250">
+					<img src="counter/images/awsb12.jpeg" width="250" height="250">
+					<img src="counter/images/awsp08m.jpeg" width="250" height="250">
+					<img src="counter/images/awsp15m.jpeg" width="250" height="250">
+					<img src="counter/images/awpok72.jpeg" width="250" height="250">
+					<img src="counter/images/awpok7.jpeg" width="250" height="250">
+					<img src="counter/images/awkf2b.jpeg" width="250" height="250">
+					<img src="counter/images/awkf2.jpeg" width="250" height="250">
+					<img src="counter/images/awk11b2.jpeg" width="250" height="250">
+					<img src="counter/images/awk11b.jpeg" width="250" height="250">
+					<img src="counter/images/aw31b.jpeg" width="250" height="250">
+					<img src="counter/images/aw21.jpeg" width="250" height="250">
+					<img src="counter/images/aw8ncbt.jpeg" width="250" height="250">
+					<img src="counter/images/awpok100.jpeg" width="250" height="250">
+					<img src="counter/images/aws21b.jpeg" width="250" height="250">
+					<img src="counter/images/aw21.jpeg" width="250" height="250">
+
+				</div>
+			</div>
+
+					<button class="collapsible" style="text-align:center;"><strong>Amplificadores</strong></button>
+				<div class="content">
+				</div>
+			</div>
+
+
 
 		<div class="fnav">
 		<div style="text-align:center"><p> © Copyright &copy;2020. Designed by <a href="https://nigarumovum.github.io/" rel="nofollow"> Neighbortech</a></p>  </div>
@@ -2669,7 +2705,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 </script>
 <!--<collapsible --->
