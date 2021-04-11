@@ -8,7 +8,41 @@
 <link rel="shortcut icon" href="counter/images/logo.png" type="image/x-icon">
 <title>Acerca de Tecnoelectro Comercio Online</title>	
 
-<style>
+<!--STYLES -->	  							
+
+<style type="text/css">
+	.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+	}
+	.back-link a:hover,
+	.back-link a:focus {
+		color: #408536; 
+		text-decoration: none;
+		border-bottom: 1px #408536 solid;
+	}
+	h1 {
+		height: 100%;
+		/* The html and body elements cannot have any padding or margin. */
+		margin: 0;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 32px;
+		margin-bottom: 3px;
+	}
+	.entry-header {
+		text-align: left;
+		margin: 0 auto 50px auto;
+		width: 80%;
+        max-width: 978px;
+		position: relative;
+		z-index: 10001;
+	}
+	#demo-content {
+		padding-top: 100px;
+	}
+
 body {font-family: Arial, Helvetica, sans-serif;}
 
 body {
@@ -59,41 +93,56 @@ body {
   background-color: #0792b4;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
+/* Gradient */
+.gradient {
+	text-transform: none;
+	background: linear-gradient(to right, #5f076b 0%, #0fb0cc 100% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+		};
+
+@media (max-width: 1024px) {
+#about img {
+	float: left;
+	margin-bottom: 8px;
+}
+}
+
+ @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
   }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+
+  @media screen and (max-width:320px) {
+	/* CSS for screens that are 320 pixels or less will be put in this section */
+  }
+
 }
 </style>
 <body>
 
-<div class="navbar">
-  <a href="index.html" class="brand-logo">  <img src="counter/images/sc.png" width="250" height="100" alt="sc"> </a>
-  <ul id="nav-mobile" class="right hide-on-med-and-down">
-    <a href="index.html"><i class="fa fa-fw fa-home"></i>Inicio</a> 
-    <a class="active "href="about.html" class="btn btn-white"  id="section0">Acerca de Nosotros</a>
-	<a href="tel:+50640339238"  class="fa fa-phone-square">Call Center</a>
-	<a href="#"><i class="fa fa-fw fa-search"></i> Buscar</a> 
-    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-</div>
-<!--Agents -->	  							
-<a class="collapsible" class="btn btn-white"> <h2 style="text-align:center;" > Asesores / Vendedores</h2> </a>
-<div class="content">
-    <a href="https://wa.me/50664251938"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Tecnoelectro WhatsApp</a>
-    <a href="https://wa.me/50671016124"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Lupe Palma</a>
-    <a href="https://wa.me/50672610966"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Tati Porras</a>
-    <a href="https://wa.me/50671065021"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Fabian Padron</a>
-    <a href="https://wa.me/50671518291"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Steven Arburola</a>
-    <a href="https://wa.me/50662459193"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Katherine Mora</a>
-    <a href="https://wa.me/50683138801"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Argery Chacon</a>
-    <a href="https://wa.me/50685379735"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Shirley Calderon </a>
-    <a href="https://wa.me/50670049582"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Cristel Ching</a>
-    <a href="https://wa.me/50670786886"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Daniela Solano</a>
-    <a href="https://wa.me/50662459193"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Katherine Jarquin</a>
-    <a href="https://wa.me/50662260928"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Tracy Guillen</a>
-    <a href="https://wa.me/50661802259"class="btn btn-white"><img  id="cart-icon" src="counter/images/whatsappicon.jpg" width="25" height="25" alt="sc">Jessica Bourrouoet</a>
-</div>	
+  <head>
+    <!--Navbar -->	  							
+    <div class="navbar">
+      <a href="index.html" class="brand-logo">  <img src="counter/images/sc.png" width="250" height="100" alt="sc"> </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="tel:+50640339238"><p class="gradient" style="font-size: 25px;">Servicio Al Cliente</p> </a>
+    <!--	<a href="#"><i class="fa fa-fw fa-search"></i> Buscar</a>   -->
+      <a href="login.html"><p class="gradient" style="font-size: 25px;">Iniciar Sesión</p> </a> 
+    </div>
+    	
 </head>
 
 <body>
@@ -101,52 +150,60 @@ body {
 
 <p><b></b></p>
 <p><b></b></p>
+		<div style="text-align:center;">
 
-<H3 align="center">
-      <div style="text-align:center;">
-         <p>Somos <b>Tecnoelectro Comercio Online</b> la tienda para tus compras tecnológicas a Crédito</p> 
-         <p>Te ayudamos & asesoramos en el proceso del estudio, afiliación, compra, entrega & pagos</p> 
-         <p>Tenemos desde: <b>SmartPhones, Smart Tvs, SmartWatchs, PS4, Nintendo Switch, PC Gammer, Laptops</b></p> 
-          <p><b> Tablets, iPads,  electrodomesticos, muebleria, linea blanca, herramientas, motocicletas  y mucho más...</b></p> 
-          <p><b> Tecno-abarrotes, Diarios de comida no perecederos, Manicure & pedicure, material electrico, de construccion</b></p> 
-          <p>Hacemos Entregas a todo el país; tenemos mensajero, hacemos encomiendas o puedes retirar en nuestro local de despacho</b></p> 	
-         <p>Todos los productos son <b>100%</b> originales & con 12 meses de garantía de fábrica!</p> 		 
-         <p>NO TE MUEVAS DE TU CASA! Compre y disfrute de sus articulos SIN moverse de la comodidad!</p> 	
+<h3 align="center">
+  <div style="text-align:center;">
+    <p class="gradient"><b>Somos Tecnoelectro Comercio Online, tu tienda para compras tecnológicas, financiamientos a crédito al plazo que desea!</b></p> 
+    <p class="gradient">Te ayudamos & asesoramos en el proceso del estudio, afiliación, compra, entrega & pagos</p> 
+         <p>Tenemos desde: 	
+          <p class="gradient"><b>SmartPhones, Smart TVs, SmartWatchs, Consolas Video Juegos,PC Gammer, Laptops, Tablets/iPads, Electrodomesticos, Muebleria, Herramientas, motocicletas  y mucho más...</b></p> 
+          <p class="gradient"><b> Tecno-abarrotes, Diarios de comida no perecederos, Manicure & pedicure, material electrico, de construccion</b></p> 
+          <p class="gradient">Hacemos Entregas a todo el país; tenemos mensajero, hacemos encomiendas o puedes retirar en nuestro local de despacho</b></p> 	
+          <p class="gradient"><b>Artículos 100% originales - 12 meses de garantía de fábrica  </b></p> 		 
+          <p class="gradient"><b>Compre y disfrute desde la comodidad de su hogar!</b></p> 	
 
    </div>
    <p><b></b></p>
       <p><b>¿Te interesa el financiamiento? </b></p>
       <p><b></b></p>
-
-      <a href=""><img src="counter/images/emma.jpeg" width="200" height="200" alt="EMMA PAY" /></a>
+<!--
+      <a href="https://www.emmapay.com/"><img src="counter/images/emma.jpeg" width="200" height="200" alt="EMMA PAY" /></a>
       <p><em><b>Requisitos:</b></em></p>
 
       <p><em>-Cedula identidad, +18 (Asalariado, independientes, universitarios, pensionados, conductores de plataforma).</em></p>
-      <p><em><b>1. Descargar Emma Pay de       <a href="https://play.google.com/store/apps/details?id=com.yellowpepper.unicomer.unipay.prod&hl=es_GT"><img src="counter/images/pstore.jpg" width="100" height="100" alt="pstore" /></a>,<a href=" https://apkcombo.com/emma-pay/com.yellowpepper.unicomer.unipay.prod/">APK (Metodo 2) o <a href="https://apps.apple.com/cr/app/emma-pay/id1455374257"><img src="counter/images/appstore.jpg" width="100" height="100" alt="appstore" /></a>
-      </a>.</b></em></p>
+      <h1>1. Descargar Emma Pay</h1>
+        
+      <p> 1- Play Store <a href="https://play.google.com/store/apps/details?id=com.yellowpepper.unicomer.unipay.prod&hl=es_GT"><img src="counter/images/pstore.jpg" width="70" height="70" alt="pstore"></a></p>
+      
+      <p> 2- APK (Metodo 2 - Android) <a href=" https://apkcombo.com/emma-pay/com.yellowpepper.unicomer.unipay.prod/"><img src="counter/images/apk.png" width="70" height="70" alt="apk"></a> </p>
+    
+      
+      <p>3- Apple Store <a href="https://apps.apple.com/cr/app/emma-pay/id1455374257"><img src="counter/images/appstore.jpg" width="70" height="70" alt="appstore"></a></p>
 
       <p><em></em></p>
-      
+      <h1>2.Registrarse</h1>
 
-      <p><em>2.Registrarse</em></p> 
       <video width="400" height="400" controls>
          <source src="counter/images/emma1.mp4" type="video/mp4">
        </video>
-      <p><em>3.Aplicar para el crédito</em></p>
+       <h1>3.Aplicar para el crédito</h1>
+
       <video width="400" height="400" controls>
          <source src="counter/images/emma2.mp4" type="video/mp4">
        </video>
-      <p><em>4.Comprar con Emma en Tecnoelectro</em></p>
+       <h1>4.Comprar con Emma en Tecnoelectro</h1>
+
       <video width="400" height="400" controls>
          <source src="counter/images/emma3.mp4" type="video/mp4">
        </video>
+       <h1>5.Descargar Codigo QR</h1>
 
-       <p><em>5.Descargar Codigo QR</em></p>
       <a href="counter/images/qrc.jpg" download="QR"><img src="counter/images/qrc.jpg" width="200" height="150" alt="CodigoQR"></a>
       <p>Descarga el Codigo QR con el que podras comprar en Tecnoelectro</p>
 
       <p><em></em></p>
-
+      -->
 
       <a img src=""><img src="counter/images/MINICUOTAS.jpg" width="300" height="300" alt="Bac" /></a>
       <p><em><b>Requisitos:</b></em></p>
@@ -172,7 +229,7 @@ body {
 
 
       <p><em>Descarga la aplicacion & Usa Credix Pay Par Pagar en Tecnoelectro Comercio Online</em> </p>
-      <a href="https://play.google.com/store/apps/details?id=com.credix.credixpay&hl=en_US&gl=US"><img src="counter/images/pstore.jpg" width="100" height="100" alt="credix" />Credix Pay</a>
+      <p> Credix Pay<a href="https://play.google.com/store/apps/details?id=com.credix.credixpay&hl=en_US&gl=US"><img src="counter/images/pstore.jpg" width="70" height="70" alt="pstore"></a></p>
 
       <p><em>  </em> </p>
 
