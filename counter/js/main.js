@@ -1,4 +1,4 @@
-
+f
 function main() {
 
 (function () {
@@ -48,7 +48,7 @@ function main() {
         $container.isotope({
             filter: '*',
             animationOptions: {
-                duration: 750,
+                duration: 500,
                 easing: 'linear',
                 queue: false
             }
