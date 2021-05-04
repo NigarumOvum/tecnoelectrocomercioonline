@@ -27,6 +27,36 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+<style>
+  @media (max-width: 1024px) {
+    #about img {
+      float: left;
+      margin-bottom: 8px;
+    }
+    }
+    
+     @media only screen and (max-width:800px) {
+      /* For tablets: */
+      .main {
+        width: 80%;
+        padding: 0;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width:500px) {
+      /* For mobile phones: */
+      .menu, .main, .right {
+        width: 100%;
+      }
+    
+      @media screen and (max-width:320px) {
+      /* CSS for screens that are 320 pixels or less will be put in this section */
+      }
+    
+    }
+    </style>
 </head>
 
 <body>
@@ -111,6 +141,7 @@
               <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
             </div>
           </div>
+          
           <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
@@ -126,8 +157,8 @@
                   <h4 class="gradient">Diferentes métodos de entrega</h4>
                   <p class="description">- Puede retirar en el local.</p>
                   <p class="description"> - Solicitar  envios con nuestro mensajero a la puerta de su casa o trabajo.  </p>
-                   <p class="description"> - Le ayudamos a coordinar encomiendas.     </p>
-                   <p class="description"> - Cobertura en todo el país     </p>
+                  <p class="description"> - Le ayudamos a coordinar encomiendas.     </p>
+                  <p class="description"> - Cobertura en todo el país     </p>
 
                 </div>
 
@@ -143,18 +174,10 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-cart"></i>
                   <h4 class="gradient">Compre y disfrute desde la comodidad de su hogar!</h4>
-
-
                 </div>
-
-             
-
+                </div>
               </div>
             </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
     </section><!-- End About Section -->
 
     <!-- ======= Services Section ======= -->
@@ -309,7 +332,7 @@
           <div class="container" data-aos="zoom-in">
     
             <div class="text-center">
-              <a class="cta-btn" href="catalog.html">  <h3>Catálogo</h3>   </a> 
+              <a class="cta-btn" href="Catalog.html">  <h3>Catálogo</h3>   </a> 
               <p style="color: black;"> Toca la clase que quieras ver</p>
            <!--    <a class="cta-btn" href="#"> Toca aca para buscar por nombre/tipo </a>  -->
             </div>
@@ -317,9 +340,9 @@
           </div>
         </section><!-- End Cta Section -->
 
-
     <!-- ======= Product Section ======= -->
-<div class="content" style="text-align: center;">
+<section id="product" class="product">
+  <div class="container" style="text-align: center;">
 
     	<!--SmartPhone Colapsible --->
 	<h3 style="text-align:center;"> <img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45"><em>SmartPhones</em> <img id="thumbail" src="counter/images/smartph.jpg" width="45" height="45"> </h3>
@@ -328,57 +351,59 @@
 
 <!--SmartWatch Colapsible --->
 
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/smartw.jpg" width="45" height="45">SmartWatchs<img id="thumbail" src="counter/images/smartwa.png" width="45" height="45"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/smartw.jpg" width="45" height="45">SmartWatchs<img id="thumbail" src="counter/images/smartwa.png" width="45" height="45"> </h3>
 	<div class="content">	
 		</div>
 
 <!--Tablets Colapsible --->
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/ip1.jpeg" width="45" height="45">Tablets/iPads <img id="thumbail" src="counter/images/tbt.jpeg" width="45" height="45"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/ip1.jpeg" width="45" height="45">Tablets/iPads <img id="thumbail" src="counter/images/tbt.jpeg" width="45" height="45"> </h3> 
 	<div class="content">	
+  </div>
 
 <!--airpods & buds--->
-<h3 style="text-align:center;"><img src="counter/images/bud.png" width="40" height="40">Airpods & EarBuds<img src="counter/images/pods.png" width="40" height="50"></h3></button>
+<h3 style="text-align:center;"><img src="counter/images/bud.png" width="40" height="40">Airpods & EarBuds<img src="counter/images/pods.png" width="40" height="50"></h3>
 						<div class="content">
 							</div>
 
 <!--Componentes PC Colapsible --->
-<h3 style="text-align:center;"><img src="counter/images/pc1.jpeg" width="40" height="40">Componentes PC<img src="counter/images/pc2.jpeg" width="40" height="50"></h3></button>
+<h3 style="text-align:center;"><img src="counter/images/pc1.jpeg" width="40" height="40">Componentes PC<img src="counter/images/pc2.jpeg" width="40" height="50"></h3>
 				<div class="content">
 					</div>
 
 <!--Consolas Colapsible --->
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/cico.png" width="35" height="35">Consolas <img id="thumbail" src="counter/images/cico.png" width="35" height="35"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/cico.png" width="35" height="35">Consolas <img id="thumbail" src="counter/images/cico.png" width="35" height="35"> </h3> 
 				<div class="content">	
 
 			</div>
 <!--Smart TV Colapsible --->
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/smartv.jpg" width="45" height="45">Smart TV<img id="thumbail" src="counter/images/smartv.jpg" width="45" height="45"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/smartv.jpg" width="45" height="45">Smart TV<img id="thumbail" src="counter/images/smartv.jpg" width="45" height="45"> </h3>
 						<div class="content">
 					</div>
 	
 <!--Laptops Colapsible --->
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/lap.png" width="45" height="45">Laptops <img id="thumbail" src="counter/images/lap.png" width="45" height="45"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/lap.png" width="45" height="45">Laptops <img id="thumbail" src="counter/images/lap.png" width="45" height="45"> </h3> 
 					<div class="content">	
 						</div>
 
 <!--Linea Blanca Colapsible --->
-<h3 style="text-align:center;"><img id="thumbail" src="counter/images/la.jpg" width="40" height="40">Linea Blanca<img id="thumbail" src="counter/images/l.jpg" width="40" height="40"> </h3> </button>
+<h3 style="text-align:center;"><img id="thumbail" src="counter/images/la.jpg" width="40" height="40">Linea Blanca<img id="thumbail" src="counter/images/l.jpg" width="40" height="40"> </h3> 
 	<div class="content">	
 
     </div>
 
 <!--Muebleria Colapsible DIVIDIR LUEGO--->
-<h3 style="text-align:center;"><img src="counter/images/cama.png" width="40" height="40">Muebleria<img src="counter/images/cama.png" width="40" height="50"></h3></button>
+<h3 style="text-align:center;"><img src="counter/images/cama.png" width="40" height="40">Muebleria<img src="counter/images/cama.png" width="40" height="50"></h3>
 				<div class="content">
 				</div> 	
 
 <!--Herramientas Colapsible --->
-<h3 style="text-align:center;"><img src="counter/images/tatornillador.jpeg" width="40" height="40">Herramientas<img src="counter/images/timpacto.jpeg" width="40" height="50"></h3></button>
+<h3 style="text-align:center;"><img src="counter/images/tatornillador.jpeg" width="40" height="40">Herramientas<img src="counter/images/timpacto.jpeg" width="40" height="50"></h3>
 						<div class="content">	
 								</div>
 							</div>
 
-            <!-- ======= End products Section ======= -->
+ <!-- ======= End products Section ======= -->
+      </section>
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
