@@ -222,7 +222,9 @@ for (i = 0; i < coll.length; i++) {
   }
   });
 }
-
+/**
+   * Slider
+   */
 var slideIndex = 0;
 carousel();
 

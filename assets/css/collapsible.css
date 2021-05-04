@@ -1,0 +1,32 @@
+
+/* Collapsible*/
+.collapsible {
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(0, 0, 0)2, 21, 21);
+	cursor: pointer;
+	padding: 3px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: 0px;
+	font-size: 8px;
+}
+  
+  .active, .collapsible:hover {
+	background-color: rgb(255, 255, 255);
+  }
+  
+  .content {
+	padding: 0 10px;
+	display: none;
+	overflow: hidden;
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+
+  }
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
