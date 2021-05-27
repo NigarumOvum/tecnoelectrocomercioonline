@@ -487,18 +487,24 @@
 	</dict>
 	<key>lastSeenDates</key>
 	<dict>
+		<key>com.apple.photos.CPAnalytics.assetCollectionViewed</key>
+		<string>18/5/21</string>
 		<key>com.apple.photos.CPAnalytics.assetViewed</key>
-		<string>11/4/21</string>
+		<string>18/5/21</string>
 		<key>com.apple.photos.CPAnalytics.firstTimeExperienceReady</key>
 		<string>3/3/21</string>
 		<key>com.apple.photos.CPAnalytics.mediaViewed</key>
-		<string>11/4/21</string>
+		<string>18/5/21</string>
 		<key>com.apple.photos.CPAnalytics.memoryNotificationSeen</key>
 		<string>3/3/21</string>
+		<key>com.apple.photos.CPAnalytics.viewScrolledToInitialPosition</key>
+		<string>18/5/21</string>
 		<key>screen_CuratedLibrary_Days</key>
-		<string>11/4/21</string>
+		<string>18/5/21</string>
 		<key>screen_MemoriesFeed</key>
-		<string>17/3/21</string>
+		<string>18/5/21</string>
+		<key>screen_PhotosView</key>
+		<string>18/5/21</string>
 	</dict>
 </dict>
 </plist>

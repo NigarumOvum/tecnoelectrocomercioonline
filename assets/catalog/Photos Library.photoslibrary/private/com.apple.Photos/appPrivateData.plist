@@ -4,6 +4,11 @@
 <dict>
 	<key>CollapsedSidebarSectionIdentifiers</key>
 	<array/>
+	<key>IPXWorkspaceControllerZoomLevelsKey</key>
+	<dict>
+		<key>kZoomLevelIdentifierPhotosGrid</key>
+		<integer>1</integer>
+	</dict>
 	<key>PXMemoriesHasConfirmedOnboardingDefaultsKey</key>
 	<true/>
 </dict>
