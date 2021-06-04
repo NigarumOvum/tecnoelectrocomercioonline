@@ -28,34 +28,51 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 <style>
-  @media (max-width: 1024px) {
-    #about img {
-      float: left;
-      margin-bottom: 8px;
-    }
-    }
-    
-     @media only screen and (max-width:800px) {
-      /* For tablets: */
-      .main {
-        width: 80%;
-        padding: 0;
-      }
-      .right {
-        width: 100%;
-      }
-    }
-    @media only screen and (max-width:500px) {
-      /* For mobile phones: */
-      .menu, .main, .right {
-        width: 100%;
-      }
-    
-      @media screen and (max-width:320px) {
-      /* CSS for screens that are 320 pixels or less will be put in this section */
-      }
-    
-    }
+
+@media (max-width: 1024px) {
+#about img {
+	float: left;
+	margin-bottom: 8px;
+}
+}
+
+/* START MEDIA 980 */
+@media screen and (max-width:980px){
+  .portfolio-overlay  { padding-top: 10px; }
+}
+/* END MEDIA 980 */
+
+@media screen and (max-width: 767px) {
+  .tm-home-title { font-size: 40px; }
+}
+
+ @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+
+/* START MEDIA 360 */
+@media screen and (max-width:360px){
+  .navbar-default .navbar-brand {  padding-top: 2px; }
+}
+/* END MEDIA 360 */
+
+  @media screen and (max-width:320px) {
+	/* CSS for screens that are 320 pixels or less will be put in this section */
+  }
+
+}
     </style>
 </head>
 
@@ -67,15 +84,15 @@
 
       <div class="logo">
 
-      <a href="index.html"> <p class="Logo"><img src="assets/catalog/" width="175" height="250" alt="Logo"></p></a>
+      <a href="index.html"> <p class="Logo"><img src="assets/catalog/tecnologo.png" width="140" height="60" alt="Logo"></p></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href=""> Home</a></li>
-          <li><a class="nav-link scrollto" href="">Catalogo   </a></li>
+          <li><a class="nav-link scrollto active" href="index.html"> Home</a></li>
+          <li><a class="nav-link scrollto" href="Catalog.html">Catalogo   </a></li>
           <li class="dropdown"><a href=""><span> Acerca de nosotros</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
 
@@ -114,7 +131,7 @@
           <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
             <div class="content">
               <h3 class="gradient"> ¡Somos Tecnoelectro Comercio Online!</h3>
-              <p> Tu tienda para compras tecnológicas mas caras con financiamientos a crédito al plazo que desea super carisimos.</p>
+              <p> Tu tienda para compras tecnológicas con financiamientos a crédito al plazo que desea!.</p>
               <p> -Artículos 100% originales. </p>
               <p> -12 meses de garantía de fábrica.</p>
               <p> Te asesoramos con cada proceso desde el análisis de crédito, afiliación, cálculo de cuotas, compra, pagos hasta la entrega del artículo.</p>
@@ -129,19 +146,22 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-devices"></i>
                   <h4 class="gradient">Te ofrecemos: </h4>
-                  <p>-  </p>
+                  <p>- Financiamientos al tiempo que desee</p>
+
+                  <p>- Las mejores cuotas & Plazos </p>
+
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bxs-package"></i>
                   <h4 class="gradient">Diferentes métodos de entrega</h4>
                   <p class="description">- Puede retirar en el local.</p>
-                  <p class="description"> - Solicitar  envios con nuestro mensajero a la puerta de su casa o trabajo.  </p>
+                  <p class="description"> - Solicitar envios con nuestro mensajero a la puerta de su casa o trabajo.  </p>
                   <p class="description"> - Le ayudamos a coordinar encomiendas.     </p>
                   <p class="description"> - Cobertura en todo el país     </p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bxs-credit-card"></i>
-                  <h4 class="gradient"> ESTAFAS MASIVAS</h4>
+                  <h4 class="gradient"> Las cuotas mas bajas</h4>
                   <p>- Disfrute de cuotas y plazos únicos</p>
                   <p>- Trabajamos con las mejores alianzas</p>
                   <p>- Elija el plazo a cancelar el financiamiento</p>
@@ -152,13 +172,11 @@
                 </div>
               </div>
             </div>
-            End .content
           </div>
         </div>
 
       </div>
-    </section> End About Section 
--->
+    </section> 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -262,9 +280,7 @@
 
       </div>
     </section>
-     End Services Section 
 
-    ======= Counts Section ======= 
     <section id="counts" class="counts  section-bg">
       <div class="container">
 
@@ -303,10 +319,11 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- End Counts Section -->
 
         <!-- ======= Cta Section =======
+
         <section id="cta" class="cta">
           <div class="container" data-aos="zoom-in">
     
@@ -512,10 +529,10 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright 2021 <strong><span>  <p class="gradient" style="font-size: 12px;">Tecnoelctro Comercio Homosexual</span></strong>. All Rights Reserved </p>
+        &copy; Copyright 2021 <strong><span>  <p class="gradient" style="font-size: 12px;">Tecnoelctro Comercio Online</span></strong>. All Rights Reserved </p>
       </div>
       <div class="credits">
-       <a href="https://neighbortechcr.com"><p class="gradient" style="font-size: 16px;"> </p></a>
+       <a href="https://neighbordevcr.com">Copyright NeighborDev CR<p class="gradient" style="font-size: 16px;"> </p></a>
       </div>
     </div>
   </footer><!-- End Footer -->
