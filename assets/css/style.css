@@ -17,7 +17,7 @@ body {
           }
        
          li {
-            margin: 5px;
+            margin: 2px;
             padding: 1px 1px;
             text-align: left;
             text-transform: uppercase;
@@ -26,7 +26,6 @@ body {
             color: white;            
             box-shadow: 0 0 10px rgb(92, 70, 134);
             border-radius: 7px;
-            display: block;
           }
 
           li a:hover {
@@ -82,30 +81,29 @@ h3 {
     flex-wrap: wrap;
 }
 
-
-         .btn-grad {
-           background-image: linear-gradient(to right, #67B26F 0%, #4ca2cd  51%, #67B26F  100%);
-           display: inline;        
-        }
-         .btn-grad {
-            display: inline;
-            margin: -5px;
-            padding: 0px 10px;
-            text-align: center;
+           li {
+           display: inline;
+           background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%)
+          }
+       
+         li {
+            margin: 2px;
+            padding: 1px 1px;
+            text-align: left;
             text-transform: uppercase;
             transition: 0.5s;
             background-size: 200% auto;
             color: white;            
-            box-shadow: 0 0 15px rgb(54, 141, 163);
-            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(92, 70, 134);
+            border-radius: 7px;
           }
 
-          .btn-grad:hover {
+           a:hover {
             background-position: right center; /* change the direction of the change here */
             color: #fff;
             text-decoration: none;
+            
           }
-        
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
