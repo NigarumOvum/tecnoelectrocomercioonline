@@ -16,7 +16,7 @@ body {
            background-image: linear-gradient(to right, #24C6DC 0%, #514A9D  51%, #24C6DC  100%)
           }
        
-         li {
+         ul li {
             margin: 2px;
             padding: 1px 1px;
             text-align: left;
@@ -26,6 +26,8 @@ body {
             color: white;            
             box-shadow: 0 0 10px rgb(92, 70, 134);
             border-radius: 7px;
+            font-size: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           }
 
           li a:hover {
@@ -97,6 +99,7 @@ h3 {
             box-shadow: 0 0 10px rgb(92, 70, 134);
             border-radius: 7px;
             font-size: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           }
 
            a:hover {
