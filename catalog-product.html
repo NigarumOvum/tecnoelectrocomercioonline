@@ -34,19 +34,25 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
-
+  
       <div class="logo">
-
-      <a href="index.html"> <p class="Logo"><img src="assets/catalog/tecnologo.png" width="175" height="250" alt="Logo"></p></a>
+  
+        <a href="index.html">
+          <p class="Logo"><img src="assets/catalog/tecnologo.png" width="140" height="60" alt="Logo"></p>
+        </a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
-
+  
       <nav id="navbar" class="navbar">
         <ul>
+            <ul>
   
+            </ul>
+          </li>
+        </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav> <!-- .navbar -->
 
     </div>
 
@@ -112,60 +118,23 @@
           margin-bottom: 12px;
         }
 
-     /* Collapsible*/
-.collapsible {
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0)2, 21, 21);
-	cursor: pointer;
-	padding: 4px;
-	width: 100%;
-	border: none;
-	text-align: center;
-	outline: 0px;
-	font-size: 10px;
-}
-  
-  .active, .collapsible:hover {
-	background-color: rgb(218, 218, 218);
-  }
-  
-  .content {
-	padding: 0 10px;
-	display: none;
-	overflow: hidden;
-	background-color: #ffffff;
-	color: rgb(0, 0, 0);
-
-  }     
-    
         </style>
   </header><!-- End Header -->
 
-  <!-- ======= Hero SLIDER Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-    <img class="mySlides" src="assets/catalog/CPU2.png">
-    <img class="mySlides" src="assets/catalog/slidersilla1.jpg">
-	<img class="mySlides" src="assets/catalog/sliderg.jpg">
-	<img class="mySlides" src="assets/catalog/sliderrg1.jpg">
-	<img class="mySlides" src="assets/catalog/sliderc.jpg">
-	<img class="mySlides" src="assets/catalog/slidert.jpg">
-    <img class="mySlides" src="assets/catalog/sliderlaptop2.jpg">
-    <img class="mySlides" src="assets/catalog/slider5.jpg">
-    <img class="mySlides" src="assets/catalog/slider7.jpg">
-    <img class="mySlides" src="assets/catalog/slider8.jpg">
-    <img class="mySlides" src="assets/catalog/sliderlaptop.jpg">
 
-    </div>
-  </section><!-- End Hero -->
+
+
+
+
+
 
   <main id="main">
-
-    <h2 style="text-align: center;">Catalogo de Productos</h2>
-
-<input style="text-align: center;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por Marca o Modelo..." title="Type in a name">
+  
+    <h2 style="text-align: center;">Catalogo de Productos</h2>  
+  <input style="text-align: center;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por Marca o Modelo..." title="Type in a name">
     <ul id="myUL">
-
+  <div id="maincat">
+  <div id="boxcat">
 	<!-- Apple Smartphones --->
 
       <li>
@@ -300,7 +269,7 @@
                                   </figure>
                                 </li>
 
-	<!-- Sasmsung Smartphones --->
+	<!-- Samsung Smartphones --->
 
         <li>
           <figure class="snip1171 blue hover">
@@ -378,17 +347,7 @@
                                           </figcaption>
                                         </figure>
                                       </li>
-                              
-                                      <li>
-                                            <figure class="snip1171 blue hover">
-                                              <img src="assets/catalog/i12pmb.jpg" alt="sample71"/>
-                                              <div class="price"> </div>
-                                              <figcaption>
-                                                <h3>256GB</h3>
-                                                <p> Colores: | |     </p><a href="#">Samsung Galaxy S </a>
-                                              </figcaption>
-                                            </figure>
-                                          </li>
+                            
                                   
                                           <li>
                                                 <figure class="snip1171 blue hover">
@@ -478,7 +437,8 @@
                                                                           </figcaption>
                                                                         </figure>
                                                                       </li>
-                                                              
+    
+
                                                                       <li>
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a10s.jpg" alt="sample71"/>
@@ -526,7 +486,7 @@
 	<!-- Huawei Smartphones --->
 
           <li>
-            <figure class="snip1171 orange">
+            <figure class="snip1171 green">
               <img src="assets/catalog/hp40l.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
@@ -537,18 +497,7 @@
           </li>
 
           <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/hy9a.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB</h3>
-                  <p> Colores: Purpura|Rosa|Negro     </p><a href="#"> Huawei Y9A</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
+            <figure class="snip1171 green">
               <img src="assets/catalog/hy7p.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
@@ -558,7 +507,52 @@
             </figure>
           </li>
 
+              <li>
+                <figure class="snip1171 green">
+                  <img src="assets/catalog/hy9a.jpg" alt="sample71" />
+                  <div class="price"> </div>
+                  <figcaption>
+                    <h3> 128GB</h3>
+                    <p> Colores: Verde Azulado </p><a href="#"> Huawei Y7A</a>
+                  </figcaption>
+                </figure>
+              </li>
+
 	<!-- Xiaomi Smartphones --->
+
+<li>
+  <figure class="snip1171 orange">
+    <img src="assets/catalog/mi11l.jpg" alt="sample71" />
+    <div class="price"> </div>
+    <figcaption>
+      <h3> 128GB</h3>
+      <p> Colores: Plateado||Negro </p><a href="#">Xiaomi Mi 11 Lite 8+</a>
+    </figcaption>
+  </figure>
+</li>
+
+          <li>
+            <figure class="snip1171 orange">
+              <img src="assets/catalog/mi10t.jpg" alt="sample71"/>
+              <div class="price"> </div>
+              <figcaption>
+                  <h3> 128GB</h3>
+                  <p> Colores: Plateado||Negro   </p><a href="#"> Xiaomi Mi 10T 6+</a>
+              </figcaption>
+            </figure>
+          </li>
+
+            <li>
+              <figure class="snip1171 orange">
+                <img src="assets/catalog/mi10t.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
+                  <h3> 128GB</h3>
+                  <p> Colores: Plateado||Negro </p><a href="#">Xiaomi Mi 10T 8+</a>
+                </figcaption>
+              </figure>
+            </li>
+
           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10tp.jpg" alt="sample71"/>
@@ -570,7 +564,30 @@
             </figure>
           </li>
 
+
+            <li>
+              <figure class="snip1171 orange">
+                <img src="assets/catalog/mi10tp.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
+                  <h3> 128GB</h3>
+                  <p> Colores: Celeste|Plateado||Negro </p><a href="#"> Xiaomi Mi 10T Pro</a>
+                </figcaption>
+              </figure>
+            </li>
+
           <li>
+            <figure class="snip1171 orange">
+              <img src="assets/catalog/mi10tl.jpg" alt="sample71"/>
+              <div class="price"> </div>
+              <figcaption>
+                  <h3>  64GB</h3>
+                  <p> Colores: Celeste|Plateado||Negro   </p><a href="#"> Xiaomi Mi 10T Lite</a>
+              </figcaption>
+            </figure>
+          </li>
+
+           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10tp.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -626,6 +643,17 @@
             </figure>
           </li>
 
+  <li>
+    <figure class="snip1171 orange">
+      <img src="assets/catalog/px3.jpg" alt="sample71" />
+      <div class="price"> </div>
+      <figcaption>
+        <h3> 256GB</h3>
+        <p> Colores: Rosa|Azul|Negro </p><a href="#"> Xiaomi Poco X3 Pro</a>
+      </figcaption>
+    </figure>
+  </li>
+
           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/px3.jpg" alt="sample71"/>
@@ -639,14 +667,36 @@
 
           <li>
             <figure class="snip1171 orange">
-              <img src="assets/catalog/px3.jpg" alt="sample71"/>
+              <img src="assets/catalog/px3nfc.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> 256GB</h3>
-                  <p> Colores: Rosa|Azul|Negro   </p><a href="#"> Xiaomi Poco X3 Pro</a>
+                  <h3> 128GB</h3>
+                  <p> Colores: Rosa|Azul|Negro   </p><a href="#"> Xiaomi Poco X3 NFC</a>
               </figcaption>
             </figure>
           </li>
+
+    <li>
+      <figure class="snip1171 orange">
+        <img src="assets/catalog/m3.jpg" alt="sample71" />
+        <div class="price"> </div>
+        <figcaption>
+          <h3> 256GB</h3>
+          <p> Colores: Rosa|Azul|Negro </p><a href="#"> Xiaomi Poco N3</a>
+        </figcaption>
+      </figure>
+    </li>
+
+      <li>
+        <figure class="snip1171 orange">
+          <img src="assets/catalog/m3.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 128GB</h3>
+            <p> Colores: Rosa|Azul|Negro </p><a href="#"> Xiaomi Poco N3</a>
+          </figcaption>
+        </figure>
+      </li>
 
           <li>
             <figure class="snip1171 orange">
@@ -659,16 +709,61 @@
             </figure>
           </li>
 
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n8p.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB</h3>
-                  <p> Colores: Verde Azulado|Negro|Azul|Blanco   </p><a href="#"> Xiaomi Redmi Note 8 Pro</a>
-              </figcaption>
-            </figure>
-          </li>
+                    <li>
+                      <figure class="snip1171 orange">
+                        <img src="assets/catalog/n10s.jpg" alt="sample71" />
+                        <div class="price"> </div>
+                        <figcaption>
+                          <h3> 64GB</h3>
+                          <p> Colores: Verde Azulado|Negro </p><a href="#"> Xiaomi Mi Note 10 S</a>
+                        </figcaption>
+                      </figure>
+                    </li>
+
+                              <li>
+                                <figure class="snip1171 orange">
+                                  <img src="assets/catalog/n10.jpg" alt="sample71" />
+                                  <div class="price"> </div>
+                                  <figcaption>
+                                    <h3> 64GB</h3>
+                                    <p> Colores: Verde Azulado|Negro </p><a href="#"> Xiaomi Mi Note 10 </a>
+                                  </figcaption>
+                                </figure>
+                              </li>
+
+                                
+                                          <li>
+                                            <figure class="snip1171 orange">
+                                              <img src="assets/catalog/n10plus.jpg" alt="sample71" />
+                                              <div class="price"> </div>
+                                              <figcaption>
+                                                <h3> 128GB</h3>
+                                                <p> Colores: Verde Azulado|Negro </p><a href="#"> Xiaomi Mi Note 10 +8</a>
+                                              </figcaption>
+                                            </figure>
+                                          </li>
+
+                                              <li>
+                                                <figure class="snip1171 orange">
+                                                  <img src="assets/catalog/n10plus.jpg" alt="sample71" />
+                                                  <div class="price"> </div>
+                                                  <figcaption>
+                                                    <h3> 128GB</h3>
+                                                    <p> Colores: Verde Azulado|Negro </p><a href="#"> Xiaomi Mi Note 10 +6</a>
+                                                  </figcaption>
+                                                </figure>
+                                              </li>
+
+                                                  <li>
+                                                    <figure class="snip1171 orange">
+                                                      <img src="assets/catalog/n10plus.jpg" alt="sample71" />
+                                                      <div class="price"> </div>
+                                                      <figcaption>
+                                                        <h3> 128GB</h3>
+                                                        <p> Colores: Verde Azulado|Negro </p><a href="#"> Xiaomi Mi Note 10 +4</a>
+                                                      </figcaption>
+                                                    </figure>
+                                                  </li>
 
           <li>
             <figure class="snip1171 orange">
@@ -676,31 +771,22 @@
               <div class="price"> </div>
               <figcaption>
                   <h3> 128GB</h3>
-                  <p> Colores: |Negro|Verde-Azul|Blanco   </p><a href="#"> Xiaomi Note 9s</a>
+                  <p> Colores: |Negro|Verde-Azul|Blanco   </p><a href="#"> Xiaomi Redmi Note 9s</a>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n9s.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
+            <li>
+              <figure class="snip1171 orange">
+                <img src="assets/catalog/n9s.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
                   <h3> 64GB</h3>
-                  <p> Colores: |Negro|Verde-Azul|Blanco   </p><a href="#"> Xiaomi Note 9s</a>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n10s.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 64GB</h3>
-                  <p> Colores: Verde|Negro|Blanco   </p><a href="#"> Xiaomi Redmi Note 10S</a>
-              </figcaption>
-            </figure>
-          </li>
+                  <p> Colores: |Negro|Verde-Azul|Blanco </p><a href="#"> Xiaomi Redmi Note 9s</a>
+                </figcaption>
+              </figure>
+            </li>
+
 
           <li>
             <figure class="snip1171 orange">
@@ -708,44 +794,12 @@
               <div class="price"> </div>
               <figcaption>
                   <h3> 128GB</h3>
-                  <p> Colores: Morado|Negro   </p><a href="#"> Xiaomi Note 9T</a>
+                  <p> Colores: Morado|Negro   </p><a href="#"> Xiaomi Redmi Note 9T</a>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/x3nfc.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB</h3>
-                  <p> Colores: Azul|Negro   </p><a href="#"> Xiaomi Poco X3 NFC</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n10.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 64GB</h3>
-                  <p> Colores: Verde|Azul|Negro   </p><a href="#"> Xiaomi Mi 10T Lite</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n104gb.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB | 4GB RAM</h3>
-                  <p> Colores: Verde Azulado|Negro   </p><a href="#"> Xiaomi RedMi Note 10</a>
-              </figcaption>
-            </figure>
-          </li>
-
+      
           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/n9.jpg" alt="sample71"/>
@@ -762,66 +816,13 @@
               <img src="assets/catalog/n9.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> 128GB</h3>
+                  <h3> 64GB</h3>
                   <p> Colores: Blanco|Azul|Negro   </p><a href="#"> Xiaomi Redmi Note 9</a>
               </figcaption>
             </figure>
           </li>
 
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n1064.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 64GB</h3>
-                  <p> Colores: Verde Azulado|Negro   </p><a href="#"> Xiaomi RedMi Note 10</a>
-              </figcaption>
-            </figure>
-          </li>
-
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n8.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB</h3>
-                  <p> Colores: Blanco|Azul|Negro   </p><a href="#"> Xiaomi RedMi Note 8</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/m3.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 128GB</h3>
-                  <p> Colores: Verde Azulado|Negro   </p><a href="#"> Xiaomi M3</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/m3.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                <h3> 64GB</h3>
-                <p> Colores: Verde Azulado|Negro   </p><a href="#"> Xiaomi M3</a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/n9.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 64GB</h3>
-                  <p> Colores: Verde Azulado|Negro   </p><a href="#"> Xiaomi Note 9</a>
-              </figcaption>
-            </figure>
-          </li>
-
+  
           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9.jpg" alt="sample71"/>
@@ -889,11 +890,11 @@
             </figure>
           </li>
     
-	<!-- Red Mi Smartphones --->
+	<!-- Realme Smartphones --->
 
       <li>
-        <figure class="snip1171 orange">
-          <img src="assets/catalog/r.jpg" alt="sample71"/>
+        <figure class="snip1171 red">
+          <img src="assets/catalog/REDMIN8P.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
               <h3> 128GB</h3>
@@ -903,7 +904,7 @@
       </li>
 
       <li>
-        <figure class="snip1171 orange">
+        <figure class="snip1171 red">
           <img src="assets/catalog/r7p.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
@@ -914,7 +915,7 @@
       </li>
 
       <li>
-        <figure class="snip1171 orange">
+        <figure class="snip1171 red">
           <img src="assets/catalog/r7.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
@@ -925,7 +926,7 @@
       </li>
 
       <li>
-        <figure class="snip1171 orange">
+        <figure class="snip1171 red">
           <img src="assets/catalog/r7i.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
@@ -936,7 +937,7 @@
       </li>
 
       <li>
-        <figure class="snip1171 orange">
+        <figure class="snip1171 red">
           <img src="assets/catalog/r6i.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
@@ -946,35 +947,26 @@
         </figure>
       </li>
 
-      <li>
-        <figure class="snip1171 orange">
-          <img src="assets/catalog/rc3.jpg" alt="sample71"/>
-          <div class="price"> </div>
-          <figcaption>
-            <h3> 64GB</h3>
-              <p> Colores: Celeste|Plateado|Negro   </p><a href="#"> Realme C3 </a>
-          </figcaption>
-        </figure>
-      </li>
-
       	<!-- CAT --->
+
           <li>
             <figure class="snip1171 orange">
-              <img src="assets/catalog/cats62.jpg" alt="sample71"/>
+              <img src="assets/catalog/s62pro.jpg" alt="sample71" />
               <div class="price"> </div>
               <figcaption>
-                  <h3> 126GB</h3>
-                  <p> Colores: Negro   </p><a href="#"> CAT S62</a>
+                <h3> 128GB</h3>
+                <p> Colores: Negro </p><a href="#"> CAT S62 Pro</a>
               </figcaption>
             </figure>
           </li>
+
 
           <li>
             <figure class="snip1171 orange">
               <img src="assets/catalog/cats61.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> 126GB</h3>
+                  <h3> 128GB</h3>
                   <p> Colores: Negro  </p><a href="#"> CAT S61</a>
               </figcaption>
             </figure>
@@ -985,19 +977,8 @@
               <img src="assets/catalog/cats52.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> 126GB</h3>
+                  <h3> 128GB</h3>
                   <p> Colores: Negro   </p><a href="#"> CAT S52 </a>
-              </figcaption>
-            </figure>
-          </li>
-
-          <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/cat.jpg" alt="sample71"/>
-              <div class="price"> </div>
-              <figcaption>
-                  <h3> 126GB</h3>
-                  <p> Colores: Celeste|Plateado||Negro   </p><a href="#"> CAT </a>
               </figcaption>
             </figure>
           </li>
@@ -1007,25 +988,150 @@
               <img src="assets/catalog/cats42.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> 126GB</h3>
+                  <h3> 128GB</h3>
                   <p> Colores:  Negro  </p><a href="#"> CAT S42 </a>
               </figcaption>
             </figure>
           </li>
 
+
+  <!-- ll Vivo --->
           <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/cat.jpg" alt="sample71"/>
+            <figure class="snip1171 purple">
+              <img src="assets/catalog/v20.jpg" alt="sample71" />
               <div class="price"> </div>
               <figcaption>
-                  <h3> 126GB</h3>
-                  <p> Colores: Celeste|Plateado||Negro   </p><a href="#"> CAT </a>
+                <h3> 128GB</h3>
+                <p> Colores: Negro </p><a href="#"> ll Vivo V20  </a>
               </figcaption>
             </figure>
           </li>
 
+              <li>
+                <figure class="snip1171 purple">
+                  <img src="assets/catalog/Y20S.jpg" alt="sample71" />
+                  <div class="price"> </div>
+                  <figcaption>
+                    <h3> 128GB</h3>
+                    <p> Colores: Negro </p><a href="#"> ll Vivo Y20S </a>
+                  </figcaption>
+                </figure>
+              </li>
 
-	<!-- Buds --->
+              <!-- Motorola--->
+
+        <li>
+          <figure class="snip1171 green">
+            <img src="assets/catalog/g10p.jpeg" alt="sample71" />
+            <div class="price"> </div>
+            <figcaption>
+              <h3> 128GB</h3>
+              <p> Colores: Negro </p><a href="#"> Motorola G10 Power</a>
+            </figcaption>
+          </figure>
+        </li>
+
+                <li>
+                  <figure class="snip1171 green">
+                    <img src="assets/catalog/g9.jpg" alt="sample71" />
+                    <div class="price"> </div>
+                    <figcaption>
+                      <h3> 128GB</h3>
+                      <p> Colores: Negro </p><a href="#"> Motorola G9 Power</a>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                        <li>
+                          <figure class="snip1171 green">
+                            <img src="assets/catalog/g9pl.jpg" alt="sample71" />
+                            <div class="price"> </div>
+                            <figcaption>
+                              <h3> 128GB</h3>
+                              <p> Colores: Negro </p><a href="#"> Motorola G9 Plus</a>
+                            </figcaption>
+                          </figure>
+                        </li>
+
+                                <li>
+                                  <figure class="snip1171 green">
+                                    <img src="assets/catalog/g9p.jpg" alt="sample71" />
+                                    <div class="price"> </div>
+                                    <figcaption>
+                                      <h3> 128GB</h3>
+                                      <p> Colores: Negro </p><a href="#"> Motorola G9 Play</a>
+                                    </figcaption>
+                                  </figure>
+                                </li>
+
+              <!-- LG--->
+      <li>
+        <figure class="snip1171 red">
+          <img src="assets/catalog/k62.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 128GB</h3>
+            <p> Colores: Negro </p><a href="#"> LG K62</a>
+          </figcaption>
+        </figure>
+      </li>
+
+            <li>
+              <figure class="snip1171 red">
+                <img src="assets/catalog/k61.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
+                  <h3> 128GB</h3>
+                  <p> Colores: Negro </p><a href="#"> LG K61</a>
+                </figcaption>
+              </figure>
+            </li>
+
+                  <li>
+                    <figure class="snip1171 red">
+                      <img src="assets/catalog/k52.jpg" alt="sample71" />
+                      <div class="price"> </div>
+                      <figcaption>
+                        <h3> 128GB</h3>
+                        <p> Colores: Negro </p><a href="#"> LG K52</a>
+                      </figcaption>
+                    </figure>
+                  </li>
+
+                        <li>
+                          <figure class="snip1171 red">
+                            <img src="assets/catalog/k42.jpg" alt="sample71" />
+                            <div class="price"> </div>
+                            <figcaption>
+                              <h3> 128GB</h3>
+                              <p> Colores: Negro </p><a href="#"> LG K42</a>
+                            </figcaption>
+                          </figure>
+                        </li>
+
+                              <li>
+                                <figure class="snip1171 red">
+                                  <img src="assets/catalog/k22p.jpg" alt="sample71" />
+                                  <div class="price"> </div>
+                                  <figcaption>
+                                    <h3> 128GB</h3>
+                                    <p> Colores: Negro </p><a href="#"> LG K22+</a>
+                                  </figcaption>
+                                </figure>
+                              </li>
+
+                                    <li>
+                                      <figure class="snip1171 red">
+                                        <img src="assets/catalog/k22.jpg" alt="sample71" />
+                                        <div class="price"> </div>
+                                        <figcaption>
+                                          <h3> 128GB</h3>
+                                          <p> Colores: Negro </p><a href="#"> LG K22</a>
+                                        </figcaption>
+                                      </figure>
+                                    </li>
+                         
+              <!-- Buds --->
     <li>
         <figure class="snip1171 orange">
           <img src="assets/catalog/airpodspro.jpg" alt="sample71"/>
@@ -1047,9 +1153,6 @@
           </figcaption>
         </figure>
       </li>
-
-    </div>
-</ul>
 
 <li>
     <figure class="snip1171 orange">
@@ -1192,7 +1295,7 @@
       <div class="price"> </div>
       <figcaption>
           <h3> </h3>
-          <p> Colores: Negro  </p><a href="#"> Apple Watch Series 3 44MM</a>
+          <p> Colores: Negro  </p><a href="#"> Apple Watch Series 3 38MM</a>
       </figcaption>
     </figure>
   </li>
@@ -1214,7 +1317,7 @@
       <div class="price"> </div>
       <figcaption>
           <h3> </h3>
-          <p> Color:   </p><a href="#"> Samsung Galaxy Watch Active 2 40MM</a>
+          <p> Material: Acero & Cuero  </p><a href="#"> Samsung Galaxy Watch Active 2 40MM</a>
       </figcaption>
     </figure>
   </li>
@@ -1253,46 +1356,947 @@
   </li>
 
      	<!-- Tablets --->
-
-
          <li>
-            <figure class="snip1171">
-              <img src="assets/catalog/wgt2e.jpg" alt="sample71"/>
+            <figure class="snip1171 blue">
+              <img src="assets/catalog/a710.jpg" alt="sample71"/>
               <div class="price"> </div>
               <figcaption>
-                  <h3> </h3>
-                  <p> Material: Acero & Cuero  </p><a href="#"> Huawei Watch GT2E</a>
+                  <h3>32GB|8MP|3GB RAM </h3>
+                  <p> Color: Dorado </p><a href="#"> Tablet Samsung Tab A7 10.4" OctaCore 4GLTE</a>
+              </figcaption>
+            </figure>
+          </li>
+
+        <li>
+          <figure class="snip1171 blue">
+            <img src="assets/catalog/a7102.jpg" alt="sample71" />
+            <div class="price"> </div>
+            <figcaption>
+              <h3>32GB|8MP|3GB RAM </h3>
+              <p> Color: Dorado </p><a href="#"> Tablet Samsung Tab A7 10.4" OctaCore 4GLTE</a>
+            </figcaption>
+          </figure>
+        </li>
+
+          <li>
+            <figure class="snip1171 blue">
+              <img src="assets/catalog/s5e.jpg" alt="sample71"/>
+              <div class="price"> </div>
+              <figcaption>
+                  <h3> 64GB|4GB</h3>
+                  <p> Color: Negro  </p><a href="#">Tablet Samsung Galaxy Tab S5e 10.5" WIFI</a>
               </figcaption>
             </figure>
           </li>
 
           <li>
-            <figure class="snip1171 orange">
-              <img src="assets/catalog/wgt2e.jpg" alt="sample71"/>
+            <figure class="snip1171 blue">
+              <img src="assets/catalog/a10octa.jpeg" alt="sample71" />
               <div class="price"> </div>
               <figcaption>
-                  <h3> </h3>
-                  <p> Material: Acero & Cuero  </p><a href="#"> Huawei Watch GT2E</a>
+                <h3> 2GB|32GB|4G</h3>
+                <p> Color: Negro </p><a href="#">Tablet Samsung Galaxy Tab A 10.1" Octa 1.8GHZ WiFi</a>
               </figcaption>
             </figure>
           </li>
 
+                    <li>
+                      <figure class="snip1171 blue">
+                        <img src="assets/catalog/a8octa2.jpg" alt="sample71" />
+                        <div class="price"> </div>
+                        <figcaption>
+                          <h3> 3GB|32GB</h3>
+                          <p> Color: Negro </p><a href="#">Tablet Samsung Galaxy Tab A 8" OctaCore 1.8GHZ WiFi</a>
+                        </figcaption>
+                      </figure>
+                    </li>
+
+                              <li>
+                                <figure class="snip1171 blue">
+                                  <img src="assets/catalog/a8octa3.jpg" alt="sample71" />
+                                  <div class="price"> </div>
+                                  <figcaption>
+                                    <h3> 3GB|32GB|4G</h3>
+                                    <p> Color: Negro </p><a href="#">Tablet Samsung Galaxy Tab A 8" OctaCore</a>
+                                  </figcaption>
+                                </figure>
+                              </li>
+
+                                  <li>
+                                    <figure class="snip1171 blue">
+                                      <img src="assets/catalog/a7104.jpg" alt="sample71" />
+                                      <div class="price"> </div>
+                                      <figcaption>
+                                        <h3> 3GB|32GB</h3>
+                                        <p> Color: Plateada </p><a href="#">Samsung Galaxy Tab A7 10.4" WiFi</a>
+                                      </figcaption>
+                                    </figure>
+                                  </li>
+
   <li>
     <figure class="snip1171 orange">
-      <img src="assets/catalog/wgt2e.jpg" alt="sample71"/>
+      <img src="assets/catalog/m5l.jpg" alt="sample71"/>
       <div class="price"> </div>
       <figcaption>
-          <h3> </h3>
-          <p> Material: Acero & Cuero  </p><a href="#"> Huawei Watch GT2E</a>
+          <h3> 3GB|32GB|4G</h3>
+          <p> Color: Blanco </p><a href="#"> Tablet Huawei MediaPad M5 Lite 10.1" </a>
       </figcaption>
     </figure>
   </li>
 
+  <li>
+    <figure class="snip1171">
+      <img src="assets/catalog/rca1.jpeg" alt="sample71" />
+      <div class="price"> </div>
+      <figcaption>
+        <h3> 1GB - 32GB</h3>
+        <p>Color: Negro</p><a href="#"> Tablet RCA Viking Pro con teclado 10.1" QuadCore </a>
+      </figcaption>
+    </figure>
+  </li>
+
+<li>
+  <figure class="snip1171">
+    <img src="assets/catalog/rca2.jpg" alt="sample71" />
+    <div class="price"> </div>
+    <figcaption>
+      <h3> 1GB - 32GB</h3>
+      <p>Color: Negro|Azul</p><a href="#"> Tablet RCA Galileo Pro 11.5" - Quadcore - 1GB - 32GB - Android - Negra</a>
+    </figcaption>
+  </figure>
+</li>
+
+<li>
+  <figure class="snip1171 yellow">
+    <img src="assets/catalog/amazfire.jpg" alt="sample71" />
+    <div class="price"> </div>
+    <figcaption>
+      <h3> 32GB|1080p</h3>
+      <p>Color: Negro</p><a href="#"> Tablet Amazon Fire HD 10 WIFI</a>
+    </figcaption>
+  </figure>
+</li>
+
+<li>
+  <figure class="snip1171 blue">
+    <img src="assets/catalog/alc3t.jpeg" alt="sample71" />
+    <div class="price"> </div>
+    <figcaption>
+      <h3> 2G|32GB</h3>
+      <p>Color: Negro</p><a href="#"> Tablet Alcatel 3T Qcore 10" 4GLTE Regalía Backpack</a>
+    </figcaption>
+  </figure>
+</li>
+
+      <!-- Pantallas --->
+      <li>
+        <figure class="snip1171 blue">
+          <img src="assets/catalog/smartsam.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>43" Smart 4K QLED</h3>
+            <p> Color: Dorado </p><a href="#"> Pantalla Samsung Sero (Rotativo)</a>
+          </figcaption>
+        </figure>
+      </li>
+
+          <li>
+            <figure class="snip1171 blue">
+              <img src="assets/catalog/smartsam1.jpg" alt="sample71" />
+              <div class="price"> </div>
+              <figcaption>
+                <h3>65" Led Smart 4K UHD FLAT </h3>
+                <p> Color: Dorado </p><a href="#"> Pantalla Samsung|Sintonizador Digital</a>
+              </figcaption>
+            </figure>
+          </li>
+
+              <li>
+                <figure class="snip1171 blue">
+                  <img src="assets/catalog/smartsam2.jpg" alt="sample71" />
+                  <div class="price"> </div>
+                  <figcaption>
+                    <h3>65" Led Smart 4K UHD </h3>
+                    <p> Color: Dorado </p><a href="#"> Pantalla Samsung|Sintonizador Digital</a>
+                  </figcaption>
+                </figure>
+              </li>
+
+                  <li>
+                    <figure class="snip1171 blue">
+                      <img src="assets/catalog/smartsam3.jpeg" alt="sample71" />
+                      <div class="price"> </div>
+                      <figcaption>
+                        <h3>55" Class 8 LED 4K UHD</h3>
+                        <p> Color: Dorado </p><a href="#"> Pantalla Samsung  Smart TV</a>
+                      </figcaption>
+                    </figure>
+                  </li>
+
+                      <li>
+                        <figure class="snip1171">
+                          <img src="assets/catalog/smartha.jpeg" alt="sample71" />
+                          <div class="price"> </div>
+                          <figcaption>
+                            <h3>75" Led 4K UHD </h3>
+                            <p> Color: Dorado </p><a href="#"> Pantalla Haier Smart TV|Sintonizador Digital</a>
+                          </figcaption>
+                        </figure>
+                      </li>
+
+      <!-- Laptops --->
+
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapace.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 8GB|256GB SSD </h3>
+            <p> Color: Dorado </p><a href="#"> ACER ASPIRE 5 Core i5-1035G1 15.6"Touch </a>
+          </figcaption>
+        </figure>
+      </li>
+
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapace2.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB+16 Opt|1TB </h3>
+            <p> Color: Dorado </p><a href="#">Acer Aspire 5 Ci5-1035G 15.6" </a>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB|256GB SSD </h3>
+            <p> Color: Dorado </p><a href="#">ASUS F512D RYZEN 7-3700U 15.6"Touch</a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus2.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>1TB-SSD|16GB|1660TI-6GB </h3>
+            <p> Color: Dorado </p><a href="#"> ASUS ROG G512L Ci7-10750H 15.6"</a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus3.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 1TB-SSD|16GB|1650TI 4GB</h3>
+            <p> Color: Dorado </p><a href="#">ASUS ROG G512LI Ci7-10750H 15.6"</a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus4.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 1TB-SSD|16GB|1660TI-6GB</h3>
+            <p> Color: Dorado </p><a href="#">ASUS ROG G712L Ci7-10750H 17.3"</a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus5.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>16GB|512GB|RTX-3060-6GB </h3>
+            <p> Color: Dorado </p><a href="#"> ASUS TUF DASH F15 - Ci7-11370H 15.6"</a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus6.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB|512GB SSD </h3>
+            <p> Color: Dorado </p><a href="#"> ASUS UX481F ZENBOOK DUO Ci7-10510U 14"+12.6" Touch</a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus7.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>4GB - 1TB </h3>
+            <p> Color: Dorado </p><a href="#">Asus X509J Ci3-1005G1 15.6" </a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus8.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB|1TB </h3>
+            <p> Color: Dorado </p><a href="#"> Asus X512J Ci5-1035G1 15.6"</a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapasus9.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> 4GB|128GB SDD</h3>
+            <p> Color: Dorado </p><a href="#"> Asus X515M N4020 15.6"</a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapdell.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">DELL G3 GAMING Ci5 10300H - GTX1650TI 4GB - 8GB - 512GB-SSD - 15.6" </a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapdell1.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">Dell Gaming G5 Ci5-10300H - 8GB - 256GB -GTX-1660TI-6GB -15.6"</a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapdell2.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB|256GB SSD </h3>
+            <p> Color: Dorado </p><a href="#">DELL INSPIRON 15 3000 RYZEN 5 3450U 15.6" Touch</a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/lapdell3.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3>8GB|256GB </h3>
+            <p> Color: Dorado </p><a href="#">DELL INSPIRON 3501 Core i5 1035G1 15.6"Touch  </a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/laphp.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">HP 14-CF2059LA Intel Corei3 10110U - 8GB - 256GB SSD + 16GB Opt -14" - W10 </a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/laphp1.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">HP 14-CF2074LA Core i5 10210U - 8GB - 256GB-SSD - 14" - W10 </a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/laphp2.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">HP 14-CK2098LA - Core i3-10110U - 4GB - 500GB - 14" - W10Esp + Regalía Parlante Kocaso </a>
+          </figcaption>
+        </figure>
+      </li><li>
+        <figure class="snip1171">
+          <img src="assets/catalog/laphp3.jpg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">HP 14-DQ1059WM - Core i5-1035G1 - 8GB - 256GB-SSD - 14" - W10 </a>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <figure class="snip1171">
+          <img src="assets/catalog/laphp4.jpeg" alt="sample71" />
+          <div class="price"> </div>
+          <figcaption>
+            <h3> </h3>
+            <p> Color: Dorado </p><a href="#">HP 14-DQ2088WM Core i5-1135G7 - 8GB - 256GB-SSD - 14" - WIN10 </a>
+          </figcaption>
+        </figure>
+      </li>
+    
+    <li>
+      <figure class="snip1171">
+        <img src="assets/catalog/laphp5.jpg" alt="sample71" />
+        <div class="price"> </div>
+        <figcaption>
+          <h3>  </h3>
+          <p> Color: </p><a href="#">HP 15-DW1504LA - CELERON N4020 - 4GB - 1TB - 15.6" - W10 ESP  </a>
+        </figcaption>
+      </figure>
+    </li>
+
+        <li>
+          <figure class="snip1171">
+            <img src="assets/catalog/laphp6.jpg" alt="sample71" />
+            <div class="price"> </div>
+            <figcaption>
+              <h3> </h3>
+              <p> Color: </p><a href="#">HP 15-dy1076nr Core i5 1035G1 - 8GB - 256GB SSD - 15.6" - WIN10 </a>
+            </figcaption>
+          </figure>
+        </li>
+    <li>
+      <figure class="snip1171">
+        <img src="assets/catalog/laphp7.jpg" alt="sample71" />
+        <div class="price"> </div>
+        <figcaption>
+          <h3> </h3>
+          <p> Color: </p><a href="#">HP 15-dy1078nr Core i7-1065G7 - 8GB - 256GB-SSD - 15.6" - W10 </a>
+        </figcaption>
+      </figure>
+    </li>
+    
+    <li>
+      <figure class="snip1171">
+        <img src="assets/catalog/laphp8.jpg" alt="sample71" />
+        <div class="price"> </div>
+        <figcaption>
+          <h3> </h3>
+          <p> Color: </p><a href="#">HP 15-DY1731 Core i3 1005G1 - 8GB - 128GB-SSD -15"TOUCH - W10 </a>
+        </figcaption>
+      </figure>
+    </li>
+        <li>
+          <figure class="snip1171">
+            <img src="assets/catalog/laphp9.jpg" alt="sample71" />
+            <div class="price"> </div>
+            <figcaption>
+              <h3> </h3>
+              <p> Color: </p><a href="#"> HP 15-DY2074NR Core i3 1115G4 - 8GB - 256GB-SSD - 15.6"-TOUCH - WIN10</a>
+            </figcaption>
+          </figure>
+        </li>
+        
+        <li>
+          <figure class="snip1171">
+            <img src="assets/catalog/laphp10.jpg" alt="sample71" />
+            <div class="price"> </div>
+            <figcaption>
+              <h3> </h3>
+              <p> Color: </p><a href="#">HP 240 G7 Ci3-1005G1 - 4GB - 1TB - 15.6" </a>
+            </figcaption>
+          </figure>
+        </li>
+            <li>
+              <figure class="snip1171">
+                <img src="assets/catalog/laphp11.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
+                  <h3> </h3>
+                  <p> Color: </p><a href="#">HP 255 G7 ATHLON-3020E - 4GB - 128GB-SSD - 15.6" - W10 - Regalía Headset XPG H20 </a>
+                </figcaption>
+              </figure>
+            </li>
+            
+            <li>
+              <figure class="snip1171">
+                <img src="assets/catalog/laphp12.jpg" alt="sample71" />
+                <div class="price"> </div>
+                <figcaption>
+                  <h3> </h3>
+                  <p> Color: </p><a href="#"> HP PAVILION GAMING Core i5 10300H - 8GB - 256GB SSD - GTX- 1650 - 15.6" </a>
+                </figcaption>
+              </figure>
+            </li>
+                <li>
+                  <figure class="snip1171">
+                    <img src="assets/catalog/laphp13.png" alt="sample71" />
+                    <div class="price"> </div>
+                    <figcaption>
+                      <h3> </h3>
+                      <p> Color: </p><a href="#">HP Pavilion x360 14-dh0011la Ci3-8145U - 4GB - 256GB-SSD - 14" </a>
+                    </figcaption>
+                  </figure>
+                </li>
+                
+                <li>
+                  <figure class="snip1171">
+                    <img src="assets/catalog/laphp14.jpg" alt="sample71" />
+                    <div class="price"> </div>
+                    <figcaption>
+                      <h3> </h3>
+                      <p> Color: </p><a href="#"> HP Pavilion X360 14m-dh0003dx Ci5-8265U - 8GB - 128GB-SSD - 14" </a>
+                    </figcaption>
+                  </figure>
+                </li>
+                    <li>
+                      <figure class="snip1171">
+                        <img src="assets/catalog/laphp15.jpg" alt="sample71" />
+                        <div class="price"> </div>
+                        <figcaption>
+                          <h3> </h3>
+                          <p> Color: </p><a href="#">HP Pavilion X360 Ci5-10210U - 8GB - 256GB-SSD - 14" TOUCH </a>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    
+                    <li>
+                      <figure class="snip1171">
+                        <img src="assets/catalog/laphp16.png" alt="sample71" />
+                        <div class="price"> </div>
+                        <figcaption>
+                          <h3> </h3>
+                          <p> Color: </p><a href="#"> HP ProBook 440 G7 Ci7-10510U - 8GB - 1TB - 14 </a>
+                        </figcaption>
+                      </figure>
+                    </li>
+                        <li>
+                          <figure class="snip1171">
+                            <img src="assets/catalog/laphp17.jpg" alt="sample71" />
+                            <div class="price"> </div>
+                            <figcaption>
+                              <h3> </h3>
+                              <p> Color: </p><a href="#">HP ProBook 445 G7 R7-4700U - 8GB - 512GB-SSD - 14" </a>
+                            </figcaption>
+                          </figure>
+                        </li>
+                        
+                        <li>
+                          <figure class="snip1171">
+                            <img src="assets/catalog/laplen.jpg" alt="sample71" />
+                            <div class="price"> </div>
+                            <figcaption>
+                              <h3> </h3>
+                              <p> Color: </p><a href="#"> Lenovo Flex 5 Ryzen 3-4300U - 4GB - 128GB-SSD - 14" Touch </a>
+                            </figcaption>
+                          </figure>
+                        </li>
+                            <li>
+                              <figure class="snip1171">
+                                <img src="assets/catalog/laplen1.jpg" alt="sample71" />
+                                <div class="price"> </div>
+                                <figcaption>
+                                  <h3> </h3>
+                                  <p> Color: </p><a href="#"> LENOVO IDEAPAD 3 Ci3-1005G1 - 4GB - 128GB - 15.6" </a>
+                                </figcaption>
+                              </figure>
+                            </li>
+                            
+                            <li>
+                              <figure class="snip1171">
+                                <img src="assets/catalog/laplen2.jpg" alt="sample71" />
+                                <div class="price"> </div>
+                                <figcaption>
+                                  <h3> </h3>
+                                  <p> Color: </p><a href="#"> Lenovo Ideapad 3 Ci5-1035G1 - 8GB - 256GB-SSD - 15.6" </a>
+                                </figcaption>
+                              </figure>
+                            </li>
+                                <li>
+                                  <figure class="snip1171">
+                                    <img src="assets/catalog/laplen3.jpg" alt="sample71" />
+                                    <div class="price"> </div>
+                                    <figcaption>
+                                      <h3> </h3>
+                                      <p> Color: </p><a href="#">LENOVO IDEAPAD 3 Core i5-1035G1 - 8GB - 512GB-SSD - 14" </a>
+                                    </figcaption>
+                                  </figure>
+                                </li>
+                                
+                                <li>
+                                  <figure class="snip1171">
+                                    <img src="assets/catalog/laplen4.jpg" alt="sample71" />
+                                    <div class="price"> </div>
+                                    <figcaption>
+                                      <h3> </h3>
+                                      <p> Color: </p><a href="#">Lenovo Ideapad Gaming 3 Ci7-10750H - 8GB - 256GB-SSD - GTX-1650 - 15.6" </a>
+                                    </figcaption>
+                                  </figure>
+                                </li>
+                                    <li>
+                                      <figure class="snip1171">
+                                        <img src="assets/catalog/laplen5.jpg" alt="sample71" />
+                                        <div class="price"> </div>
+                                        <figcaption>
+                                          <h3> </h3>
+                                          <p> Color: </p><a href="#">Lenovo IdeaPad S145 Ci5-1035G11 - 4GB - 1TB - 15.6" </a>
+                                        </figcaption>
+                                      </figure>
+                                    </li>
+                                    
+                                    <li>
+                                      <figure class="snip1171">
+                                        <img src="assets/catalog/laplen6.jpg" alt="sample71" />
+                                        <div class="price"> </div>
+                                        <figcaption>
+                                          <h3> </h3>
+                                          <p> Color: </p><a href="#">Lenovo Ideapad S340 R7-3700U - 12GB - 512GB-SSD - 15.6" Touch  </a>
+                                        </figcaption>
+                                      </figure>
+                                    </li>
+                                        <li>
+                                          <figure class="snip1171">
+                                            <img src="assets/catalog/laplen7.jpg" alt="sample71" />
+                                            <div class="price"> </div>
+                                            <figcaption>
+                                              <h3> </h3>
+                                              <p> Color: </p><a href="#">Lenovo Legion 5 Ci7-10750H - 8GB - 512GB-SSD - GTX-1650 - 15.6" </a>
+                                            </figcaption>
+                                          </figure>
+                                        </li>
+                                        
+                                        <li>
+                                          <figure class="snip1171">
+                                            <img src="assets/catalog/laplen8.jpg" alt="sample71" />
+                                            <div class="price"> </div>
+                                            <figcaption>
+                                              <h3> </h3>
+                                              <p> Color: </p><a href="#">Lenovo Legión 5 R5-4600H - 8GB - 1TB + 256GB-SSD - GTX-1650-4GB - 15.6"  </a>
+                                            </figcaption>
+                                          </figure>
+                                        </li>
+                                            <li>
+                                              <figure class="snip1171">
+                                                <img src="assets/catalog/laplen9.jpg" alt="sample71" />
+                                                <div class="price"> </div>
+                                                <figcaption>
+                                                  <h3> </h3>
+                                                  <p> Color: </p><a href="#">LENOVO V14-IIL - Corei5-1035G1 - 8GB - 256GB-SSD - 14"</a>
+                                                </figcaption>
+                                              </figure>
+                                            </li>
+                                            
+                                            <li>
+                                              <figure class="snip1171">
+                                                <img src="assets/catalog/lapmics.jpg" alt="sample71" />
+                                                <div class="price"> </div>
+                                                <figcaption>
+                                                  <h3> </h3>
+                                                  <p> Color: </p><a href="#"> Microsoft Surface PRO 7 Ci3-1005G1 - 4GB - 128GB-SSD - 12.3"</a>
+                                                </figcaption>
+                                              </figure>
+                                            </li>
+                                                <li>
+                                                  <figure class="snip1171">
+                                                    <img src="assets/catalog/lapxpg1.jpg" alt="sample71" />
+                                                    <div class="price"> </div>
+                                                    <figcaption>
+                                                      <h3> </h3>
+                                                      <p> Color: Gris </p><a href="#">XPG XENIA Ci7-9750H - 16GB - 512GB-SSD - GTX-1660Ti-6GB - 15.6"IPS-144HZ </a>
+                                                    </figcaption>
+                                                  </figure>
+                                                </li>
+                                                
+                                                <li>
+                                                  <figure class="snip1171">
+                                                    <img src="assets/catalog/lapxpg2.jpg" alt="sample71" />
+                                                    <div class="price"> </div>
+                                                    <figcaption>
+                                                      <h3> </h3>
+                                                      <p> Color: </p><a href="#">XPG XENIA Ci7-9750H - 32GB - 1TB-SSD - RTX-2070-8GB - 15.6"IPS - 144HZ</a>
+                                                    </figcaption>
+                                                  </figure>
+                                                </li>
+                                                    <li>
+                                                      <figure class="snip1171">
+                                                        <img src="assets/catalog/lapxpg3.jpg" alt="sample71" />
+                                                        <div class="price"> </div>
+                                                        <figcaption>
+                                                          <h3> </h3>
+                                                          <p> Color: </p><a href="#">XPG XENIA Xe Core i5-1135G7 - 8GB 4266mhz - 1TB-SSD - 15.6" TOUCH </a>
+                                                        </figcaption>
+                                                      </figure>
+                                                    </li>
+                                                    
+                                                    <li>
+                                                      <figure class="snip1171">
+                                                        <img src="assets/catalog/lapxpg4.jpg" alt="sample71" />
+                                                        <div class="price"> </div>
+                                                        <figcaption>
+                                                          <h3> </h3>
+                                                          <p> Color: </p><a href="#">XPG XENIA Xe Core i7-1165G7 - 16GB 4266mhz - 1TB-SSD - 15.6" TOUCH</a>
+                                                        </figcaption>
+                                                      </figure>
+                                                    </li>
+                                            <!--  Mini PC -->
+
+                                                        <li>
+                                                          <figure class="snip1171">
+                                                            <img src="assets/catalog/nuc1.jpg" alt="sample71" />
+                                                            <div class="price"> </div>
+                                                            <figcaption>
+                                                              <h3> </h3>
+                                                              <p> Color: </p><a href="#">Intel NUC - Intel UCFF Ci7-8705G - RX -VEGA- WLAN </a>
+                                                            </figcaption>
+                                                          </figure>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                          <figure class="snip1171">
+                                                            <img src="assets/catalog/nuc2.jpg" alt="sample71" />
+                                                            <div class="price"> </div>
+                                                            <figcaption>
+                                                              <h3> </h3>
+                                                              <p> Color: </p><a href="#">Intel NUC CEL N3350 - 4GB - 64GB eMMC - WLAN </a>
+                                                            </figcaption>
+                                                          </figure>
+                                                        </li>
+                                                            <li>
+                                                              <figure class="snip1171">
+                                                                <img src="assets/catalog/nuc3.jpg" alt="sample71" />
+                                                                <div class="price"> </div>
+                                                                <figcaption>
+                                                                  <h3> </h3>
+                                                                  <p> Color: </p><a href="#"> Intel Nuc Ci3-10110U - DDR4 - WIFI - HDMI</a>
+                                                                </figcaption>
+                                                              </figure>
+                                                            </li>
+                                                            
+                                                            <li>
+                                                              <figure class="snip1171">
+                                                                <img src="assets/catalog/nuc4.jpg" alt="sample71" />
+                                                                <div class="price"> </div>
+                                                                <figcaption>
+                                                                  <h3> </h3>
+                                                                  <p> Color: </p><a href="#">Mini PC Gigabyte BRIX - Intel Core i3-10110U - DDR4 - HDMI - USB-C - Sin SO </a>
+                                                                </figcaption>
+                                                              </figure>
+                                                            </li>
+                                                                <li>
+                                                                  <figure class="snip1171">
+                                                                    <img src="assets/catalog/nuc5.jpg" alt="sample71" />
+                                                                    <div class="price"> </div>
+                                                                    <figcaption>
+                                                                      <h3> </h3>
+                                                                      <p> Color: </p><a href="#">Mini PC Gigabyte BRIX - Intel Core i7-10710 - DDR4 - HDMI - USB-C - Sin SO </a>
+                                                                    </figcaption>
+                                                                  </figure>
+                                                                </li>
+                                                 <!--  Monitor -->
+    
+                                                                <li>
+                                                                  <figure class="snip1171">
+                                                                    <img src="assets/catalog/monit1.jpg" alt="sample71" />
+                                                                    <div class="price"> </div>
+                                                                    <figcaption>
+                                                                      <h3> </h3>
+                                                                      <p> Color: </p><a href="#">Monitor Led 32" ViewSonic IPS SuperClear 4ms- 75Hz - 2560x1440 </a>
+                                                                    </figcaption>
+                                                                  </figure>
+                                                                </li>
+                                                                    <li>
+                                                                      <figure class="snip1171">
+                                                                        <img src="assets/catalog/monit2.jpg" alt="sample71" />
+                                                                        <div class="price"> </div>
+                                                                        <figcaption>
+                                                                          <h3> </h3>
+                                                                          <p> Color: </p><a href="#">Monitor Led 32" MSI Optix G32C4 Curvo 1ms - 165Hz - 1920x1080 </a>
+                                                                        </figcaption>
+                                                                      </figure>
+                                                                    </li>
+                                                                    
+                                                                    <li>
+                                                                      <figure class="snip1171">
+                                                                        <img src="assets/catalog/monit3.jpg" alt="sample71" />
+                                                                        <div class="price"> </div>
+                                                                        <figcaption>
+                                                                          <h3> </h3>
+                                                                          <p> Color: </p><a href="#">Monitor Led 31.5" Samsung Curvo 4ms - 75Hz - 1920x1080 </a>
+                                                                        </figcaption>
+                                                                      </figure>
+                                                                    </li>
+                                                                        <li>
+                                                                          <figure class="snip1171">
+                                                                            <img src="assets/catalog/monit4.jpg" alt="sample71" />
+                                                                            <div class="price"> </div>
+                                                                            <figcaption>
+                                                                              <h3> </h3>
+                                                                              <p> Color: </p><a href="#"> Monitor Led 31.5" AOC CQ32G1 Curvo 1ms - 144Hz - 2560x1440</a>
+                                                                            </figcaption>
+                                                                          </figure>
+                                                                        </li>
+                                                                        
+                                                                        <li>
+                                                                          <figure class="snip1171">
+                                                                            <img src="assets/catalog/monit5.jpg" alt="sample71" />
+                                                                            <div class="price"> </div>
+                                                                            <figcaption>
+                                                                              <h3> </h3>
+                                                                              <p> Color: </p><a href="#"> Monitor VIEWSONIC GAMING VX2718 LED 27" - 1MS - 165HZ - 1920X1080</a>
+                                                                            </figcaption>
+                                                                          </figure>
+                                                                        </li>
+                                                                            <li>
+                                                                              <figure class="snip1171">
+                                                                                <img src="assets/catalog/monit6.jpg" alt="sample71" />
+                                                                                <div class="price"> </div>
+                                                                                <figcaption>
+                                                                                  <h3> </h3>
+                                                                                  <p> Color: </p><a href="#">Monitor QLed 27" Samsung Gaming Curvo Odyssey G7 1ms - 240Hz - 2560x1440 </a>
+                                                                                </figcaption>
+                                                                              </figure>
+                                                                            </li>
+                                                                            
+                                                                            <li>
+                                                                              <figure class="snip1171">
+                                                                                <img src="assets/catalog/monit7.jpg" alt="sample71" />
+                                                                                <div class="price"> </div>
+                                                                                <figcaption>
+                                                                                  <h3> </h3>
+                                                                                  <p> Color: </p><a href="#"> Monitor Led 28" Samsung 4K IPS 4ms - 60Hz - 3840 x 2160</a>
+                                                                                </figcaption>
+                                                                              </figure>
+                                                                            </li>
+                                                                                <li>
+                                                                                  <figure class="snip1171">
+                                                                                    <img src="assets/catalog/monit8.jpg" alt="sample71" />
+                                                                                    <div class="price"> </div>
+                                                                                    <figcaption>
+                                                                                      <h3> </h3>
+                                                                                      <p> Color: </p><a href="#"> Monitor Led 28" Asus Tuf Gaming VG289Q IPS 5ms - 60Hz - 3840x2160</a>
+                                                                                    </figcaption>
+                                                                                  </figure>
+                                                                                </li>
+                                                                                
+                                                                                <li>
+                                                                                  <figure class="snip1171">
+                                                                                    <img src="assets/catalog/monit9.jpg" alt="sample71" />
+                                                                                    <div class="price"> </div>
+                                                                                    <figcaption>
+                                                                                      <h3> </h3>
+                                                                                      <p> Color: </p><a href="#"> Monitor Led 27" Samsung Gaming Curvo C27R5G 4ms - 240Hz - 1920x1080</a>
+                                                                                    </figcaption>
+                                                                                  </figure>
+                                                                                </li>
+                                                                                    <li>
+                                                                                      <figure class="snip1171">
+                                                                                        <img src="assets/catalog/monit10.jpg" alt="sample71" />
+                                                                                        <div class="price"> </div>
+                                                                                        <figcaption>
+                                                                                          <h3> </h3>
+                                                                                          <p> Color: </p><a href="#"> Monitor Led 27" MSI Optix MAG270VC2 Curvo 1ms - 165Hz - 1920x1080</a>
+                                                                                        </figcaption>
+                                                                                      </figure>
+                                                                                    </li>
+                                                                                    
+                                                                                    <li>
+                                                                                      <figure class="snip1171">
+                                                                                        <img src="assets/catalog/monit11.jpg" alt="sample71" />
+                                                                                        <div class="price"> </div>
+                                                                                        <figcaption>
+                                                                                          <h3> </h3>
+                                                                                          <p> Color: </p><a href="#"> Monitor Led 27" HP 27x Gaming 1ms - 144Hz - 1920x1080</a>
+                                                                                        </figcaption>
+                                                                                      </figure>
+                                                                                    </li>
+                                                                                        <li>
+                                                                                          <figure class="snip1171">
+                                                                                            <img src="assets/catalog/monit12.jpg" alt="sample71" />
+                                                                                            <div class="price"> </div>
+                                                                                            <figcaption>
+                                                                                              <h3> </h3>
+                                                                                              <p> Color: </p><a href="#">Monitor Led 27" Asus Tuf Gaming VG27BQ 0.4ms - 165Hz - 2560x1440 </a>
+                                                                                            </figcaption>
+                                                                                          </figure>
+                                                                                        </li>
+                                                                                        
+                                                                                        <li>
+                                                                                          <figure class="snip1171">
+                                                                                            <img src="assets/catalog/monit13.jpg" alt="sample71" />
+                                                                                            <div class="price"> </div>
+                                                                                            <figcaption>
+                                                                                              <h3> </h3>
+                                                                                              <p> Color: </p><a href="#">Monitor Led 27" Asus Tuf Gaming VG27AQ1A IPS 1ms - 170Hz - 2560x1440 </a>
+                                                                                            </figcaption>
+                                                                                          </figure>
+                                                                                        </li>
+                                                                                            <li>
+                                                                                              <figure class="snip1171">
+                                                                                                <img src="assets/catalog/monit14.jpg" alt="sample71" />
+                                                                                                <div class="price"> </div>
+                                                                                                <figcaption>
+                                                                                                  <h3> </h3>
+                                                                                                  <p> Color: </p><a href="#">Monitor Led 27" Asus Tuf Gaming VG27AQ IPS 1ms - 165Hz - 2560x1440</a>
+                                                                                                </figcaption>
+                                                                                              </figure>
+                                                                                            </li>
+                                                                                            
+                                                                                            <li>
+                                                                                              <figure class="snip1171">
+                                                                                                <img src="assets/catalog/monit15.jpg" alt="sample71" />
+                                                                                                <div class="price"> </div>
+                                                                                                <figcaption>
+                                                                                                  <h3> </h3>
+                                                                                                  <p> Color: </p><a href="#">Monitor Led 27" Asus Gaming VG279Q IPS 1ms - 144Hz - 1920 x 1080 </a>
+                                                                                                </figcaption>
+                                                                                              </figure>
+                                                                                            </li>
+                                                                                                <li>
+                                                                                                  <figure class="snip1171">
+                                                                                                    <img src="assets/catalog/monit16.jpg" alt="sample71" />
+                                                                                                    <div class="price"> </div>
+                                                                                                    <figcaption>
+                                                                                                      <h3> </h3>
+                                                                                                      <p> Color: </p><a href="#">Monitor Led 17.3" Asus Rog Strix XG17AHPE Portable IPS USB-C 3ms - 240Hz - 1920x1080 </a>
+                                                                                                    </figcaption>
+                                                                                                  </figure>
+                                                                                                </li>
+                                                                                                
+
+                                                                    <!--  Linea Blanca -->
+
+                                                                                                <!--  Lavadoras -->
+                                                                           
+                                                                                                    <!-- 
+                                                                                                    <li>
+                                                                                                      <figure class="snip1171">
+                                                                                                        <img src="assets/catalog/lapace.jpg" alt="sample71" />
+                                                                                                        <div class="price"> </div>
+                                                                                                        <figcaption>
+                                                                                                          <h3> </h3>
+                                                                                                          <p> Color: </p><a href="#"> </a>
+                                                                                                        </figcaption>
+                                                                                                      </figure>
+                                                                                                    </li>
+-->
 
 
-    </div>
-  </ul>
+
+
+
+
+
 <!-- Catalog END--->
+         </div>
+       </ul>
+    </div>
+ </div>
+
 <!-- Search Script-->
 <script>
     function myFunction() {
@@ -1312,12 +2316,31 @@
         }
     }
     </script>
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
 </main><!-- End #main -->
+
+
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd"> </a>
+  <a class="a2a_button_whatsapp"></a>
+  <a class="a2a_button_twitter"></a>
+  <a class="a2a_button_wechat"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_line"></a>
+  <a class="a2a_button_email"></a>
+</div>
+
    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
+          <h2 style="text-align: center;"> Sitio en continua remodelacion </h2>
 
         <div class="section-title">
+
+              <img src="./assets/img/gif.gif" style="text-align: center;">
           <h2>Contacto</h2>
   <a href="https://wa.me/50671785522"class="btn btn-white"><img  id="cart-icon" src="assets/catalog/whatsappicon.jpg" width="25" height="25" alt="sc"><p class="gradient">WhatsApp</p></a>
 
@@ -1440,7 +2463,7 @@
         &copy; Copyright 2021 <strong><span>  <p class="gradient" style="font-size: 12px;">Tecnoelctro Comercio Online </span></strong>. All Rights Reserved </p>
       </div>
       <div class="credits">
-       <a href="https://neighbortechcr.com"><p class="gradient" style="font-size: 16px;">Designed by Neighbortech CR</p></a>
+       <a href="https://neighbordevcr.com"><p class="gradient" style="font-size: 16px;">Designed by NeighborDev CR</p></a>
       </div>
     </div>
   </footer><!-- End Footer -->

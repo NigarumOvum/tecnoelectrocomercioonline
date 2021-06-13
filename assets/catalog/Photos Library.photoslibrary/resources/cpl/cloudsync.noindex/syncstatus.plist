@@ -14,7 +14,7 @@
 		<integer>2</integer>
 	</dict>
 	<key>cloudAssetCountPerTypeLastCheckDate</key>
-	<date>2021-05-27T03:16:38Z</date>
+	<date>2021-06-12T15:51:05Z</date>
 	<key>connectedToNetwork</key>
 	<true/>
 	<key>hasBatteryBudgetKey</key>
@@ -32,6 +32,6 @@
 	<key>lastCompletePrefetchDate</key>
 	<date>2021-05-27T16:48:37Z</date>
 	<key>lastSyncDate</key>
-	<date>2021-05-27T16:37:54Z</date>
+	<date>2021-06-12T15:51:05Z</date>
 </dict>
 </plist>
