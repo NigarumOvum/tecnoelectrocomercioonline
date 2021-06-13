@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="assets/catalog/logo.png" type="image/x-icon">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
-<title>Tecnoelectro Comercio Online Catalogo de Productos</title>	
+<title>Tecnoelectro Comercio Online - Catalogo de Productos</title>	
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.jpg" rel="icon">
@@ -23,41 +23,32 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/cc.css" rel="stylesheet">
+  <link href="assets/css/cata-list-filter.css" rel="stylesheet">
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
-  
       <div class="logo">
-  
         <a href="index.html">
           <p class="Logo"><img src="assets/catalog/tecnologo.png" width="140" height="60" alt="Logo"></p>
         </a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
-  
       <nav id="navbar" class="navbar">
         <ul>
             <ul>
-  
             </ul>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav> <!-- .navbar -->
-
     </div>
-
-    <style>
-
+ <style>
 @media (max-width: 1024px) {
 #about img {
 	float: left;
@@ -85,6 +76,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
+}
+
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
@@ -102,9 +100,9 @@
   }
 
 }
-
         * {
           box-sizing: border-box;
+          
         }
         
         #myInput {
@@ -114,31 +112,40 @@
           width: 100%;
           font-size: 16px;
           padding: 12px 20px 12px 40px;
-          border: 1px solid rgb(14, 109, 153);
+          border: linear-gradient(to left, #3AA2CF 46%, #7208CF 100%);
           margin-bottom: 12px;
         }
-
         </style>
   </header><!-- End Header -->
-
-
-
-
-
-
-
-
   <main id="main">
-  
     <h2 style="text-align: center;">Catalogo de Productos</h2>  
-  <input style="text-align: center;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por Marca o Modelo..." title="Type in a name">
-    <ul id="myUL">
-  <div id="maincat">
-  <div id="boxcat">
-	<!-- Apple Smartphones --->
 
-      <li>
-        <figure class="snip1171">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <ul>
+      <li><a href="">View All</a></li>
+      <li><a href="">SmartPhones</a></li>
+      <li><a href="">Buds</a></li>
+      <li><a href="">Watch</a></li>
+      <li><a href="">Tablets</a></li>
+      <li><a href="">Pantallas</a></li>
+     <li><a href="">Electrodomesticos</a></li>
+     <li><a href="">Linea Blanca</a></li>
+    <li><a href="">Herramientas</a></li>
+
+    </ul>
+
+      <li> <button class="btn-grad"><a href="Uñas.html" class="opc-main-bg">Uñas McNails</a></button></li>
+      <li><button class="btn-grad"><a href="miasecret.html" class="opc-main-bg">Uñas Mia Secret</a></button></li>
+  <!-- BUSCADOR --->
+  <input style="text-align: center;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por Marca o Modelo..." title="Type in a name">
+    <ul id="myUL" class="category">
+      <div id="maincat">
+        <div id="boxcat">
+
+
+  <!-- Apple Smartphones --->
+    <li class="smartphones-1">
+      <figure class="snip1171">
             <img src="assets/catalog/i12pmb.jpg" alt="sample71"/>
             <div class="price"> </div>
             <figcaption>
@@ -147,19 +154,18 @@
             </figcaption>
           </figure>
         </li>
-
-        <li>
-            <figure class="snip1171">
-                <img src="assets/catalog/i12pmb.jpg" alt="sample71"/>
+          <li class="smartphones-1">
+            <figure class="snip1171" class="iso-box smartphone">
+                <img src="assets/catalog/i12pmb.jpg" class="fluid-img" alt="sample71"/>
                 <div class="price"> </div>
                 <figcaption>
                     <h3>128GB </h3> 
                     <p> Colores: Dorado | Blanco | Negro | Azul       </p><a href="#">Apple iPhone 12 Pro Max </a>
                 </figcaption>
               </figure>
-            </li>
+              </li>
 
-        <li>
+      <li class="smartphones-1">
             <figure class="snip1171">
                 <img src="assets/catalog/i12pb.jpg" alt="sample71"/>
                 <div class="price"> </div>
@@ -170,7 +176,7 @@
               </figure>
             </li>
 
-            <li>
+            <li class="smartphones-1">
                 <figure class="snip1171">
                     <img src="assets/catalog/i12pb.jpg" alt="sample71"/>
                     <div class="price"> </div>
@@ -181,7 +187,7 @@
                   </figure>
                 </li>
 
-            <li>
+            <li class="smartphones-1">
                 <figure class="snip1171">
                     <img src="assets/catalog/i12b.jpg" alt="sample71"/>
                     <div class="price"> </div>
@@ -192,7 +198,7 @@
                   </figure>
                 </li>
 
-            <li>
+            <li class="smartphones-1">
                 <figure class="snip1171">
                     <img src="assets/catalog/i12a.jpg" alt="sample71"/>
                     <div class="price"> </div>
@@ -203,7 +209,7 @@
                   </figure>
                 </li>
 
-                <li>
+                <li class="smartphones-1">
                     <figure class="snip1171">
                         <img src="assets/catalog/i12bl.jpg" alt="sample71"/>
                         <div class="price"> </div>
@@ -214,7 +220,7 @@
                       </figure>
                     </li>
 
-                    <li>
+                    <li class="smartphones-1">
                         <figure class="snip1171">
                             <img src="assets/catalog/i12bl.jpg" alt="sample71"/>
                             <div class="price"> </div>
@@ -225,7 +231,7 @@
                           </figure>
                         </li>
 
-                    <li>
+                    <li class="smartphones-1">
                         <figure class="snip1171">
                             <img src="assets/catalog/i11.jpg" alt="sample71"/>
                             <div class="price"> </div>
@@ -236,7 +242,7 @@
                           </figure>
                         </li>
 
-                        <li>
+                        <li class="smartphones-1">
                             <figure class="snip1171">
                                 <img src="assets/catalog/i11.jpg" alt="sample71"/>
                                 <div class="price"> </div>
@@ -247,7 +253,7 @@
                               </figure>
                             </li>
 
-                        <li>
+                        <li class="smartphones-1">
                             <figure class="snip1171">
                                 <img src="assets/catalog/ise.jpg" alt="sample71"/>
                                 <div class="price"> </div>
@@ -258,7 +264,7 @@
                               </figure>
                             </li>
 
-                            <li>
+                            <li class="smartphones-1">
                                 <figure class="snip1171">
                                     <img src="assets/catalog/ise.jpg" alt="sample71"/>
                                     <div class="price"> </div>
@@ -271,7 +277,7 @@
 
 	<!-- Samsung Smartphones --->
 
-        <li>
+        <li class="smartphones-1">
           <figure class="snip1171 blue hover">
             <img src="assets/catalog/s21plus.jpg" alt="sample71"/>
             <div class="price"> </div>
@@ -282,7 +288,7 @@
           </figure>
         </li>
 
-             <li>
+             <li class="smartphones-1">
                 <figure class="snip1171 blue hover">
                   <img src="assets/catalog/s21u.jpg" alt="sample71"/>
                   <div class="price"> </div>
@@ -293,7 +299,7 @@
                 </figure>
               </li>
       
-              <li>
+              <li class="smartphones-1">
                     <figure class="snip1171 blue hover">
                       <img src="assets/catalog/s21256.jpg" alt="sample71"/>
                       <div class="price"> </div>
@@ -304,7 +310,7 @@
                     </figure>
                   </li>
           
-                  <li>
+                  <li class="smartphones-1">
                         <figure class="snip1171 blue hover">
                             <img src="assets/catalog/s2128.jpg" alt="sample71"/>
                             <div class="price"> </div>
@@ -315,7 +321,7 @@
                           </figure>
                         </li>
               
-                      <li>
+                      <li class="smartphones-1">
                                 <figure class="snip1171 blue hover">
                                   <img src="assets/catalog/s20fe.jpg" alt="sample71"/>
                                   <div class="price"> </div>
@@ -326,7 +332,7 @@
                                 </figure>
                               </li>
                       
-                              <li>
+                              <li class="smartphones-1">
                                     <figure class="snip1171 blue hover">
                                       <img src="assets/catalog/s20fer.jpg" alt="sample71"/>
                                       <div class="price"> </div>
@@ -337,7 +343,7 @@
                                     </figure>
                                   </li>
                           
-                                  <li>
+                                  <li class="smartphones-1">
                                         <figure class="snip1171 blue hover">
                                           <img src="assets/catalog/n20u.jpg" alt="sample71"/>
                                           <div class="price"> </div>
@@ -349,7 +355,7 @@
                                       </li>
                             
                                   
-                                          <li>
+                                          <li class="smartphones-1">
                                                 <figure class="snip1171 blue hover">
                                                   <img src="assets/catalog/m21s.jpg" alt="sample71"/>
                                                   <div class="price"> </div>
@@ -360,7 +366,7 @@
                                                 </figure>
                                               </li>
                                       
-                                              <li>
+                                              <li class="smartphones-1">
                                                     <figure class="snip1171 blue hover">
                                                       <img src="assets/catalog/a72.jpg" alt="sample71"/>
                                                       <div class="price"> </div>
@@ -371,7 +377,7 @@
                                                     </figure>
                                                   </li>
                                           
-                                                  <li>
+                                                  <li class="smartphones-1">
 
                                                         <figure class="snip1171 blue hover">
                                                           <img src="assets/catalog/a52.jpg" alt="sample71"/>
@@ -383,7 +389,7 @@
                                                         </figure>
                                                       </li>
                                               
-                                                      <li>
+                                                      <li class="smartphones-1">
                                                                 <figure class="snip1171 blue hover">
                                                                   <img src="assets/catalog/a51.jpg" alt="sample71"/>
                                                                   <div class="price"> </div>
@@ -394,7 +400,7 @@
                                                                 </figure>
                                                               </li>
                                                       
-                                                              <li>
+                                                              <li class="smartphones-1">
                                                                     <figure class="snip1171 blue hover">
                                                                       <img src="assets/catalog/a32.jpg" alt="sample71"/>
                                                                       <div class="price"> </div>
@@ -405,7 +411,7 @@
                                                                     </figure>
                                                                   </li>
                                                           
-                                                                  <li>
+                                                                  <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/A31.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -416,7 +422,7 @@
                                                                         </figure>
                                                                       </li>
                                                               
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a21s.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -427,7 +433,7 @@
                                                                         </figure>
                                                                       </li>
                                                               
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a11.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -439,7 +445,7 @@
                                                                       </li>
     
 
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a10s.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -450,7 +456,7 @@
                                                                         </figure>
                                                                       </li>
                                                               
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a02s.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -461,7 +467,7 @@
                                                                         </figure>
                                                                       </li>
                                                               
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a02.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -472,7 +478,7 @@
                                                                         </figure>
                                                                       </li>
                                                               
-                                                                      <li>
+                                                                      <li class="smartphones-1">
                                                                         <figure class="snip1171 blue hover">
                                                                           <img src="assets/catalog/a01.jpg" alt="sample71"/>
                                                                           <div class="price"> </div>
@@ -485,7 +491,7 @@
 
 	<!-- Huawei Smartphones --->
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 green">
               <img src="assets/catalog/hp40l.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -496,7 +502,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 green">
               <img src="assets/catalog/hy7p.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -507,7 +513,7 @@
             </figure>
           </li>
 
-              <li>
+              <li class="smartphones-1">
                 <figure class="snip1171 green">
                   <img src="assets/catalog/hy9a.jpg" alt="sample71" />
                   <div class="price"> </div>
@@ -520,7 +526,7 @@
 
 	<!-- Xiaomi Smartphones --->
 
-<li>
+<li class="smartphones-1">
   <figure class="snip1171 orange">
     <img src="assets/catalog/mi11l.jpg" alt="sample71" />
     <div class="price"> </div>
@@ -531,7 +537,7 @@
   </figure>
 </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10t.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -542,7 +548,7 @@
             </figure>
           </li>
 
-            <li>
+            <li class="smartphones-1">
               <figure class="snip1171 orange">
                 <img src="assets/catalog/mi10t.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -553,7 +559,7 @@
               </figure>
             </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10tp.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -565,7 +571,7 @@
           </li>
 
 
-            <li>
+            <li class="smartphones-1">
               <figure class="snip1171 orange">
                 <img src="assets/catalog/mi10tp.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -576,7 +582,7 @@
               </figure>
             </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10tl.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -587,7 +593,7 @@
             </figure>
           </li>
 
-           <li>
+           <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/mi10tp.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -598,7 +604,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/pf3.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -609,7 +615,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/10t.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -620,7 +626,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/10t.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -632,7 +638,7 @@
           </li>
 
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/11l.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -643,7 +649,7 @@
             </figure>
           </li>
 
-  <li>
+  <li class="smartphones-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/px3.jpg" alt="sample71" />
       <div class="price"> </div>
@@ -654,7 +660,7 @@
     </figure>
   </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/px3.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -665,7 +671,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/px3nfc.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -676,7 +682,7 @@
             </figure>
           </li>
 
-    <li>
+    <li class="smartphones-1">
       <figure class="snip1171 orange">
         <img src="assets/catalog/m3.jpg" alt="sample71" />
         <div class="price"> </div>
@@ -687,7 +693,7 @@
       </figure>
     </li>
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 orange">
           <img src="assets/catalog/m3.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -698,7 +704,7 @@
         </figure>
       </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/n10l.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -709,7 +715,7 @@
             </figure>
           </li>
 
-                    <li>
+                    <li class="smartphones-1">
                       <figure class="snip1171 orange">
                         <img src="assets/catalog/n10s.jpg" alt="sample71" />
                         <div class="price"> </div>
@@ -720,7 +726,7 @@
                       </figure>
                     </li>
 
-                              <li>
+                              <li class="smartphones-1">
                                 <figure class="snip1171 orange">
                                   <img src="assets/catalog/n10.jpg" alt="sample71" />
                                   <div class="price"> </div>
@@ -732,7 +738,7 @@
                               </li>
 
                                 
-                                          <li>
+                                          <li class="smartphones-1">
                                             <figure class="snip1171 orange">
                                               <img src="assets/catalog/n10plus.jpg" alt="sample71" />
                                               <div class="price"> </div>
@@ -743,7 +749,7 @@
                                             </figure>
                                           </li>
 
-                                              <li>
+                                              <li class="smartphones-1">
                                                 <figure class="snip1171 orange">
                                                   <img src="assets/catalog/n10plus.jpg" alt="sample71" />
                                                   <div class="price"> </div>
@@ -754,7 +760,7 @@
                                                 </figure>
                                               </li>
 
-                                                  <li>
+                                                  <li class="smartphones-1">
                                                     <figure class="snip1171 orange">
                                                       <img src="assets/catalog/n10plus.jpg" alt="sample71" />
                                                       <div class="price"> </div>
@@ -765,7 +771,7 @@
                                                     </figure>
                                                   </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/n9s.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -776,7 +782,7 @@
             </figure>
           </li>
 
-            <li>
+            <li class="smartphones-1">
               <figure class="snip1171 orange">
                 <img src="assets/catalog/n9s.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -788,7 +794,7 @@
             </li>
 
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/n9t.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -800,7 +806,7 @@
           </li>
 
       
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/n9.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -811,7 +817,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/n9.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -823,7 +829,7 @@
           </li>
 
   
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -834,7 +840,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -846,7 +852,7 @@
           </li>
 
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9c.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -857,7 +863,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9c.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -868,7 +874,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9at.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -879,7 +885,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/redmi9at.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -892,7 +898,7 @@
     
 	<!-- Realme Smartphones --->
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/REDMIN8P.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -903,7 +909,7 @@
         </figure>
       </li>
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/r7p.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -914,7 +920,7 @@
         </figure>
       </li>
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/r7.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -925,7 +931,7 @@
         </figure>
       </li>
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/r7i.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -936,7 +942,7 @@
         </figure>
       </li>
 
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/r6i.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -949,7 +955,7 @@
 
       	<!-- CAT --->
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/s62pro.jpg" alt="sample71" />
               <div class="price"> </div>
@@ -961,7 +967,7 @@
           </li>
 
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/cats61.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -972,7 +978,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/cats52.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -983,7 +989,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 orange">
               <img src="assets/catalog/cats42.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -996,7 +1002,7 @@
 
 
   <!-- ll Vivo --->
-          <li>
+          <li class="smartphones-1">
             <figure class="snip1171 purple">
               <img src="assets/catalog/v20.jpg" alt="sample71" />
               <div class="price"> </div>
@@ -1007,7 +1013,7 @@
             </figure>
           </li>
 
-              <li>
+              <li class="smartphones-1">
                 <figure class="snip1171 purple">
                   <img src="assets/catalog/Y20S.jpg" alt="sample71" />
                   <div class="price"> </div>
@@ -1020,7 +1026,7 @@
 
               <!-- Motorola--->
 
-        <li>
+        <li class="smartphones-1">
           <figure class="snip1171 green">
             <img src="assets/catalog/g10p.jpeg" alt="sample71" />
             <div class="price"> </div>
@@ -1031,7 +1037,7 @@
           </figure>
         </li>
 
-                <li>
+                <li class="smartphones-1">
                   <figure class="snip1171 green">
                     <img src="assets/catalog/g9.jpg" alt="sample71" />
                     <div class="price"> </div>
@@ -1042,7 +1048,7 @@
                   </figure>
                 </li>
 
-                        <li>
+                        <li class="smartphones-1">
                           <figure class="snip1171 green">
                             <img src="assets/catalog/g9pl.jpg" alt="sample71" />
                             <div class="price"> </div>
@@ -1053,7 +1059,7 @@
                           </figure>
                         </li>
 
-                                <li>
+                                <li class="smartphones-1">
                                   <figure class="snip1171 green">
                                     <img src="assets/catalog/g9p.jpg" alt="sample71" />
                                     <div class="price"> </div>
@@ -1065,7 +1071,7 @@
                                 </li>
 
               <!-- LG--->
-      <li>
+      <li class="smartphones-1">
         <figure class="snip1171 red">
           <img src="assets/catalog/k62.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1076,7 +1082,7 @@
         </figure>
       </li>
 
-            <li>
+            <li class="smartphones-1">
               <figure class="snip1171 red">
                 <img src="assets/catalog/k61.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -1087,7 +1093,7 @@
               </figure>
             </li>
 
-                  <li>
+                  <li class="smartphones-1">
                     <figure class="snip1171 red">
                       <img src="assets/catalog/k52.jpg" alt="sample71" />
                       <div class="price"> </div>
@@ -1098,7 +1104,7 @@
                     </figure>
                   </li>
 
-                        <li>
+                        <li class="smartphones-1">
                           <figure class="snip1171 red">
                             <img src="assets/catalog/k42.jpg" alt="sample71" />
                             <div class="price"> </div>
@@ -1109,7 +1115,7 @@
                           </figure>
                         </li>
 
-                              <li>
+                              <li class="smartphones-1">
                                 <figure class="snip1171 red">
                                   <img src="assets/catalog/k22p.jpg" alt="sample71" />
                                   <div class="price"> </div>
@@ -1120,7 +1126,7 @@
                                 </figure>
                               </li>
 
-                                    <li>
+                                    <li class="smartphones-1">
                                       <figure class="snip1171 red">
                                         <img src="assets/catalog/k22.jpg" alt="sample71" />
                                         <div class="price"> </div>
@@ -1132,8 +1138,8 @@
                                     </li>
                          
               <!-- Buds --->
-    <li>
-        <figure class="snip1171 orange">
+        <li class="buds-1">
+        <figure class="snip1171 orange buds">
           <img src="assets/catalog/airpodspro.jpg" alt="sample71"/>
           <div class="price"> </div>
           <figcaption>
@@ -1142,8 +1148,7 @@
           </figcaption>
         </figure>
       </li>
-
-      <li>
+      <li class="buds-1">
         <figure class="snip1171 orange">
           <img src="assets/catalog/airpods2.jpg" alt="sample71"/>
           <div class="price"> </div>
@@ -1154,7 +1159,7 @@
         </figure>
       </li>
 
-<li>
+<li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/galaxbudspro.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1165,7 +1170,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/galaxbuds.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1176,7 +1181,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/freebuds4i.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1187,7 +1192,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/earbuds2.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1198,7 +1203,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/budsz.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1209,7 +1214,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/budsairp.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1220,7 +1225,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="buds-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/earbudsq.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1234,7 +1239,7 @@
 
      	<!-- Smart Watchs --->
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 ">
       <img src="assets/catalog/apw.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1245,7 +1250,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171">
       <img src="assets/catalog/apw1.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1256,7 +1261,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171">
       <img src="assets/catalog/apw2.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1267,7 +1272,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171">
       <img src="assets/catalog/apw3.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1278,7 +1283,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171">
       <img src="assets/catalog/apw.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1289,7 +1294,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 ">
       <img src="assets/catalog/apw.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1300,7 +1305,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 ">
       <img src="assets/catalog/apw.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1311,7 +1316,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 orange blue hover">
       <img src="assets/catalog/gwa.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1322,7 +1327,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/wgte.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1333,7 +1338,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/wfit.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1344,7 +1349,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="watch-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/wlite.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1356,7 +1361,7 @@
   </li>
 
      	<!-- Tablets --->
-         <li>
+         <li class="tablets-1">
             <figure class="snip1171 blue">
               <img src="assets/catalog/a710.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -1367,7 +1372,7 @@
             </figure>
           </li>
 
-        <li>
+        <li class="tablets-1">
           <figure class="snip1171 blue">
             <img src="assets/catalog/a7102.jpg" alt="sample71" />
             <div class="price"> </div>
@@ -1378,7 +1383,7 @@
           </figure>
         </li>
 
-          <li>
+          <li class="tablets-1">
             <figure class="snip1171 blue">
               <img src="assets/catalog/s5e.jpg" alt="sample71"/>
               <div class="price"> </div>
@@ -1389,7 +1394,7 @@
             </figure>
           </li>
 
-          <li>
+          <li class="tablets-1">
             <figure class="snip1171 blue">
               <img src="assets/catalog/a10octa.jpeg" alt="sample71" />
               <div class="price"> </div>
@@ -1400,7 +1405,7 @@
             </figure>
           </li>
 
-                    <li>
+                    <li class="tablets-1">
                       <figure class="snip1171 blue">
                         <img src="assets/catalog/a8octa2.jpg" alt="sample71" />
                         <div class="price"> </div>
@@ -1411,7 +1416,7 @@
                       </figure>
                     </li>
 
-                              <li>
+                              <li class="tablets-1">
                                 <figure class="snip1171 blue">
                                   <img src="assets/catalog/a8octa3.jpg" alt="sample71" />
                                   <div class="price"> </div>
@@ -1422,7 +1427,7 @@
                                 </figure>
                               </li>
 
-                                  <li>
+                                  <li class="tablets-1">
                                     <figure class="snip1171 blue">
                                       <img src="assets/catalog/a7104.jpg" alt="sample71" />
                                       <div class="price"> </div>
@@ -1433,7 +1438,7 @@
                                     </figure>
                                   </li>
 
-  <li>
+  <li class="tablets-1">
     <figure class="snip1171 orange">
       <img src="assets/catalog/m5l.jpg" alt="sample71"/>
       <div class="price"> </div>
@@ -1444,7 +1449,7 @@
     </figure>
   </li>
 
-  <li>
+  <li class="tablets-1">
     <figure class="snip1171">
       <img src="assets/catalog/rca1.jpeg" alt="sample71" />
       <div class="price"> </div>
@@ -1455,7 +1460,7 @@
     </figure>
   </li>
 
-<li>
+<li class="tablets-1">
   <figure class="snip1171">
     <img src="assets/catalog/rca2.jpg" alt="sample71" />
     <div class="price"> </div>
@@ -1466,7 +1471,7 @@
   </figure>
 </li>
 
-<li>
+<li class="tablets-1">
   <figure class="snip1171 yellow">
     <img src="assets/catalog/amazfire.jpg" alt="sample71" />
     <div class="price"> </div>
@@ -1477,7 +1482,7 @@
   </figure>
 </li>
 
-<li>
+<li class="tablets-1">
   <figure class="snip1171 blue">
     <img src="assets/catalog/alc3t.jpeg" alt="sample71" />
     <div class="price"> </div>
@@ -1489,7 +1494,7 @@
 </li>
 
       <!-- Pantallas --->
-      <li>
+      <li class="pantallas-1">
         <figure class="snip1171 blue">
           <img src="assets/catalog/smartsam.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1500,7 +1505,7 @@
         </figure>
       </li>
 
-          <li>
+          <li class="pantallas-1">
             <figure class="snip1171 blue">
               <img src="assets/catalog/smartsam1.jpg" alt="sample71" />
               <div class="price"> </div>
@@ -1511,7 +1516,7 @@
             </figure>
           </li>
 
-              <li>
+              <li class="pantallas-1">
                 <figure class="snip1171 blue">
                   <img src="assets/catalog/smartsam2.jpg" alt="sample71" />
                   <div class="price"> </div>
@@ -1522,7 +1527,7 @@
                 </figure>
               </li>
 
-                  <li>
+                  <li class="pantallas-1">
                     <figure class="snip1171 blue">
                       <img src="assets/catalog/smartsam3.jpeg" alt="sample71" />
                       <div class="price"> </div>
@@ -1533,7 +1538,7 @@
                     </figure>
                   </li>
 
-                      <li>
+                      <li class="pantallas-1">
                         <figure class="snip1171">
                           <img src="assets/catalog/smartha.jpeg" alt="sample71" />
                           <div class="price"> </div>
@@ -1546,7 +1551,7 @@
 
       <!-- Laptops --->
 
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapace.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1557,7 +1562,7 @@
         </figure>
       </li>
 
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapace2.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1567,7 +1572,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1578,7 +1583,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus2.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1587,7 +1592,7 @@
             <p> Color: Dorado </p><a href="#"> ASUS ROG G512L Ci7-10750H 15.6"</a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus3.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1598,7 +1603,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus4.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1607,7 +1612,7 @@
             <p> Color: Dorado </p><a href="#">ASUS ROG G712L Ci7-10750H 17.3"</a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus5.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1618,7 +1623,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus6.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1627,7 +1632,7 @@
             <p> Color: Dorado </p><a href="#"> ASUS UX481F ZENBOOK DUO Ci7-10510U 14"+12.6" Touch</a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus7.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1638,7 +1643,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus8.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1647,7 +1652,7 @@
             <p> Color: Dorado </p><a href="#"> Asus X512J Ci5-1035G1 15.6"</a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapasus9.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1658,7 +1663,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapdell.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1667,7 +1672,7 @@
             <p> Color: Dorado </p><a href="#">DELL G3 GAMING Ci5 10300H - GTX1650TI 4GB - 8GB - 512GB-SSD - 15.6" </a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapdell1.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1678,7 +1683,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapdell2.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1687,7 +1692,7 @@
             <p> Color: Dorado </p><a href="#">DELL INSPIRON 15 3000 RYZEN 5 3450U 15.6" Touch</a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/lapdell3.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1698,7 +1703,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/laphp.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1707,7 +1712,7 @@
             <p> Color: Dorado </p><a href="#">HP 14-CF2059LA Intel Corei3 10110U - 8GB - 256GB SSD + 16GB Opt -14" - W10 </a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/laphp1.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1718,7 +1723,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/laphp2.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1727,7 +1732,7 @@
             <p> Color: Dorado </p><a href="#">HP 14-CK2098LA - Core i3-10110U - 4GB - 500GB - 14" - W10Esp + Regalía Parlante Kocaso </a>
           </figcaption>
         </figure>
-      </li><li>
+      </li><li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/laphp3.jpg" alt="sample71" />
           <div class="price"> </div>
@@ -1738,7 +1743,7 @@
         </figure>
       </li>
       
-      <li>
+      <li class="laptops-1">
         <figure class="snip1171">
           <img src="assets/catalog/laphp4.jpeg" alt="sample71" />
           <div class="price"> </div>
@@ -1749,7 +1754,7 @@
         </figure>
       </li>
     
-    <li>
+    <li class="laptops-1">
       <figure class="snip1171">
         <img src="assets/catalog/laphp5.jpg" alt="sample71" />
         <div class="price"> </div>
@@ -1760,7 +1765,7 @@
       </figure>
     </li>
 
-        <li>
+        <li class="laptops-1">
           <figure class="snip1171">
             <img src="assets/catalog/laphp6.jpg" alt="sample71" />
             <div class="price"> </div>
@@ -1770,7 +1775,7 @@
             </figcaption>
           </figure>
         </li>
-    <li>
+    <li class="laptops-1">
       <figure class="snip1171">
         <img src="assets/catalog/laphp7.jpg" alt="sample71" />
         <div class="price"> </div>
@@ -1781,7 +1786,7 @@
       </figure>
     </li>
     
-    <li>
+    <li class="laptops-1">
       <figure class="snip1171">
         <img src="assets/catalog/laphp8.jpg" alt="sample71" />
         <div class="price"> </div>
@@ -1791,7 +1796,7 @@
         </figcaption>
       </figure>
     </li>
-        <li>
+        <li class="laptops-1">
           <figure class="snip1171">
             <img src="assets/catalog/laphp9.jpg" alt="sample71" />
             <div class="price"> </div>
@@ -1802,7 +1807,7 @@
           </figure>
         </li>
         
-        <li>
+        <li class="laptops-1">
           <figure class="snip1171">
             <img src="assets/catalog/laphp10.jpg" alt="sample71" />
             <div class="price"> </div>
@@ -1812,7 +1817,7 @@
             </figcaption>
           </figure>
         </li>
-            <li>
+            <li class="laptops-1">
               <figure class="snip1171">
                 <img src="assets/catalog/laphp11.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -1823,7 +1828,7 @@
               </figure>
             </li>
             
-            <li>
+            <li class="laptops-1">
               <figure class="snip1171">
                 <img src="assets/catalog/laphp12.jpg" alt="sample71" />
                 <div class="price"> </div>
@@ -1833,7 +1838,7 @@
                 </figcaption>
               </figure>
             </li>
-                <li>
+                <li class="laptops-1">
                   <figure class="snip1171">
                     <img src="assets/catalog/laphp13.png" alt="sample71" />
                     <div class="price"> </div>
@@ -1844,7 +1849,7 @@
                   </figure>
                 </li>
                 
-                <li>
+                <li class="laptops-1">
                   <figure class="snip1171">
                     <img src="assets/catalog/laphp14.jpg" alt="sample71" />
                     <div class="price"> </div>
@@ -1854,7 +1859,7 @@
                     </figcaption>
                   </figure>
                 </li>
-                    <li>
+                    <li class="laptops-1">
                       <figure class="snip1171">
                         <img src="assets/catalog/laphp15.jpg" alt="sample71" />
                         <div class="price"> </div>
@@ -1865,7 +1870,7 @@
                       </figure>
                     </li>
                     
-                    <li>
+                    <li class="laptops-1">
                       <figure class="snip1171">
                         <img src="assets/catalog/laphp16.png" alt="sample71" />
                         <div class="price"> </div>
@@ -1875,7 +1880,7 @@
                         </figcaption>
                       </figure>
                     </li>
-                        <li>
+                        <li class="laptops-1">
                           <figure class="snip1171">
                             <img src="assets/catalog/laphp17.jpg" alt="sample71" />
                             <div class="price"> </div>
@@ -1886,7 +1891,7 @@
                           </figure>
                         </li>
                         
-                        <li>
+                        <li class="laptops-1">
                           <figure class="snip1171">
                             <img src="assets/catalog/laplen.jpg" alt="sample71" />
                             <div class="price"> </div>
@@ -1896,7 +1901,7 @@
                             </figcaption>
                           </figure>
                         </li>
-                            <li>
+                            <li class="laptops-1">
                               <figure class="snip1171">
                                 <img src="assets/catalog/laplen1.jpg" alt="sample71" />
                                 <div class="price"> </div>
@@ -1907,7 +1912,7 @@
                               </figure>
                             </li>
                             
-                            <li>
+                            <li class="laptops-1">
                               <figure class="snip1171">
                                 <img src="assets/catalog/laplen2.jpg" alt="sample71" />
                                 <div class="price"> </div>
@@ -1917,7 +1922,7 @@
                                 </figcaption>
                               </figure>
                             </li>
-                                <li>
+                                <li class="laptops-1">
                                   <figure class="snip1171">
                                     <img src="assets/catalog/laplen3.jpg" alt="sample71" />
                                     <div class="price"> </div>
@@ -1928,7 +1933,7 @@
                                   </figure>
                                 </li>
                                 
-                                <li>
+                                <li class="laptops-1">
                                   <figure class="snip1171">
                                     <img src="assets/catalog/laplen4.jpg" alt="sample71" />
                                     <div class="price"> </div>
@@ -1938,7 +1943,7 @@
                                     </figcaption>
                                   </figure>
                                 </li>
-                                    <li>
+                                    <li class="laptops-1">
                                       <figure class="snip1171">
                                         <img src="assets/catalog/laplen5.jpg" alt="sample71" />
                                         <div class="price"> </div>
@@ -1949,7 +1954,7 @@
                                       </figure>
                                     </li>
                                     
-                                    <li>
+                                    <li class="laptops-1">
                                       <figure class="snip1171">
                                         <img src="assets/catalog/laplen6.jpg" alt="sample71" />
                                         <div class="price"> </div>
@@ -1959,7 +1964,7 @@
                                         </figcaption>
                                       </figure>
                                     </li>
-                                        <li>
+                                        <li class="laptops-1">
                                           <figure class="snip1171">
                                             <img src="assets/catalog/laplen7.jpg" alt="sample71" />
                                             <div class="price"> </div>
@@ -1970,7 +1975,7 @@
                                           </figure>
                                         </li>
                                         
-                                        <li>
+                                        <li class="laptops-1">
                                           <figure class="snip1171">
                                             <img src="assets/catalog/laplen8.jpg" alt="sample71" />
                                             <div class="price"> </div>
@@ -1980,7 +1985,7 @@
                                             </figcaption>
                                           </figure>
                                         </li>
-                                            <li>
+                                            <li class="laptops-1">
                                               <figure class="snip1171">
                                                 <img src="assets/catalog/laplen9.jpg" alt="sample71" />
                                                 <div class="price"> </div>
@@ -1991,7 +1996,7 @@
                                               </figure>
                                             </li>
                                             
-                                            <li>
+                                            <li class="laptops-1">
                                               <figure class="snip1171">
                                                 <img src="assets/catalog/lapmics.jpg" alt="sample71" />
                                                 <div class="price"> </div>
@@ -2001,7 +2006,7 @@
                                                 </figcaption>
                                               </figure>
                                             </li>
-                                                <li>
+                                                <li class="laptops-1">
                                                   <figure class="snip1171">
                                                     <img src="assets/catalog/lapxpg1.jpg" alt="sample71" />
                                                     <div class="price"> </div>
@@ -2012,7 +2017,7 @@
                                                   </figure>
                                                 </li>
                                                 
-                                                <li>
+                                                <li class="laptops-1">
                                                   <figure class="snip1171">
                                                     <img src="assets/catalog/lapxpg2.jpg" alt="sample71" />
                                                     <div class="price"> </div>
@@ -2022,7 +2027,7 @@
                                                     </figcaption>
                                                   </figure>
                                                 </li>
-                                                    <li>
+                                                    <li class="laptops-1">
                                                       <figure class="snip1171">
                                                         <img src="assets/catalog/lapxpg3.jpg" alt="sample71" />
                                                         <div class="price"> </div>
@@ -2033,7 +2038,7 @@
                                                       </figure>
                                                     </li>
                                                     
-                                                    <li>
+                                                    <li class="laptops-1">
                                                       <figure class="snip1171">
                                                         <img src="assets/catalog/lapxpg4.jpg" alt="sample71" />
                                                         <div class="price"> </div>
@@ -2143,7 +2148,7 @@
                                                                         
                                                                         <li>
                                                                           <figure class="snip1171">
-                                                                            <img src="assets/catalog/monit5.jpg" alt="sample71" />
+                                                                            <img src="assets/catalog/monit5.png" alt="sample71" />
                                                                             <div class="price"> </div>
                                                                             <figcaption>
                                                                               <h3> </h3>
@@ -2256,6 +2261,7 @@
                                                                                                 </figcaption>
                                                                                               </figure>
                                                                                             </li>
+
                                                                                                 <li>
                                                                                                   <figure class="snip1171">
                                                                                                     <img src="assets/catalog/monit16.jpg" alt="sample71" />
@@ -2267,7 +2273,6 @@
                                                                                                   </figure>
                                                                                                 </li>
                                                                                                 
-
                                                                     <!--  Linea Blanca -->
 
                                                                                                 <!--  Lavadoras -->
@@ -2284,18 +2289,14 @@
                                                                                                       </figure>
                                                                                                     </li>
 -->
-
-
-
-
-
-
-
 <!-- Catalog END--->
-         </div>
-       </ul>
-    </div>
- </div>
+            </div>
+        </div>
+     </div>
+   </ul>
+  </div>
+</div>
+</div>
 
 <!-- Search Script-->
 <script>
@@ -2317,10 +2318,8 @@
     }
     </script>
 
-<script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
 </main><!-- End #main -->
-
 
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -2336,7 +2335,7 @@
    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
-          <h2 style="text-align: center;"> Sitio en continua remodelacion </h2>
+          <h2 style="text-align: center;"> Sitio continua en remodelacion </h2>
 
         <div class="section-title">
 
@@ -2369,8 +2368,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
-      <a href="tel:+50640339238"><p class="gradient" style="font-size: 16px;"> <h3>Llamanos!</h3>
- </a>
+      <a href="tel:+50640339238"><p class="gradient" style="font-size: 16px;"> <h3>Llamanos!</h3> </a>
            </div>
           </div>
 
@@ -2383,7 +2381,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="dist/js/validate.js" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
@@ -2481,6 +2479,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/cata-list-filter.js"></script>
+
 
 </body>
 
