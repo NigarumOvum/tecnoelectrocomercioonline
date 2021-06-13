@@ -96,6 +96,7 @@ h3 {
             color: white;            
             box-shadow: 0 0 10px rgb(92, 70, 134);
             border-radius: 7px;
+            font-size: 10px;
           }
 
            a:hover {
