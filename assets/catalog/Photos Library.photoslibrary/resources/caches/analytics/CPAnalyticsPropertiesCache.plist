@@ -10,11 +10,11 @@
 		<string>Unknown</string>
 	</dict>
 	<key>cpa_cache_lastCacheTime</key>
-	<date>2021-06-13T18:04:15Z</date>
+	<date>2021-06-24T00:51:43Z</date>
 	<key>cpa_cache_librarySummary</key>
 	<dict>
 		<key>cpa_common_collectionCount</key>
-		<integer>24</integer>
+		<integer>23</integer>
 		<key>cpa_common_icpl_enabled</key>
 		<false/>
 		<key>cpa_common_icpl_exceedingQuota</key>
@@ -24,7 +24,7 @@
 		<key>cpa_common_icpl_lowDiskSpace</key>
 		<false/>
 		<key>cpa_common_photoCount</key>
-		<integer>22</integer>
+		<integer>21</integer>
 		<key>cpa_common_videoCount</key>
 		<integer>2</integer>
 	</dict>
